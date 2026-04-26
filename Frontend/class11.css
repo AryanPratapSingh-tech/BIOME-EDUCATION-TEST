@@ -368,6 +368,162 @@ footer {
 
 .footer-links a:hover { color: #fff; }
 
+/* ========== CHAPTER ACTION BUTTONS ========== */
+.chapter-card-actions {
+  padding: 0.75rem 1.1rem 1rem;
+  display: flex;
+  gap: 0.6rem;
+  background: var(--white);
+}
+
+.btn-full-test,
+.btn-topic-test {
+  flex: 1;
+  padding: 8px 6px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background 0.18s, transform 0.15s;
+  border: none;
+  white-space: nowrap;
+}
+
+.btn-full-test {
+  background: var(--green-main);
+  color: #fff;
+}
+
+.btn-full-test:hover {
+  background: var(--green-dark);
+  transform: translateY(-1px);
+}
+
+.btn-topic-test {
+  background: var(--green-bg);
+  color: var(--green-dark);
+  border: 1.5px solid var(--green-light);
+}
+
+.btn-topic-test:hover {
+  background: var(--green-bg2);
+  transform: translateY(-1px);
+}
+
+/* ========== PAID CHAPTER ACTIONS ========== */
+.paid-actions {
+  flex-direction: column;
+  gap: 8px;
+  background: linear-gradient(135deg, #fff8f0, #fff3e8);
+  border-top: 2px solid #f0a040;
+}
+
+.paid-49 {
+  background: linear-gradient(135deg, #fff5f8, #ffedf2);
+  border-top: 2px solid #e05080;
+}
+
+.paid-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #c06010;
+}
+
+.paid-49 .paid-badge {
+  color: #b02050;
+}
+
+.paid-badge span {
+  background: #f0a040;
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+
+.paid-49 .paid-badge span {
+  background: #e05080;
+}
+
+.paid-btn-row {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-pay-now {
+  flex: 1;
+  padding: 9px 8px;
+  background: #f0a040;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background 0.18s, transform 0.15s;
+}
+
+.btn-pay-now:hover {
+  background: #d08020;
+  transform: translateY(-1px);
+}
+
+.paid-49 .btn-pay-now {
+  background: #e05080;
+}
+
+.paid-49 .btn-pay-now:hover {
+  background: #c03060;
+}
+
+.btn-already-paid {
+  flex: 1;
+  padding: 9px 8px;
+  background: #fff;
+  color: #c06010;
+  border: 1.5px solid #f0a040;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background 0.18s;
+  white-space: nowrap;
+}
+
+.btn-already-paid:hover {
+  background: #fff3e0;
+}
+
+.paid-49 .btn-already-paid {
+  color: #b02050;
+  border-color: #e05080;
+}
+
+.paid-49 .btn-already-paid:hover {
+  background: #fff0f4;
+}
+
+/* Lock overlay on card hover for paid chapters */
+.chapter-card:has(.paid-actions) .class-card-header,
+.chapter-card:has(.paid-actions) .chapter-card-top {
+  position: relative;
+}
+
+.chapter-card:has(.paid-actions) {
+  border-color: rgba(240, 160, 64, 0.35);
+}
+
+.chapter-card:has(.paid-49) {
+  border-color: rgba(224, 80, 128, 0.3);
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 640px) {
   nav { padding: 0 1rem; }

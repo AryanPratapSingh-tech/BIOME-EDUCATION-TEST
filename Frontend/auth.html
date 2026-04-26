@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Sign Up — Biome Education</title>
+  <link rel="stylesheet" href="auth.css"/>
+</head>
+<body>
+
+<div class="auth-page">
+
+  <!-- ======== LEFT PANEL ======== -->
+  <div class="auth-left">
+
+    <!-- Decorative SVG background -->
+    <svg class="auth-left-bg" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+      <ellipse cx="100" cy="150" rx="80" ry="100" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <ellipse cx="100" cy="150" rx="38" ry="60" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="100" cy="150" r="16" fill="#fff" opacity="0.5"/>
+      <circle cx="128" cy="118" r="8" fill="#fff" opacity="0.3"/>
+      <circle cx="76" cy="182" r="8" fill="#fff" opacity="0.3"/>
+      <path d="M320 300 C355 250 400 275 435 225 C470 175 510 200 545 155" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <path d="M320 335 C355 285 400 310 435 260 C470 210 510 235 545 190" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <line x1="365" y1="270" x2="365" y2="308" stroke="#fff" stroke-width="1.5"/>
+      <line x1="402" y1="258" x2="402" y2="296" stroke="#fff" stroke-width="1.5"/>
+      <line x1="440" y1="243" x2="440" y2="278" stroke="#fff" stroke-width="1.5"/>
+      <line x1="478" y1="228" x2="478" y2="260" stroke="#fff" stroke-width="1.5"/>
+      <path d="M80 550 C56 546 44 570 50 600 C56 630 80 622 94 602 C108 582 98 540 80 550Z" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M80 550 L73 606" stroke="#fff" stroke-width="1.2"/>
+      <path d="M73 596 L50 582" stroke="#fff" stroke-width="1"/>
+      <ellipse cx="460" cy="620" rx="60" ry="34" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M410 620 C422 604 436 613 450 598 C464 583 476 595 490 606 C504 617 514 600 524 606" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="220" cy="700" r="28" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M240 682 L278 658 M240 700 L284 700 M240 718 L278 742" stroke="#fff" stroke-width="1.5"/>
+      <path d="M200 682 L162 658 M200 700 L156 700 M200 718 L162 742" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="220" cy="700" r="10" fill="#fff" opacity="0.35"/>
+    </svg>
+
+    <a class="auth-brand" href="index.html">
+      <svg class="auth-logo" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="21" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+        <ellipse cx="22" cy="22" rx="10" ry="15" fill="none" stroke="#9FE1CB" stroke-width="2.2"/>
+        <ellipse cx="22" cy="22" rx="5" ry="9" fill="none" stroke="#9FE1CB" stroke-width="1.4"/>
+        <line x1="22" y1="7" x2="22" y2="37" stroke="#fff" stroke-width="1.4"/>
+        <line x1="12" y1="22" x2="32" y2="22" stroke="#fff" stroke-width="1.4"/>
+        <circle cx="22" cy="22" r="4" fill="#9FE1CB"/>
+      </svg>
+      <span class="auth-brand-name">BIOME <span>EDUCATION</span></span>
+    </a>
+
+    <div class="auth-left-body">
+      <div class="auth-left-tag">NEET-UG BIOLOGY PREPARATION</div>
+      <h2 class="auth-left-title">
+        Your Journey to<br/>
+        <em>MBBS Starts Here</em>
+      </h2>
+      <p class="auth-left-desc">
+        Join thousands of NEET aspirants who are acing Biology with Biome Education's targeted mock tests, chapter-wise analysis, and expert explanations.
+      </p>
+      <div class="auth-perks">
+        <div class="perk-item">
+          <span class="perk-dot">📋</span>
+          97+ chapter-wise and full mock tests
+        </div>
+        <div class="perk-item">
+          <span class="perk-dot">🎯</span>
+          NEET +4/−1 marking with instant analysis
+        </div>
+        <div class="perk-item">
+          <span class="perk-dot">📈</span>
+          Track your progress across all chapters
+        </div>
+        <div class="perk-item">
+          <span class="perk-dot">🏆</span>
+          Leaderboard and percentile ranking
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-left-footer">
+      © 2026 Biome Education · NEET Biology
+    </div>
+  </div>
+
+  <!-- ======== RIGHT PANEL ======== -->
+  <div class="auth-right">
+    <div class="auth-card">
+
+      <!-- Tab switcher -->
+      <div class="auth-card-tabs">
+        <button class="tab-btn active" id="tab-signup" onclick="switchTab('signup')">Create Account</button>
+        <button class="tab-btn" id="tab-login" onclick="switchTab('login')">Login</button>
+      </div>
+
+      <!-- ── SIGNUP FORM ── -->
+      <div id="panel-signup">
+
+        <!-- Step indicator -->
+        <div class="step-indicator" id="signup-steps">
+          <div class="step active" id="step-1">
+            <div class="step-circle">1</div>
+            <div class="step-label">Details</div>
+          </div>
+          <div style="width:48px;height:2px;background:var(--border);margin-bottom:16px;" id="line-1-2"></div>
+          <div class="step" id="step-2">
+            <div class="step-circle">2</div>
+            <div class="step-label">Verify OTP</div>
+          </div>
+          <div style="width:48px;height:2px;background:var(--border);margin-bottom:16px;" id="line-2-3"></div>
+          <div class="step" id="step-3">
+            <div class="step-circle">3</div>
+            <div class="step-label">Done!</div>
+          </div>
+        </div>
+
+        <!-- STEP 1 — Details -->
+        <div id="signup-step1">
+          <div class="auth-card-header">
+            <h1 class="auth-heading">Create your account</h1>
+            <p class="auth-sub">Fill in your details to get started</p>
+          </div>
+
+          <!-- Google signup -->
+          <button class="btn-google" onclick="handleGoogleAuth()">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M19.6 10.23c0-.68-.06-1.36-.17-2H10v3.79h5.39a4.6 4.6 0 0 1-2 3.02v2.51h3.24c1.89-1.74 2.97-4.3 2.97-7.32Z" fill="#4285F4"/>
+              <path d="M10 20c2.7 0 4.96-.9 6.62-2.44l-3.24-2.51c-.9.6-2.04.96-3.38.96-2.6 0-4.8-1.76-5.59-4.12H1.07v2.6A10 10 0 0 0 10 20Z" fill="#34A853"/>
+              <path d="M4.41 11.89A5.97 5.97 0 0 1 4.1 10c0-.66.11-1.3.31-1.89V5.51H1.07A10 10 0 0 0 0 10c0 1.61.39 3.14 1.07 4.49l3.34-2.6Z" fill="#FBBC05"/>
+              <path d="M10 3.98c1.47 0 2.79.5 3.82 1.5l2.87-2.87C14.95.99 12.7 0 10 0A10 10 0 0 0 1.07 5.51l3.34 2.6C5.2 5.74 7.4 3.98 10 3.98Z" fill="#EA4335"/>
+            </svg>
+            Continue with Google
+          </button>
+
+          <div class="or-divider">or sign up with details</div>
+
+          <form class="form-grid" id="signup-form-1" onsubmit="return false;">
+
+            <div class="form-row">
+              <div class="field">
+                <label for="s-name">Full Name *</label>
+                <div class="field-wrap">
+                  <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="5.5" r="3.5" stroke="#5a8070" stroke-width="1.3"/>
+                    <path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#5a8070" stroke-width="1.3" stroke-linecap="round"/>
+                  </svg>
+                  <input type="text" id="s-name" placeholder="e.g. Arjun Sharma" autocomplete="name"/>
+                </div>
+                <span class="field-error" id="err-name">Please enter your full name</span>
+              </div>
+
+              <div class="field">
+                <label for="s-class">Class *</label>
+                <div class="select-wrap field-wrap">
+                  <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <rect x="1" y="2" width="14" height="12" rx="2" stroke="#5a8070" stroke-width="1.3"/>
+                    <line x1="4" y1="6" x2="12" y2="6" stroke="#5a8070" stroke-width="1.1"/>
+                    <line x1="4" y1="9" x2="10" y2="9" stroke="#5a8070" stroke-width="1.1"/>
+                  </svg>
+                  <select id="s-class">
+                    <option value="">Select class</option>
+                    <option value="11">Class 11th</option>
+                    <option value="12">Class 12th</option>
+                    <option value="dropper">Dropper</option>
+                  </select>
+                </div>
+                <span class="field-error" id="err-class">Please select your class</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="s-phone">Mobile Number *</label>
+              <div class="phone-wrap">
+                <div class="field-wrap" style="flex:1;">
+                  <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <rect x="3" y="1" width="10" height="14" rx="2" stroke="#5a8070" stroke-width="1.3"/>
+                    <circle cx="8" cy="12.5" r="0.8" fill="#5a8070"/>
+                  </svg>
+                  <input type="tel" id="s-phone" placeholder="+91 98765 43210" maxlength="13" autocomplete="tel"/>
+                </div>
+                <button class="btn-otp" id="btn-phone-otp" type="button" onclick="sendPhoneOTP()">Send OTP</button>
+              </div>
+              <span class="field-error" id="err-phone">Enter a valid 10-digit mobile number</span>
+            </div>
+
+            <!-- Phone OTP -->
+            <div class="field" id="phone-otp-field" style="display:none;">
+              <label>Enter OTP sent to your mobile</label>
+              <div class="otp-row">
+                <input class="otp-box" id="potp1" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'potp2')" onkeydown="otpBack(event,this,'')"/>
+                <input class="otp-box" id="potp2" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'potp3')" onkeydown="otpBack(event,this,'potp1')"/>
+                <input class="otp-box" id="potp3" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'potp4')" onkeydown="otpBack(event,this,'potp2')"/>
+                <input class="otp-box" id="potp4" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'potp5')" onkeydown="otpBack(event,this,'potp3')"/>
+                <input class="otp-box" id="potp5" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'potp6')" onkeydown="otpBack(event,this,'potp4')"/>
+                <input class="otp-box" id="potp6" maxlength="1" type="text" inputmode="numeric" oninput="checkPhoneOTP()" onkeydown="otpBack(event,this,'potp5')"/>
+              </div>
+              <div class="otp-timer" id="phone-otp-timer">Resend in <span id="phone-timer-val">60</span>s · <span onclick="resendPhoneOTP()" style="display:none;" id="phone-resend-link">Resend OTP</span></div>
+            </div>
+
+            <div class="field">
+              <label for="s-email">Email Address *</label>
+              <div class="field-wrap">
+                <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="1" y="3" width="14" height="10" rx="2" stroke="#5a8070" stroke-width="1.3"/>
+                  <path d="M1 5l7 5 7-5" stroke="#5a8070" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <input type="email" id="s-email" placeholder="you@example.com" autocomplete="email"/>
+              </div>
+              <span class="field-error" id="err-email">Enter a valid email address</span>
+            </div>
+
+            <div class="field">
+              <label for="s-password">Create Password *</label>
+              <div class="field-wrap">
+                <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="2" y="7" width="12" height="8" rx="2" stroke="#5a8070" stroke-width="1.3"/>
+                  <path d="M5 7V5a3 3 0 0 1 6 0v2" stroke="#5a8070" stroke-width="1.3" stroke-linecap="round"/>
+                  <circle cx="8" cy="11" r="1.2" fill="#5a8070"/>
+                </svg>
+                <input type="password" id="s-password" placeholder="Min 8 characters" autocomplete="new-password"/>
+                <button type="button" class="pass-toggle" onclick="togglePass('s-password',this)">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5Z" stroke="#5a8070" stroke-width="1.3"/><circle cx="8" cy="8" r="2" stroke="#5a8070" stroke-width="1.3"/></svg>
+                </button>
+              </div>
+              <span class="field-hint">Use letters, numbers and symbols</span>
+              <span class="field-error" id="err-password">Password must be at least 8 characters</span>
+            </div>
+
+            <button type="button" class="btn-submit" id="btn-signup-next" onclick="proceedSignup()">
+              <span class="btn-text">Continue →</span>
+              <div class="spinner"></div>
+            </button>
+
+          </form>
+
+          <p class="terms-text">
+            By creating an account you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+          </p>
+        </div>
+
+        <!-- STEP 2 — Email OTP Verification -->
+        <div id="signup-step2" style="display:none;">
+          <div class="auth-card-header">
+            <h1 class="auth-heading">Verify your Email</h1>
+            <p class="auth-sub" id="email-otp-sub">We've sent a 6-digit code to your email</p>
+          </div>
+
+          <div class="form-grid">
+            <div style="text-align:center;padding:0.5rem 0;">
+              <div style="font-size:3rem;margin-bottom:0.5rem;">📧</div>
+              <div style="font-size:0.82rem;color:var(--text-muted);">Check your inbox and spam folder</div>
+            </div>
+
+            <div class="field">
+              <label style="text-align:center;margin-bottom:0.5rem;">Enter 6-digit OTP</label>
+              <div class="otp-row">
+                <input class="otp-box" id="eotp1" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'eotp2')" onkeydown="otpBack(event,this,'')"/>
+                <input class="otp-box" id="eotp2" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'eotp3')" onkeydown="otpBack(event,this,'eotp1')"/>
+                <input class="otp-box" id="eotp3" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'eotp4')" onkeydown="otpBack(event,this,'eotp2')"/>
+                <input class="otp-box" id="eotp4" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'eotp5')" onkeydown="otpBack(event,this,'eotp3')"/>
+                <input class="otp-box" id="eotp5" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'eotp6')" onkeydown="otpBack(event,this,'eotp4')"/>
+                <input class="otp-box" id="eotp6" maxlength="1" type="text" inputmode="numeric" oninput="checkEmailOTP()" onkeydown="otpBack(event,this,'eotp5')"/>
+              </div>
+              <div class="otp-timer">Resend in <span id="email-timer-val">60</span>s &nbsp;<span onclick="resendEmailOTP()" style="display:none;" id="email-resend-link">Resend OTP</span></div>
+            </div>
+
+            <button type="button" class="btn-submit" id="btn-verify-email" onclick="verifyEmailOTP()">
+              <span class="btn-text">Verify &amp; Create Account</span>
+              <div class="spinner"></div>
+            </button>
+
+            <button type="button" onclick="gotoStep(1)" style="background:none;border:none;color:var(--text-muted);font-size:0.82rem;cursor:pointer;font-family:var(--font-body);text-align:center;">← Go back and edit details</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 — Success -->
+        <div id="signup-step3" style="display:none;">
+          <div class="auth-success" style="display:flex;flex-direction:column;align-items:center;">
+            <div class="success-icon">🎉</div>
+            <div class="success-title">Welcome to Biome!</div>
+            <p class="success-desc">Your account has been created. You're all set to start practising NEET Biology.</p>
+            <div class="student-chip" id="success-chip">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" fill="#1D9E75"/><polyline points="4,7 6,9.5 10,5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span id="success-name-chip"></span>
+            </div>
+            <button class="btn-submit" onclick="window.location.href='class11.html'" style="max-width:280px;">
+              <span class="btn-text">Go to My Dashboard →</span>
+              <div class="spinner"></div>
+            </button>
+          </div>
+        </div>
+
+      </div><!-- end panel-signup -->
+
+      <!-- ── LOGIN FORM ── -->
+      <div id="panel-login" style="display:none;">
+
+        <div id="login-main">
+          <div class="auth-card-header">
+            <h1 class="auth-heading">Welcome back!</h1>
+            <p class="auth-sub">Log in to continue your NEET prep</p>
+          </div>
+
+          <button class="btn-google" onclick="handleGoogleAuth()" style="margin-bottom:1rem;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M19.6 10.23c0-.68-.06-1.36-.17-2H10v3.79h5.39a4.6 4.6 0 0 1-2 3.02v2.51h3.24c1.89-1.74 2.97-4.3 2.97-7.32Z" fill="#4285F4"/>
+              <path d="M10 20c2.7 0 4.96-.9 6.62-2.44l-3.24-2.51c-.9.6-2.04.96-3.38.96-2.6 0-4.8-1.76-5.59-4.12H1.07v2.6A10 10 0 0 0 10 20Z" fill="#34A853"/>
+              <path d="M4.41 11.89A5.97 5.97 0 0 1 4.1 10c0-.66.11-1.3.31-1.89V5.51H1.07A10 10 0 0 0 0 10c0 1.61.39 3.14 1.07 4.49l3.34-2.6Z" fill="#FBBC05"/>
+              <path d="M10 3.98c1.47 0 2.79.5 3.82 1.5l2.87-2.87C14.95.99 12.7 0 10 0A10 10 0 0 0 1.07 5.51l3.34 2.6C5.2 5.74 7.4 3.98 10 3.98Z" fill="#EA4335"/>
+            </svg>
+            Continue with Google
+          </button>
+
+          <div class="or-divider">or login with email</div>
+
+          <form class="form-grid" onsubmit="return false;">
+            <div class="field">
+              <label for="l-email">Email or Mobile Number</label>
+              <div class="field-wrap">
+                <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="1" y="3" width="14" height="10" rx="2" stroke="#5a8070" stroke-width="1.3"/>
+                  <path d="M1 5l7 5 7-5" stroke="#5a8070" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <input type="text" id="l-email" placeholder="you@example.com or 9876543210" autocomplete="username"/>
+              </div>
+              <span class="field-error" id="err-l-email">Enter a valid email or mobile number</span>
+            </div>
+
+            <div class="field">
+              <label for="l-password" style="display:flex;justify-content:space-between;">
+                Password
+                <a href="#" onclick="showForgot();return false;" style="font-size:0.72rem;color:var(--green-main);font-weight:500;text-decoration:none;">Forgot password?</a>
+              </label>
+              <div class="field-wrap">
+                <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="2" y="7" width="12" height="8" rx="2" stroke="#5a8070" stroke-width="1.3"/>
+                  <path d="M5 7V5a3 3 0 0 1 6 0v2" stroke="#5a8070" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <input type="password" id="l-password" placeholder="Your password" autocomplete="current-password"/>
+                <button type="button" class="pass-toggle" onclick="togglePass('l-password',this)">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5Z" stroke="#5a8070" stroke-width="1.3"/><circle cx="8" cy="8" r="2" stroke="#5a8070" stroke-width="1.3"/></svg>
+                </button>
+              </div>
+              <span class="field-error" id="err-l-password">Password cannot be empty</span>
+            </div>
+
+            <button type="button" class="btn-submit" onclick="handleLogin()">
+              <span class="btn-text">Login to My Account</span>
+              <div class="spinner"></div>
+            </button>
+
+            <div style="text-align:center;">
+              <button type="button" onclick="showLoginOTP()" style="background:none;border:none;color:var(--green-main);font-size:0.82rem;cursor:pointer;font-family:var(--font-body);font-weight:500;">Login with OTP instead</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Login with OTP -->
+        <div id="login-otp-panel" style="display:none;">
+          <div class="auth-card-header">
+            <h1 class="auth-heading">Login with OTP</h1>
+            <p class="auth-sub">Enter your mobile number to receive an OTP</p>
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label>Mobile Number</label>
+              <div class="phone-wrap">
+                <div class="field-wrap" style="flex:1;">
+                  <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <rect x="3" y="1" width="10" height="14" rx="2" stroke="#5a8070" stroke-width="1.3"/>
+                    <circle cx="8" cy="12.5" r="0.8" fill="#5a8070"/>
+                  </svg>
+                  <input type="tel" id="l-phone" placeholder="+91 98765 43210" maxlength="13"/>
+                </div>
+                <button class="btn-otp" id="btn-login-otp" type="button" onclick="sendLoginOTP()">Send OTP</button>
+              </div>
+            </div>
+
+            <div class="field" id="login-otp-field" style="display:none;">
+              <label style="text-align:center;">Enter OTP</label>
+              <div class="otp-row">
+                <input class="otp-box" id="lotp1" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'lotp2')" onkeydown="otpBack(event,this,'')"/>
+                <input class="otp-box" id="lotp2" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'lotp3')" onkeydown="otpBack(event,this,'lotp1')"/>
+                <input class="otp-box" id="lotp3" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'lotp4')" onkeydown="otpBack(event,this,'lotp2')"/>
+                <input class="otp-box" id="lotp4" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'lotp5')" onkeydown="otpBack(event,this,'lotp3')"/>
+                <input class="otp-box" id="lotp5" maxlength="1" type="text" inputmode="numeric" oninput="otpMove(this,'lotp6')" onkeydown="otpBack(event,this,'lotp4')"/>
+                <input class="otp-box" id="lotp6" maxlength="1" type="text" inputmode="numeric" oninput="checkLoginOTP()" onkeydown="otpBack(event,this,'lotp5')"/>
+              </div>
+              <div class="otp-timer">Resend in <span id="login-timer-val">60</span>s &nbsp;<span onclick="sendLoginOTP()" style="display:none;" id="login-resend-link">Resend OTP</span></div>
+            </div>
+
+            <button type="button" class="btn-submit" id="btn-login-verify" style="display:none;" onclick="verifyLoginOTP()">
+              <span class="btn-text">Verify &amp; Login</span>
+              <div class="spinner"></div>
+            </button>
+
+            <button type="button" onclick="hideLoginOTP()" style="background:none;border:none;color:var(--text-muted);font-size:0.82rem;cursor:pointer;font-family:var(--font-body);text-align:center;">← Back to password login</button>
+          </div>
+        </div>
+
+        <!-- Forgot password -->
+        <div id="forgot-panel" style="display:none;">
+          <div class="auth-card-header">
+            <h1 class="auth-heading">Reset Password</h1>
+            <p class="auth-sub">Enter your registered email to receive a reset link</p>
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="forgot-email">Email Address</label>
+              <div class="field-wrap">
+                <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="1" y="3" width="14" height="10" rx="2" stroke="#5a8070" stroke-width="1.3"/>
+                  <path d="M1 5l7 5 7-5" stroke="#5a8070" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <input type="email" id="forgot-email" placeholder="you@example.com"/>
+              </div>
+            </div>
+            <button type="button" class="btn-submit" onclick="sendReset()">
+              <span class="btn-text">Send Reset Link</span>
+              <div class="spinner"></div>
+            </button>
+            <button type="button" onclick="hideForgot()" style="background:none;border:none;color:var(--text-muted);font-size:0.82rem;cursor:pointer;font-family:var(--font-body);text-align:center;">← Back to Login</button>
+          </div>
+        </div>
+
+      </div><!-- end panel-login -->
+
+    </div><!-- auth-card -->
+  </div><!-- auth-right -->
+
+</div><!-- auth-page -->
+
+<!-- Toast notification -->
+<div class="toast" id="toast"></div>
+
+<!-- ======== JAVASCRIPT ======== -->
+<script>
+
+/* ─────────── STATE ─────────── */
+var signupData = {};
+var generatedPhoneOTP = '';
+var generatedEmailOTP = '';
+var generatedLoginOTP = '';
+var phoneVerified = false;
+
+/* ─────────── TAB SWITCHER ─────────── */
+function switchTab(tab) {
+  document.getElementById('panel-signup').style.display = tab === 'signup' ? 'block' : 'none';
+  document.getElementById('panel-login').style.display  = tab === 'login'  ? 'block' : 'none';
+  document.getElementById('tab-signup').classList.toggle('active', tab === 'signup');
+  document.getElementById('tab-login').classList.toggle('active', tab === 'login');
+}
+
+/* ─────────── HELPERS ─────────── */
+function showToast(msg, isError) {
+  var t = document.getElementById('toast');
+  t.textContent = (isError ? '⚠ ' : '✓ ') + msg;
+  t.className = 'toast' + (isError ? ' error-toast' : '') + ' show';
+  setTimeout(function() { t.classList.remove('show'); }, 3200);
+}
+
+function setLoading(btn, on) {
+  btn.classList.toggle('loading', on);
+  btn.disabled = on;
+}
+
+function togglePass(id, btn) {
+  var inp = document.getElementById(id);
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+}
+
+function showErr(id, show) {
+  var el = document.getElementById(id);
+  if (el) el.style.display = show ? 'block' : 'none';
+}
+
+function markField(id, state) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  el.classList.remove('error', 'valid');
+  if (state) el.classList.add(state);
+}
+
+/* ─────────── OTP INPUT NAVIGATION ─────────── */
+function otpMove(el, nextId) {
+  el.classList.toggle('filled', el.value.length > 0);
+  if (el.value && nextId) {
+    var next = document.getElementById(nextId);
+    if (next) next.focus();
+  }
+}
+
+function otpBack(e, el, prevId) {
+  if (e.key === 'Backspace' && !el.value && prevId) {
+    var prev = document.getElementById(prevId);
+    if (prev) { prev.value = ''; prev.classList.remove('filled'); prev.focus(); }
+  }
+}
+
+function getOTP(prefix, count) {
+  var otp = '';
+  for (var i = 1; i <= count; i++) {
+    otp += document.getElementById(prefix + i).value;
+  }
+  return otp;
+}
+
+/* ─────────── TIMER ─────────── */
+function startTimer(spanId, linkId, seconds) {
+  var remaining = seconds;
+  var link = document.getElementById(linkId);
+  if (link) link.style.display = 'none';
+  var iv = setInterval(function() {
+    remaining--;
+    var el = document.getElementById(spanId);
+    if (el) el.textContent = remaining;
+    if (remaining <= 0) {
+      clearInterval(iv);
+      if (link) link.style.display = 'inline';
+      var timeEl = document.getElementById(spanId);
+      if (timeEl) timeEl.parentElement.querySelector('span:first-child') && (timeEl.textContent = '0');
+    }
+  }, 1000);
+}
+
+/* ─────────── PHONE OTP (SIGNUP) ─────────── */
+function sendPhoneOTP() {
+  var phone = document.getElementById('s-phone').value.replace(/\s/g,'');
+  var digits = phone.replace(/\D/g,'');
+  if (digits.length < 10) { showErr('err-phone', true); markField('s-phone','error'); return; }
+  showErr('err-phone', false); markField('s-phone','valid');
+
+  generatedPhoneOTP = Math.floor(100000 + Math.random() * 900000).toString();
+  console.log('📱 PHONE OTP (demo):', generatedPhoneOTP);
+
+  var btn = document.getElementById('btn-phone-otp');
+  btn.textContent = 'Sent ✓'; btn.classList.add('sent'); btn.disabled = true;
+
+  document.getElementById('phone-otp-field').style.display = 'block';
+  startTimer('phone-timer-val','phone-resend-link', 60);
+  showToast('OTP sent to ' + phone + ' (check console for demo OTP)');
+}
+
+function resendPhoneOTP() {
+  generatedPhoneOTP = Math.floor(100000 + Math.random() * 900000).toString();
+  console.log('📱 RESENT PHONE OTP (demo):', generatedPhoneOTP);
+  startTimer('phone-timer-val','phone-resend-link', 60);
+  showToast('OTP resent to mobile number');
+}
+
+function checkPhoneOTP() {
+  var entered = getOTP('potp', 6);
+  if (entered.length === 6) {
+    if (entered === generatedPhoneOTP) {
+      phoneVerified = true;
+      showToast('Mobile number verified! ✓');
+      for (var i=1;i<=6;i++) document.getElementById('potp'+i).style.borderColor = 'var(--green-main)';
+    } else {
+      showToast('Incorrect OTP. Try again.', true);
+      for (var i=1;i<=6;i++) document.getElementById('potp'+i).style.borderColor = 'var(--error)';
+    }
+  }
+}
+
+/* ─────────── PROCEED SIGNUP (STEP 1 → 2) ─────────── */
+function proceedSignup() {
+  var name     = document.getElementById('s-name').value.trim();
+  var cls      = document.getElementById('s-class').value;
+  var phone    = document.getElementById('s-phone').value.replace(/\s/g,'');
+  var email    = document.getElementById('s-email').value.trim();
+  var password = document.getElementById('s-password').value;
+  var valid = true;
+
+  if (!name) { showErr('err-name',true); markField('s-name','error'); valid=false; } else { showErr('err-name',false); markField('s-name','valid'); }
+  if (!cls)  { showErr('err-class',true); markField('s-class','error'); valid=false; } else { showErr('err-class',false); markField('s-class','valid'); }
+  if (phone.replace(/\D/g,'').length < 10) { showErr('err-phone',true); markField('s-phone','error'); valid=false; } else { showErr('err-phone',false); }
+  if (!/\S+@\S+\.\S+/.test(email)) { showErr('err-email',true); markField('s-email','error'); valid=false; } else { showErr('err-email',false); markField('s-email','valid'); }
+  if (password.length < 8) { showErr('err-password',true); markField('s-password','error'); valid=false; } else { showErr('err-password',false); markField('s-password','valid'); }
+
+  if (!valid) { showToast('Please fix the errors above.', true); return; }
+
+  if (!phoneVerified) { showToast('Please verify your mobile number first.', true); document.getElementById('s-phone').focus(); return; }
+
+  signupData = { name, cls, phone, email, password };
+
+  var btn = document.getElementById('btn-signup-next');
+  setLoading(btn, true);
+
+  setTimeout(function() {
+    setLoading(btn, false);
+    generatedEmailOTP = Math.floor(100000 + Math.random() * 900000).toString();
+    console.log('📧 EMAIL OTP (demo):', generatedEmailOTP);
+    document.getElementById('email-otp-sub').textContent = 'Code sent to ' + email;
+    startTimer('email-timer-val','email-resend-link', 60);
+    gotoStep(2);
+    showToast('Verification code sent to ' + email);
+  }, 1200);
+}
+
+/* ─────────── EMAIL OTP ─────────── */
+function checkEmailOTP() {
+  var entered = getOTP('eotp', 6);
+  if (entered.length === 6) {
+    for (var i=1;i<=6;i++) {
+      document.getElementById('eotp'+i).style.borderColor =
+        entered === generatedEmailOTP ? 'var(--green-main)' : 'var(--error)';
+    }
+  }
+}
+
+function resendEmailOTP() {
+  generatedEmailOTP = Math.floor(100000 + Math.random() * 900000).toString();
+  console.log('📧 RESENT EMAIL OTP (demo):', generatedEmailOTP);
+  startTimer('email-timer-val','email-resend-link', 60);
+  showToast('OTP resent to your email');
+}
+
+function verifyEmailOTP() {
+  var entered = getOTP('eotp', 6);
+  if (entered.length < 6) { showToast('Please enter the complete 6-digit OTP.', true); return; }
+
+  var btn = document.getElementById('btn-verify-email');
+  setLoading(btn, true);
+
+  setTimeout(function() {
+    setLoading(btn, false);
+    if (entered === generatedEmailOTP) {
+      var classLabel = { '11':'Class 11th', '12':'Class 12th', 'dropper':'Dropper' };
+      document.getElementById('success-name-chip').textContent =
+        signupData.name + ' · ' + classLabel[signupData.cls];
+      console.log('✅ SIGNUP COMPLETE — Student Data:', signupData);
+      gotoStep(3);
+      showToast('Account created successfully! Welcome, ' + signupData.name.split(' ')[0] + '!');
+    } else {
+      showToast('Incorrect OTP. Please try again.', true);
+      for (var i=1;i<=6;i++) document.getElementById('eotp'+i).style.borderColor = 'var(--error)';
+    }
+  }, 1000);
+}
+
+/* ─────────── STEP NAVIGATION ─────────── */
+function gotoStep(n) {
+  document.getElementById('signup-step1').style.display = n===1 ? 'block':'none';
+  document.getElementById('signup-step2').style.display = n===2 ? 'block':'none';
+  document.getElementById('signup-step3').style.display = n===3 ? 'block':'none';
+
+  ['step-1','step-2','step-3'].forEach(function(id, i) {
+    var el = document.getElementById(id);
+    el.classList.remove('active','done');
+    if (i+1 < n) el.classList.add('done');
+    if (i+1 === n) el.classList.add('active');
+  });
+
+  var l1 = document.getElementById('line-1-2');
+  var l2 = document.getElementById('line-2-3');
+  if (l1) l1.style.background = n>=2 ? 'var(--green-main)' : 'var(--border)';
+  if (l2) l2.style.background = n>=3 ? 'var(--green-main)' : 'var(--border)';
+}
+
+/* ─────────── LOGIN ─────────── */
+function handleLogin() {
+  var email = document.getElementById('l-email').value.trim();
+  var pass  = document.getElementById('l-password').value;
+  var valid = true;
+  if (!email) { showErr('err-l-email',true); valid=false; } else showErr('err-l-email',false);
+  if (!pass)  { showErr('err-l-password',true); valid=false; } else showErr('err-l-password',false);
+  if (!valid) return;
+
+  var btn = document.querySelector('#login-main .btn-submit');
+  setLoading(btn, true);
+  setTimeout(function() {
+    setLoading(btn, false);
+    showToast('Login successful! Redirecting…');
+    setTimeout(function() { window.location.href = 'class11.html'; }, 1200);
+  }, 1200);
+}
+
+/* ─────────── LOGIN WITH OTP ─────────── */
+function showLoginOTP() {
+  document.getElementById('login-main').style.display = 'none';
+  document.getElementById('login-otp-panel').style.display = 'block';
+  document.getElementById('forgot-panel').style.display = 'none';
+}
+
+function hideLoginOTP() {
+  document.getElementById('login-main').style.display = 'block';
+  document.getElementById('login-otp-panel').style.display = 'none';
+}
+
+function sendLoginOTP() {
+  var phone = document.getElementById('l-phone').value.replace(/\s/g,'');
+  if (phone.replace(/\D/g,'').length < 10) { showToast('Enter a valid mobile number.', true); return; }
+  generatedLoginOTP = Math.floor(100000 + Math.random() * 900000).toString();
+  console.log('📱 LOGIN OTP (demo):', generatedLoginOTP);
+  document.getElementById('btn-login-otp').textContent = 'Resend';
+  document.getElementById('login-otp-field').style.display = 'block';
+  document.getElementById('btn-login-verify').style.display = 'block';
+  startTimer('login-timer-val','login-resend-link', 60);
+  showToast('OTP sent to ' + phone);
+}
+
+function checkLoginOTP() {
+  var entered = getOTP('lotp', 6);
+  if (entered.length === 6) {
+    for (var i=1;i<=6;i++) {
+      document.getElementById('lotp'+i).style.borderColor =
+        entered === generatedLoginOTP ? 'var(--green-main)' : 'var(--error)';
+    }
+  }
+}
+
+function verifyLoginOTP() {
+  var entered = getOTP('lotp', 6);
+  if (entered.length < 6) { showToast('Enter complete 6-digit OTP.', true); return; }
+  var btn = document.getElementById('btn-login-verify');
+  setLoading(btn, true);
+  setTimeout(function() {
+    setLoading(btn, false);
+    if (entered === generatedLoginOTP) {
+      showToast('Logged in successfully!');
+      setTimeout(function() { window.location.href = 'class11.html'; }, 1200);
+    } else {
+      showToast('Incorrect OTP. Try again.', true);
+    }
+  }, 1000);
+}
+
+/* ─────────── FORGOT PASSWORD ─────────── */
+function showForgot() {
+  document.getElementById('login-main').style.display = 'none';
+  document.getElementById('forgot-panel').style.display = 'block';
+  document.getElementById('login-otp-panel').style.display = 'none';
+}
+
+function hideForgot() {
+  document.getElementById('login-main').style.display = 'block';
+  document.getElementById('forgot-panel').style.display = 'none';
+}
+
+function sendReset() {
+  var email = document.getElementById('forgot-email').value.trim();
+  if (!/\S+@\S+\.\S+/.test(email)) { showToast('Enter a valid email address.', true); return; }
+  var btn = document.querySelector('#forgot-panel .btn-submit');
+  setLoading(btn, true);
+  setTimeout(function() {
+    setLoading(btn, false);
+    showToast('Password reset link sent to ' + email);
+    setTimeout(hideForgot, 1500);
+  }, 1200);
+}
+
+/* ─────────── GOOGLE AUTH ─────────── */
+function handleGoogleAuth() {
+  showToast('Google Sign-In requires Firebase setup. Connect your project to enable this.');
+}
+
+</script>
+
+</body>
+</html>
