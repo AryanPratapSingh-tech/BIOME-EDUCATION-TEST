@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 4: Animal Kingdom — Biome Education</title>
+  <link rel="stylesheet" href="chapter1.css"/>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="index.html">
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="17" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+        <ellipse cx="18" cy="18" rx="8" ry="12" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+        <ellipse cx="18" cy="18" rx="4" ry="7" fill="none" stroke="#9FE1CB" stroke-width="1.2"/>
+        <line x1="18" y1="6" x2="18" y2="30" stroke="#fff" stroke-width="1.2"/>
+        <line x1="10" y1="18" x2="26" y2="18" stroke="#fff" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="3" fill="#9FE1CB"/>
+      </svg>
+      <span class="nav-brand-name">BIOME <span>EDUCATION</span></span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="class11.html">Class 11</a></li>
+        <li><a href="chapter3.html">← Ch.3</a></li>
+      </ul>
+      <a class="nav-back" href="class11.html">← All Chapters</a>
+    </div>
+  </nav>
+
+  <div class="chapter-hero">
+    <svg class="hero-bg-decor" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+      <!-- Sponge (Porifera) -->
+      <ellipse cx="80" cy="200" rx="35" ry="55" fill="none" stroke="#fff" stroke-width="2"/>
+      <circle cx="80" cy="145" r="8" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="62" cy="170" r="4" fill="#fff" opacity="0.3"/>
+      <circle cx="98" cy="175" r="4" fill="#fff" opacity="0.3"/>
+      <circle cx="70" cy="195" r="4" fill="#fff" opacity="0.3"/>
+      <circle cx="92" cy="205" r="4" fill="#fff" opacity="0.3"/>
+      <circle cx="75" cy="220" r="3" fill="#fff" opacity="0.3"/>
+      <!-- Jellyfish (Cnidaria) -->
+      <path d="M220 120 Q260 80 300 120" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M225 120 Q260 150 295 120" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <line x1="235" y1="130" x2="225" y2="175" stroke="#fff" stroke-width="1.2"/>
+      <line x1="248" y1="135" x2="242" y2="180" stroke="#fff" stroke-width="1.2"/>
+      <line x1="262" y1="136" x2="260" y2="185" stroke="#fff" stroke-width="1.2"/>
+      <line x1="276" y1="135" x2="278" y2="180" stroke="#fff" stroke-width="1.2"/>
+      <line x1="288" y1="130" x2="295" y2="175" stroke="#fff" stroke-width="1.2"/>
+      <!-- Earthworm (Annelida) segmentation -->
+      <ellipse cx="450" cy="270" rx="80" ry="12" fill="none" stroke="#fff" stroke-width="1.8"/>
+      <line x1="385" y1="270" x2="390" y2="270" stroke="#fff" stroke-width="1"/>
+      <line x1="400" y1="270" x2="405" y2="270" stroke="#fff" stroke-width="1"/>
+      <line x1="415" y1="270" x2="420" y2="270" stroke="#fff" stroke-width="1"/>
+      <line x1="430" y1="270" x2="435" y2="270" stroke="#fff" stroke-width="1"/>
+      <line x1="445" y1="270" x2="450" y2="270" stroke="#fff" stroke-width="1"/>
+      <line x1="460" y1="270" x2="465" y2="270" stroke="#fff" stroke-width="1"/>
+      <line x1="475" y1="270" x2="480" y2="270" stroke="#fff" stroke-width="1"/>
+      <line x1="490" y1="270" x2="495" y2="270" stroke="#fff" stroke-width="1"/>
+      <line x1="505" y1="270" x2="510" y2="270" stroke="#fff" stroke-width="1"/>
+      <!-- Fish (Chordata) -->
+      <path d="M640 180 Q700 150 750 180 Q700 210 640 180Z" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M640 180 L615 165 L615 195 Z" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="730" cy="175" r="4" fill="#fff" opacity="0.5"/>
+      <line x1="660" y1="170" x2="660" y2="192" stroke="#fff" stroke-width="1"/>
+      <line x1="675" y1="165" x2="675" y2="196" stroke="#fff" stroke-width="1"/>
+      <line x1="690" y1="163" x2="690" y2="198" stroke="#fff" stroke-width="1"/>
+      <line x1="705" y1="164" x2="705" y2="197" stroke="#fff" stroke-width="1"/>
+      <!-- Starfish (Echinodermata) -->
+      <circle cx="820" cy="100" r="8" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <line x1="820" y1="92" x2="820" y2="65" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      <line x1="820" y1="108" x2="820" y2="135" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      <line x1="812" y1="96" x2="788" y2="80" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      <line x1="828" y1="96" x2="852" y2="80" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      <line x1="812" y1="106" x2="790" y2="122" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      <line x1="828" y1="106" x2="850" y2="122" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+
+    <div class="hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep">›</span>
+        <a href="class11.html">Class 11 Biology</a><span class="sep">›</span>
+        <span style="color:rgba(255,255,255,0.85);">Chapter 4</span>
+      </div>
+      <div class="chapter-badge-row">
+        <span class="ch-badge chapter-num">📖 Chapter 4</span>
+        <span class="ch-badge unit">Unit I — Diversity in the Living World</span>
+        <span class="ch-badge ncert">NCERT Class 11</span>
+      </div>
+      <h1 class="chapter-hero-title">Animal <em>Kingdom</em></h1>
+      <p class="chapter-hero-desc">
+        Comprehensive classification of the animal kingdom — from Porifera to Chordata. Master the basis of classification, phylum-wise features, examples, and NEET-pattern questions across all 7 topics.
+      </p>
+      <div class="hero-quick-stats">
+        <div class="hqs"><span class="hqs-num">7</span><span class="hqs-lbl">Topics</span></div>
+        <div class="hqs"><span class="hqs-num">105+</span><span class="hqs-lbl">Practice Questions</span></div>
+        <div class="hqs"><span class="hqs-num">16</span><span class="hqs-lbl">PYQ Questions</span></div>
+        <div class="hqs"><span class="hqs-num">~60 min</span><span class="hqs-lbl">Full Test Duration</span></div>
+      </div>
+    </div>
+    <div class="chapter-progress-strip">
+      <span class="progress-label">Chapter Progress</span>
+      <div class="progress-bar-outer"><div class="progress-bar-inner" id="chapter-progress"></div></div>
+      <span class="progress-pct" id="progress-pct">0% done</span>
+    </div>
+  </div>
+
+  <main class="page-body">
+
+    <div class="overview-row">
+      <div class="overview-card"><div class="ov-icon">🦁</div><div class="ov-num">7</div><div class="ov-lbl">Topics</div></div>
+      <div class="overview-card"><div class="ov-icon">❓</div><div class="ov-num">15</div><div class="ov-lbl">Qs per topic</div></div>
+      <div class="overview-card"><div class="ov-icon">⏱️</div><div class="ov-num">15 min</div><div class="ov-lbl">Per topic</div></div>
+      <div class="overview-card"><div class="ov-icon">🎯</div><div class="ov-num">+4/−1</div><div class="ov-lbl">NEET marking</div></div>
+      <div class="overview-card"><div class="ov-icon">📊</div><div class="ov-num">Instant</div><div class="ov-lbl">Result & analysis</div></div>
+    </div>
+
+    <div class="full-chapter-banner">
+      <div class="fcb-text">
+        <h3>Ready for the Full Chapter Test?</h3>
+        <p>45 questions · 60 minutes · NEET +4/−1 marking · All 7 topics with NEET weightage · Shuffled every attempt</p>
+      </div>
+      <button class="btn-full-chapter" onclick="openExamModal('Full Chapter Test — Animal Kingdom', 45, 60, 'full')">📋 Start Full Chapter Test</button>
+    </div>
+
+    <div class="section-label">
+      <span class="section-tag">Topic-wise</span>
+      <h2 class="section-title">Choose a Topic to Practice</h2>
+    </div>
+
+    <div class="topics-list">
+
+      <div class="topic-card" style="--topic-color:#1D9E75;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col"><div class="topic-num-badge">T1</div><div class="topic-num-label">Topic</div></div>
+          <div class="topic-content">
+            <div class="topic-title">Basis of Classification</div>
+            <div class="topic-desc">Levels of organisation, symmetry (radial, bilateral, asymmetry), diploblastic vs triploblastic, coelom (acoelomate, pseudocoelomate, eucoelomate), segmentation, notochord.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Levels of Organisation</span><span class="subtopic-chip">Symmetry</span><span class="subtopic-chip">Diploblastic</span>
+              <span class="subtopic-chip">Coelom</span><span class="subtopic-chip">Segmentation</span><span class="subtopic-chip">Notochord</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Very High Weightage</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <button class="btn-start-exam" onclick="openExamModal('Basis of Classification', 15, 15, 'topic-1')">▶ Start Exam</button>
+            <button class="btn-practice" onclick="openExamModal('Basis of Classification — Practice', 15, 30, 'topic-1')">📝 Practice Mode</button>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card" style="--topic-color:#0F6E56;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col"><div class="topic-num-badge">T2</div><div class="topic-num-label">Topic</div></div>
+          <div class="topic-content">
+            <div class="topic-title">Phylum Porifera & Cnidaria</div>
+            <div class="topic-desc">Porifera: canal system, choanocytes, spicules, spongin. Cnidaria: nematocysts, metagenesis, polyp and medusa forms. Key examples and distinguishing features of each phylum.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Choanocytes</span><span class="subtopic-chip">Ostia & Osculum</span><span class="subtopic-chip">Nematocysts</span>
+              <span class="subtopic-chip">Metagenesis</span><span class="subtopic-chip">Polyp & Medusa</span><span class="subtopic-chip">Coelenteron</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ High Weightage</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <button class="btn-start-exam" onclick="openExamModal('Phylum Porifera & Cnidaria', 15, 15, 'topic-2')">▶ Start Exam</button>
+            <button class="btn-practice" onclick="openExamModal('Porifera & Cnidaria — Practice', 15, 30, 'topic-2')">📝 Practice Mode</button>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card" style="--topic-color:#1a7a9a;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col"><div class="topic-num-badge">T3</div><div class="topic-num-label">Topic</div></div>
+          <div class="topic-content">
+            <div class="topic-title">Platyhelminthes, Aschelminthes & Annelida</div>
+            <div class="topic-desc">Platyhelminthes: flatworms, acoelomate, parasites (Taenia, Fasciola, Planaria). Aschelminthes: pseudocoelomate (Ascaris, Wuchereria). Annelida: true segmentation, nephridia, closed circulation (Earthworm, Leech, Nereis).</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Acoelomate</span><span class="subtopic-chip">Taenia solium</span><span class="subtopic-chip">Fasciola</span>
+              <span class="subtopic-chip">Pseudocoelom</span><span class="subtopic-chip">Ascaris</span><span class="subtopic-chip">Nephridia</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ High Weightage</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <button class="btn-start-exam" onclick="openExamModal('Platyhelminthes, Aschelminthes & Annelida', 15, 15, 'topic-3')">▶ Start Exam</button>
+            <button class="btn-practice" onclick="openExamModal('Flat/Round/Ringed worms — Practice', 15, 30, 'topic-3')">📝 Practice Mode</button>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card" style="--topic-color:#8B5CF6;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col"><div class="topic-num-badge">T4</div><div class="topic-num-label">Topic</div></div>
+          <div class="topic-content">
+            <div class="topic-title">Arthropoda & Mollusca</div>
+            <div class="topic-desc">Arthropoda: largest phylum, chitinous exoskeleton, jointed appendages, open circulation, Malpighian tubules. Mollusca: mantle, radula, ctenidia. Key examples: Cockroach, Butterfly, Pila, Octopus, Loligo.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Chitin exoskeleton</span><span class="subtopic-chip">Malpighian tubules</span><span class="subtopic-chip">Open circulation</span>
+              <span class="subtopic-chip">Mantle & Radula</span><span class="subtopic-chip">Ctenidia</span><span class="subtopic-chip">Book gills/lungs</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Highest Weightage</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <button class="btn-start-exam" onclick="openExamModal('Arthropoda & Mollusca', 15, 15, 'topic-4')">▶ Start Exam</button>
+            <button class="btn-practice" onclick="openExamModal('Arthropoda & Mollusca — Practice', 15, 30, 'topic-4')">📝 Practice Mode</button>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card" style="--topic-color:#D97706;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col"><div class="topic-num-badge">T5</div><div class="topic-num-label">Topic</div></div>
+          <div class="topic-content">
+            <div class="topic-title">Echinodermata & Hemichordata</div>
+            <div class="topic-desc">Echinodermata: water vascular system, tube feet, radial symmetry, endoskeleton of calcareous ossicles. Hemichordata: Balanoglossus, tornaria larva. Key features and examples.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Water vascular system</span><span class="subtopic-chip">Tube feet</span><span class="subtopic-chip">Radial symmetry</span>
+              <span class="subtopic-chip">Ossicles</span><span class="subtopic-chip">Balanoglossus</span><span class="subtopic-chip">Tornaria larva</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Medium–High</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <button class="btn-start-exam" onclick="openExamModal('Echinodermata & Hemichordata', 15, 15, 'topic-5')">▶ Start Exam</button>
+            <button class="btn-practice" onclick="openExamModal('Echinodermata & Hemichordata — Practice', 15, 30, 'topic-5')">📝 Practice Mode</button>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card" style="--topic-color:#059669;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col"><div class="topic-num-badge">T6</div><div class="topic-num-label">Topic</div></div>
+          <div class="topic-content">
+            <div class="topic-title">Phylum Chordata — Protochordata & Agnatha</div>
+            <div class="topic-desc">Defining characters of Chordata: notochord, dorsal nerve cord, pharyngeal gill slits, post-anal tail. Urochordata (Herdmania), Cephalochordata (Amphioxus), Cyclostomata (Petromyzon, Myxine).</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Notochord</span><span class="subtopic-chip">Dorsal nerve cord</span><span class="subtopic-chip">Pharyngeal gill slits</span>
+              <span class="subtopic-chip">Urochordata</span><span class="subtopic-chip">Cephalochordata</span><span class="subtopic-chip">Cyclostomata</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Very Important</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <button class="btn-start-exam" onclick="openExamModal('Phylum Chordata — Protochordata & Agnatha', 15, 15, 'topic-6')">▶ Start Exam</button>
+            <button class="btn-practice" onclick="openExamModal('Chordata Protochordata — Practice', 15, 30, 'topic-6')">📝 Practice Mode</button>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card" style="--topic-color:#DC2626;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col"><div class="topic-num-badge">T7</div><div class="topic-num-label">Topic</div></div>
+          <div class="topic-content">
+            <div class="topic-title">Vertebrata — Pisces to Mammalia</div>
+            <div class="topic-desc">Five classes of vertebrates: Pisces (fish), Amphibia, Reptilia, Aves, Mammalia. Heart chambers, thermoregulation, fertilisation, respiration, key characters and examples of each class.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Pisces</span><span class="subtopic-chip">Amphibia</span><span class="subtopic-chip">Reptilia</span>
+              <span class="subtopic-chip">Aves — 4-chambered heart</span><span class="subtopic-chip">Mammalia</span><span class="subtopic-chip">Warm/Cold blooded</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Very High Weightage</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <button class="btn-start-exam" onclick="openExamModal('Vertebrata — Pisces to Mammalia', 15, 15, 'topic-7')">▶ Start Exam</button>
+            <button class="btn-practice" onclick="openExamModal('Vertebrata — Practice', 15, 30, 'topic-7')">📝 Practice Mode</button>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pyq-section">
+      <div class="section-label">
+        <span class="section-tag">PYQs</span>
+        <h2 class="section-title">Previous Year NEET Questions</h2>
+      </div>
+      <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:0.75rem;">Chapter 4 is one of the most heavily tested chapters in NEET — especially Arthropoda, Vertebrata, and basis of classification.</p>
+      <div class="pyq-chips">
+        <div class="pyq-chip" onclick="openExamModal('NEET 2024 — Ch.4 PYQs', 4, 15, 'pyq-2024')">📅 NEET 2024 · 4 Qs</div>
+        <div class="pyq-chip" onclick="openExamModal('NEET 2023 — Ch.4 PYQs', 4, 15, 'pyq-2023')">📅 NEET 2023 · 4 Qs</div>
+        <div class="pyq-chip" onclick="openExamModal('NEET 2022 — Ch.4 PYQs', 3, 10, 'pyq-2022')">📅 NEET 2022 · 3 Qs</div>
+        <div class="pyq-chip" onclick="openExamModal('NEET 2021 — Ch.4 PYQs', 3, 10, 'pyq-2021')">📅 NEET 2021 · 3 Qs</div>
+        <div class="pyq-chip" onclick="openExamModal('NEET 2020 — Ch.4 PYQs', 2, 10, 'pyq-2020')">📅 NEET 2020 · 2 Qs</div>
+        <div class="pyq-chip" onclick="openExamModal('All PYQs — Ch.4 (2020–2024)', 16, 40, 'pyq-all')">📅 All PYQs · 16 Qs · 40 min</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-bottom">© 2026 Biome Education · NEET-UG Biology · Chapter 4: Animal Kingdom</div>
+  </footer>
+
+  <!-- CONFIRM MODAL -->
+  <div class="modal-overlay" id="confirm-modal" onclick="handleOverlayClick(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-text">
+          <h3 id="modal-topic-title">Topic Test</h3>
+          <p>Chapter 4 · Animal Kingdom · Class 11</p>
+        </div>
+        <button class="modal-close" onclick="closeConfirm()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-info-grid">
+          <div class="modal-info-card"><div class="mic-num" id="modal-q-count">15</div><div class="mic-lbl">Questions</div></div>
+          <div class="modal-info-card"><div class="mic-num" id="modal-duration">15 min</div><div class="mic-lbl">Time Limit</div></div>
+          <div class="modal-info-card"><div class="mic-num">+4</div><div class="mic-lbl">Correct</div></div>
+          <div class="modal-info-card"><div class="mic-num" style="color:#c0392b;">−1</div><div class="mic-lbl">Wrong</div></div>
+        </div>
+        <ul class="modal-rules">
+          <li><span class="rule-dot">📌</span>Timer cannot be paused. Auto-submits when time runs out.</li>
+          <li><span class="rule-dot">🔒</span>Do not refresh — progress will be lost.</li>
+          <li><span class="rule-dot">✅</span>Navigate freely and change answers before submitting.</li>
+          <li><span class="rule-dot">📊</span>Instant detailed result with explanations after submission.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-modal-cancel" onclick="closeConfirm()">Cancel</button>
+        <button class="btn-modal-start" id="btn-modal-start" onclick="launchQuiz()">▶ Start Test Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUIZ OVERLAY -->
+  <div id="quiz-overlay" style="display:none;position:fixed;inset:0;background:#f8fdf9;z-index:500;overflow-y:auto;">
+    <style>
+      .qo-nav{position:sticky;top:0;background:#085041;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:56px;z-index:10;gap:1rem;}
+      .qo-title{font-family:'Playfair Display',serif;color:#fff;font-size:1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;}
+      .qo-timer{background:rgba(255,255,255,0.15);color:#fff;padding:5px 16px;border-radius:20px;font-size:.88rem;font-weight:700;font-family:monospace;white-space:nowrap;}
+      .qo-timer.danger{background:rgba(192,57,43,0.6);}
+      .qo-exit{background:rgba(255,255,255,0.1);border:none;color:#9FE1CB;padding:6px 14px;border-radius:16px;font-size:.78rem;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;}
+      .qo-exit:hover{background:rgba(255,255,255,.18);}
+      .qo-progress{height:4px;background:#d0f0e4;}
+      .qo-progress-bar{height:4px;background:#1D9E75;transition:width 0.3s;}
+      .qo-body{max-width:760px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+      .qo-qnum{font-size:.75rem;color:#5a8070;letter-spacing:.5px;margin-bottom:.5rem;}
+      .qo-qtext{font-size:1.05rem;font-weight:600;color:#0d2b22;line-height:1.65;margin-bottom:1.5rem;}
+      .qo-options{display:flex;flex-direction:column;gap:.65rem;margin-bottom:1.75rem;}
+      .qo-opt{display:flex;align-items:center;gap:12px;padding:.85rem 1.1rem;border:1.5px solid rgba(29,158,117,.2);border-radius:10px;cursor:pointer;transition:all .18s;font-size:.92rem;color:#2f5045;background:#fff;}
+      .qo-opt:hover{border-color:#1D9E75;background:#E1F5EE;}
+      .qo-opt.selected{border-color:#1D9E75;background:#E1F5EE;color:#085041;font-weight:500;}
+      .qo-key{width:30px;height:30px;border-radius:50%;background:rgba(29,158,117,.1);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:#0F6E56;flex-shrink:0;}
+      .qo-opt.selected .qo-key{background:#1D9E75;color:#fff;}
+      .qo-nav-btns{display:flex;justify-content:space-between;align-items:center;gap:.75rem;}
+      .qo-btn{padding:9px 20px;border-radius:8px;border:none;font-size:.88rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s;}
+      .qo-btn-prev{background:#fff;border:1.5px solid rgba(29,158,117,.2);color:#5a8070;}
+      .qo-btn-prev:hover{background:#E1F5EE;}
+      .qo-btn-prev:disabled{opacity:.3;cursor:not-allowed;}
+      .qo-btn-next{background:#1D9E75;color:#fff;}
+      .qo-btn-next:hover{background:#085041;}
+      .qo-btn-submit{background:#c0392b;color:#fff;}
+      .qo-btn-submit:hover{background:#a93226;}
+      .qo-dots{display:flex;flex-wrap:wrap;gap:6px;padding:1rem 1.5rem;background:#fff;border-top:1px solid rgba(29,158,117,.12);border-bottom:1px solid rgba(29,158,117,.12);}
+      .qo-dot{width:30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:600;cursor:pointer;border:1.5px solid rgba(29,158,117,.2);background:#fff;color:#5a8070;transition:all .15s;}
+      .qo-dot.answered{background:#E1F5EE;border-color:#5DCAA5;color:#085041;}
+      .qo-dot.current{background:#1D9E75;border-color:#1D9E75;color:#fff;}
+      .qo-result{max-width:760px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+      .result-grade-card{border-radius:18px;overflow:hidden;margin-bottom:1.5rem;box-shadow:0 8px 32px rgba(8,80,65,.12);}
+      .result-grade-header{padding:2rem;text-align:center;}
+      .result-grade-emoji{font-size:3rem;margin-bottom:.5rem;}
+      .result-grade-title{font-family:'Playfair Display',serif;font-size:1.5rem;color:#fff;margin-bottom:4px;}
+      .result-grade-sub{font-size:.88rem;color:rgba(255,255,255,.8);}
+      .result-score-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(29,158,117,.15);}
+      .result-score-cell{background:#fff;padding:1rem;text-align:center;}
+      .rsc-num{font-size:1.5rem;font-weight:700;font-family:'Playfair Display',serif;}
+      .rsc-lbl{font-size:.7rem;color:#5a8070;margin-top:2px;}
+      .result-review-title{font-family:'Playfair Display',serif;font-size:1.1rem;color:#0d2b22;margin:1.5rem 0 1rem;}
+      .review-item{border:1px solid rgba(29,158,117,.15);border-radius:12px;overflow:hidden;margin-bottom:.85rem;}
+      .review-q{padding:.85rem 1rem;font-size:.88rem;font-weight:600;color:#0d2b22;line-height:1.5;}
+      .review-q.correct-bg{background:#E1F5EE;}
+      .review-q.wrong-bg{background:#fdecea;}
+      .review-q.skip-bg{background:#f5f5f5;}
+      .review-detail{padding:.75rem 1rem;background:#fff;font-size:.82rem;color:#5a8070;line-height:1.55;}
+      .review-correct{color:#1D9E75;font-weight:600;}
+      .review-wrong{color:#c0392b;font-weight:600;}
+      .review-exp{border-top:1px dashed rgba(29,158,117,.2);padding-top:.55rem;margin-top:.45rem;font-style:italic;}
+      .qo-retake-row{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem;}
+      .btn-retake{padding:11px 24px;background:#1D9E75;color:#fff;border:none;border-radius:10px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;}
+      .btn-retake:hover{background:#085041;}
+      .btn-back-ch{padding:11px 24px;background:#fff;color:#085041;border:1.5px solid rgba(29,158,117,.3);border-radius:10px;font-size:.9rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;}
+      .btn-back-ch:hover{background:#E1F5EE;}
+      @keyframes fadeInUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+      .qo-body,.qo-result{animation:fadeInUp 0.3s ease;}
+    </style>
+    <div class="qo-nav">
+      <div class="qo-title" id="qo-title">Quiz</div>
+      <div class="qo-timer" id="qo-timer">15:00</div>
+      <button class="qo-exit" onclick="confirmExit()">✕ Exit</button>
+    </div>
+    <div class="qo-progress"><div class="qo-progress-bar" id="qo-pbar" style="width:0%"></div></div>
+    <div class="qo-dots" id="qo-dots"></div>
+    <div class="qo-body" id="qo-question-area">
+      <div class="qo-qnum" id="qo-qnum">Question 1 of 15</div>
+      <div class="qo-qtext" id="qo-qtext"></div>
+      <div class="qo-options" id="qo-options"></div>
+      <div class="qo-nav-btns">
+        <button class="qo-btn qo-btn-prev" id="qo-prev" onclick="goQ(-1)">← Prev</button>
+        <button class="qo-btn qo-btn-submit" onclick="confirmSubmit()">Submit Test</button>
+        <button class="qo-btn qo-btn-next" id="qo-next" onclick="goQ(1)">Next →</button>
+      </div>
+    </div>
+    <div class="qo-result" id="qo-result-area" style="display:none;"></div>
+  </div>
+
+  <script>
+  var QUESTION_BANK = {
+
+  'topic-1': [
+    {q:"The simplest level of organisation found in some animals like sponges is:",opts:["Tissue level","Organ level","Cellular level","Organ system level"],ans:2,exp:"Sponges (Porifera) show the cellular level of organisation — cells are arranged but do not form true tissues. Cnidaria shows tissue level; Platyhelminthes and above show organ level; most higher animals show organ system level."},
+    {q:"Radial symmetry means any plane passing through the central axis divides the animal into:",opts:["Unequal halves","Two equal halves only on one axis","Equal halves (any plane through the central axis)","No equal halves"],ans:2,exp:"Radially symmetrical animals can be divided into two equal halves by any plane passing through the central axis. Examples: Coelenterata (Hydra, jellyfish), Ctenophora, adult Echinoderms (starfish). They are typically sessile or slow-moving."},
+    {q:"Bilateral symmetry means the animal can be divided into equal halves by:",opts:["Any plane","Two planes","Only one specific plane (sagittal plane) into left and right mirror-image halves","No plane"],ans:2,exp:"Bilaterally symmetrical animals have only one plane of symmetry — the sagittal (median) plane divides the body into right and left mirror-image halves. Examples: All higher animals (Platyhelminthes to Mammalia). Bilateral symmetry is associated with active, directional movement."},
+    {q:"Diploblastic animals have how many germ layers?",opts:["One","Two (ectoderm and endoderm only — no mesoderm)","Three","Four"],ans:1,exp:"Diploblastic animals have two embryonic germ layers: ectoderm (outer) and endoderm (inner). Between them is a non-cellular jelly-like mesoglea. Examples: Porifera and Cnidaria (Coelenterata). All other animals (Platyhelminthes and above) are triploblastic (ectoderm + mesoderm + endoderm)."},
+    {q:"Animals without a body cavity (coelom) are called:",opts:["Eucoelomates","Pseudocoelomates","Acoelomates","Haemocoelomates"],ans:2,exp:"Acoelomates have no body cavity — the space between body wall and gut is filled with mesenchyme (parenchyma cells). Examples: Platyhelminthes (Planaria, Taenia, Fasciola). Pseudocoelomates have a false coelom (not lined by mesoderm) — Aschelminthes/Nematoda (Ascaris)."},
+    {q:"A true coelom (eucoelomate) is body cavity that is:",opts:["Not lined by any tissue","Lined by mesodermal epithelium (peritoneum) on all sides","Present between ectoderm and mesoderm","Absent in all invertebrates"],ans:1,exp:"True coelom (eucoelomate): body cavity completely lined by mesodermal epithelium (peritoneum). Found in: Annelida, Mollusca, Arthropoda, Echinodermata, Chordata. The coelom allows organ development and movement independent of the body wall."},
+    {q:"Segmentation (metamerism) is found in which phyla?",opts:["Porifera and Cnidaria","Annelida, Arthropoda (and Chordata — vertebral column)","Mollusca and Echinodermata","Platyhelminthes only"],ans:1,exp:"Metamerism (serial repetition of body segments): Annelida (earthworm — most clearly segmented), Arthropoda (tagmatisation — segments fused into regions), and Chordata (vertebral column, ribs). In Arthropoda, segments are not identical — they form head, thorax, abdomen."},
+    {q:"The notochord is a flexible rod-like structure found at some stage in:",opts:["All invertebrates","Only fish","All chordates (Urochordata, Cephalochordata, Vertebrata)","Only vertebrates"],ans:2,exp:"Notochord is present in all chordates at some stage of life: in Urochordata (only in larval tail), Cephalochordata (entire life), Vertebrata (in embryo — replaced by vertebral column in most adults). The notochord provides support and is a defining character of phylum Chordata."},
+    {q:"Which of the following animals is asymmetrical?",opts:["Starfish","Hydra","Most adult sponges (Porifera)","Earthworm"],ans:2,exp:"Most adult sponges (Porifera) are asymmetrical — they have no definite plane of symmetry. Their irregular, branching growth forms vary with water current and substrate. Some sponges (like Sycon) may show radial symmetry, but asymmetry is most common."},
+    {q:"Open circulatory system (haemocoel) is found in:",opts:["Annelida","Echinodermata","Arthropoda and Mollusca (except Cephalopods)","All invertebrates"],ans:2,exp:"Open circulatory system: blood flows through open sinuses (haemocoel) — not through closed vessels. Found in: Arthropoda (cockroach, grasshopper) and most Mollusca (Pila, oyster). Closed system: Annelida, Echinoderms, Cephalopod Mollusca (Octopus, Loligo), all Chordata."},
+    {q:"Flame cells are excretory structures found in:",opts:["Annelida","Platyhelminthes (flatworms — Planaria, Taenia)","Arthropoda","Mollusca"],ans:1,exp:"Flame cells (solenocytes) are the excretory units of Platyhelminthes. Each flame cell has a tuft of cilia (the 'flame') that beats to draw water and waste into the protonephridium tubule, which then excretes it. They also regulate osmotic balance."},
+    {q:"Organ of Jacobson (vomeronasal organ) is found in:",opts:["Fish","Snakes and lizards (Reptilia) — detects chemical cues","Amphibia","Birds"],ans:1,exp:"Jacobson's organ (vomeronasal organ) is a chemoreceptor found in snakes and lizards — it detects chemicals in the environment. When a snake flicks its tongue, it picks up chemical particles and delivers them to Jacobson's organ for analysis — helping in prey tracking."},
+    {q:"Which is NOT a characteristic feature of Chordata?",opts:["Notochord","Dorsal hollow nerve cord","Pharyngeal gill slits","Nematocysts"],ans:3,exp:"Nematocysts are stinging cells of Cnidaria (jellyfish, Hydra) — NOT a chordate feature. Chordate features: (1) notochord, (2) dorsal hollow nerve cord (NOT a solid ventral nerve cord as in invertebrates), (3) pharyngeal gill slits, (4) post-anal tail — all present at least in embryonic stage."},
+    {q:"Haemocyanin is a respiratory pigment found in the blood of:",opts:["Humans","Frogs","Some Arthropoda and Mollusca — contains copper, appears blue","Fish"],ans:2,exp:"Haemocyanin is a copper-containing respiratory pigment in the haemolymph of some arthropods (Limulus, some crustaceans) and molluscs (Octopus, Pila). It appears blue when oxygenated, colourless when deoxygenated. Haemoglobin (iron-containing, red) is found in vertebrates and some invertebrates."},
+    {q:"Indirect development (with larval stage) is found in:",opts:["Humans","Most mammals","Insects (Lepidoptera — caterpillar to butterfly) and frogs (tadpole to frog)","Birds"],ans:2,exp:"Indirect development involves a morphologically different larval stage before the adult form. Examples: insects (holometabolous — egg→larva→pupa→adult; hemimetabolous — egg→nymph→adult), frogs (tadpole→frog), echinoderms (various larval stages). Direct development: most mammals, reptiles, birds."},
+  ],
+
+  'topic-2': [
+    {q:"Porifera are also known as:",opts:["Sponges — filter feeders with a canal system","Flatworms","Jellyfish","Corals only"],ans:0,exp:"Porifera (Latin: pore-bearers) are commonly called sponges. They are filter feeders — water enters through ostia (pores), passes through canals lined with choanocytes, and exits through the osculum. They are sessile (attached) and mostly marine."},
+    {q:"Choanocytes (collar cells) in sponges function to:",opts:["Provide structural support","Create water current and capture food particles by phagocytosis","Secrete spicules","Form the outer layer"],ans:1,exp:"Choanocytes are flagellated collar cells lining the sponge canals (spongocoel/radial canals). Their flagella beat to create water current, and the collar of microvilli traps food particles (bacteria, organic matter) that are then phagocytosed."},
+    {q:"The skeleton of sponges is made of:",opts:["Bone","Chitin","Spicules (CaCO₃ or SiO₂) and/or spongin protein fibres","Cellulose"],ans:2,exp:"Sponge skeleton: calcareous spicules (CaCO₃ — in Calcarea), siliceous spicules (SiO₂ — in Hexactinellida/glass sponges), or spongin fibres (protein — in commercial bath sponges like Spongia). Euspongia/Spongia: used as natural bath sponge (only spongin skeleton)."},
+    {q:"Regeneration in sponges is remarkable. Which experiment demonstrated this?",opts:["Passing sponge tissue through silk cloth — individual cells reaggregate into a new sponge (H.V. Wilson's experiment)","Cutting sponge in half","Removing the osculum","Drying the sponge"],ans:0,exp:"H.V. Wilson (1907) dissociated sponge cells by pressing through silk cloth → individual cells in seawater reaggregated and reformed a functional sponge. This demonstrated sponge cells' capacity for self-organisation and regeneration — a landmark experiment in developmental biology."},
+    {q:"Which type of canal system is the most complex in sponges?",opts:["Ascon type","Sycon type","Leucon (rhagon) type — most canals and chambers, most efficient filtration","No canal system"],ans:2,exp:"Three canal system types: Ascon (simplest — Leucosolenia): straight canals, choanocytes line spongocoel. Sycon (intermediate — Sycon/Scypha): radial canals with choanocytes. Leucon/Rhagon (most complex — most sponges): many flagellated chambers, most efficient, allows largest body size."},
+    {q:"Cnidarians are named because they possess:",opts:["A coelom","Nematocysts (cnidoblasts — stinging cells) used for prey capture and defence","Triploblastic organisation","Bilateral symmetry"],ans:1,exp:"Cnidaria are named for their cnidoblasts (from Greek 'knide' = nettle) — cells containing nematocysts (stinging organelles). Nematocysts have a coiled thread that is explosively discharged to inject venom or entangle prey. Each nematocyst can be used only once."},
+    {q:"Which organism shows metagenesis (alternation of polyp and medusa)?",opts:["Hydra (only polyp)","Aurelia (only medusa)","Obelia — shows both polyp colony (asexual) and free-swimming medusa (sexual)","Physalia (only polyp colony)"],ans:2,exp:"Obelia shows metagenesis: colonial polyp stage (hydranths for feeding + gonozooids for reproduction) alternates with free-swimming medusa stage (sexual reproduction). Hydra has only polyp; Aurelia has both but medusa dominates; sea anemones have only polyp."},
+    {q:"Coral reefs are formed by:",opts:["Sponges","Colonial anthozoans (corals — Meandrina, Favia) that secrete calcium carbonate exoskeletons","Molluscs","Echinoderms"],ans:1,exp:"Coral reefs are formed by the calcium carbonate (CaCO₃) exoskeletons secreted by colonial anthozoan polyps (order Scleractinia). Corals harbour symbiotic zooxanthellae (dinoflagellates) that provide up to 90% of their energy. Coral bleaching occurs when zooxanthellae are expelled under stress."},
+    {q:"The body cavity in Cnidaria is called:",opts:["Coelom","Haemocoel","Gastrovascular cavity (coelenteron) — used for both digestion and circulation","Pseudocoelom"],ans:2,exp:"Cnidaria have a gastrovascular cavity (coelenteron or enteron) — a single central cavity with one opening (mouth/anus = hypostome in Hydra). It serves for both digestion and circulation (no separate circulatory system). This is why they were formerly called Coelenterata."},
+    {q:"Portuguese Man-of-War (Physalia) is a:",opts:["Single jellyfish","Colonial cnidarian — a polymorphic colony of many polyp and medusa-like zooids","Type of sponge","Ctenophore"],ans:1,exp:"Physalia (Portuguese Man-of-War) is a colonial cnidarian — a highly polymorphic siphonophore colony. It has a gas-filled pneumatophore (float), dactylozooids (tentacles with nematocysts for prey capture), gastrozooids (feeding polyps), and gonozooids (reproduction). Not a single organism."},
+    {q:"Which class of Cnidaria has NO medusa stage?",opts:["Hydrozoa","Scyphozoa","Anthozoa (sea anemones and corals — only polyp stage)","All have medusa"],ans:2,exp:"Anthozoa (sea anemones, corals, sea pens) exist only as polyps — they have no medusa stage. Hydrozoa: mostly polyp, some medusa (Obelia), some only medusa. Scyphozoa (true jellyfish — Aurelia): medusa is dominant; small polyp stage (scyphistoma) briefly present."},
+    {q:"Skeleton of calcareous sponges (Calcarea) is made of:",opts:["Silica","Calcium carbonate spicules","Spongin fibres only","Chitin"],ans:1,exp:"Calcarea (e.g., Sycon, Leucosolenia) have calcareous spicules (CaCO₃). Hexactinellida (glass sponges — Euplectella/Venus's Flower Basket) have siliceous spicules (SiO₂). Demospongiae (e.g., Spongia, Spongilla) have siliceous spicules and/or spongin fibres."},
+    {q:"Bioluminescence is a characteristic seen in which cnidarian?",opts:["Hydra","Obelia","Noctiluca (a dinoflagellate, not cnidarian) — among Cnidaria: some hydromedusae","Aurelia"],ans:2,exp:"Bioluminescence in Cnidaria is seen in some hydromedusae (Aequorea victoria — source of green fluorescent protein/GFP used in research) and some siphonophores. Noctiluca is a bioluminescent dinoflagellate (Protista). Aequorea victoria's GFP won the Nobel Prize in Chemistry (2008)."},
+    {q:"The stinging cells of Cnidaria are primarily located in:",opts:["Epidermis (ectoderm) — mainly on tentacles and hypostome","Gastrodermis","Mesoglea","Gonads"],ans:0,exp:"Cnidoblasts (nematocyst-containing cells) are located primarily in the epidermis (ectoderm), especially concentrated on tentacles and the hypostome (area around the mouth) where prey capture occurs. Some are also present on the foot (basal disc) for attachment."},
+    {q:"Gorgonia (sea fan) belongs to class:",opts:["Hydrozoa","Scyphozoa","Anthozoa","Cubozoa"],ans:2,exp:"Gorgonia (sea fan) is a colonial anthozoan — class Anthozoa. Other Anthozoa: Meandrina (brain coral), Tubipora (organ pipe coral), Adamsia (sea anemone), Pennatula (sea pen). All Anthozoa are exclusively polyp — no medusa stage."},
+  ],
+
+  'topic-3': [
+    {q:"Platyhelminthes are called flatworms because they are:",opts:["They live flat on rocks","Dorsoventrally flattened, triploblastic, acoelomate","They have flat eggs","They are bilaterally flat from side to side"],ans:1,exp:"Platyhelminthes (Greek: platys = flat, helmins = worm) are dorsoventrally flattened (flat from top to bottom). They are triploblastic (3 germ layers) and acoelomate (no true body cavity). Being flat maximises surface area for diffusion — they have no circulatory or respiratory system."},
+    {q:"Flame cells in Platyhelminthes are primarily involved in:",opts:["Digestion","Reproduction","Osmoregulation and excretion","Locomotion"],ans:2,exp:"Flame cells (protonephridia) in Platyhelminthes perform osmoregulation (water balance) and excretion (nitrogenous waste removal). The beating cilia create a 'flame' appearance. Waste exits through nephridiopores. This is the simplest excretory system in animals."},
+    {q:"Taenia solium (pork tapeworm) causes disease in humans called:",opts:["Fascioliasis","Schistosomiasis","Taeniasis and cysticercosis","Ascariasis"],ans:2,exp:"Taenia solium causes taeniasis (adult worm in small intestine) and cysticercosis (when humans ingest eggs — cysticerci develop in muscles, brain, eyes). Neurocysticercosis (cysts in brain) is a major cause of epilepsy worldwide. Pigs are the intermediate host (cysticerci in muscle)."},
+    {q:"Fasciola hepatica (liver fluke) completes its life cycle in:",opts:["Only in humans","Only in sheep","Two hosts — sheep/cattle (definitive) and freshwater snail Lymnaea (intermediate)","In water only"],ans:2,exp:"Fasciola hepatica life cycle: adult in bile duct of sheep/cattle (definitive host) → eggs in faeces → miracidium larva → Lymnaea snail (intermediate host — sporocyst, redia, cercaria stages) → metacercaria on aquatic plants → eaten by sheep → adult in liver."},
+    {q:"Planaria (Dugesia) is remarkable for its ability to:",opts:["Fly","Regenerate from small body fragments — even a 1/270th piece can regenerate","Produce venom","Fix nitrogen"],ans:1,exp:"Planaria (freshwater turbellarian) has extraordinary regenerative ability — even a tiny fragment (1/279th of its body) can regenerate into a complete worm. The regeneration involves pluripotent stem cells called neoblasts. Planaria is used as a model organism for studying regeneration."},
+    {q:"Ascaris lumbricoides causes which disease?",opts:["Filariasis","Ascariasis — infection of small intestine causing malnutrition and intestinal obstruction","Elephantiasis","Malaria"],ans:1,exp:"Ascaris lumbricoides (roundworm) causes ascariasis — one of the most common parasitic infections (1 billion+ people infected). Adults live in small intestine causing malnutrition; heavy infections cause intestinal obstruction. Transmission: fecal-oral route (ingesting eggs from contaminated soil/food)."},
+    {q:"Wuchereria bancrofti causes:",opts:["Ascariasis","Elephantiasis (filariasis) — lymphatic obstruction causing gross swelling of limbs","Taeniasis","Kala-azar"],ans:1,exp:"Wuchereria bancrofti (filarial worm) causes lymphatic filariasis (elephantiasis). Adult worms in lymphatic vessels → lymph vessel blockage → lymphedema → gross swelling of legs, scrotum (hydrocele). Transmitted by female Culex mosquito. Affects ~120 million people worldwide."},
+    {q:"Annelida are characterised by:",opts:["No segmentation","True metameric segmentation, closed circulatory system, and nephridia for excretion","Pseudocoelom","Open circulatory system"],ans:1,exp:"Annelida (Latin: anellus = little ring) have: true metameric segmentation (body divided into similar segments internally and externally), true coelom (eucoelomate), closed circulatory system (blood in closed vessels), and nephridia for excretion. Examples: Pheretima (earthworm), Nereis, Hirudo (leech)."},
+    {q:"Clitellum in earthworm (Pheretima) is located at segments:",opts:["1-5","14-16","20-25","Last 5 segments"],ans:1,exp:"Clitellum is a glandular region at segments 14-16 in Pheretima posthuma. It secretes a mucus ring (cocoon) into which eggs and sperms are deposited → fertilisation occurs → cocoon hardens to form egg case. The clitellum is also used to identify the dorsal surface."},
+    {q:"Leech (Hirudo medicinalis) is used medically because it secretes:",opts:["Pepsin","Hirudin — an anticoagulant that prevents blood clotting","Insulin","Heparin only"],ans:1,exp:"Hirudo medicinalis (medicinal leech) secretes hirudin — a potent anticoagulant from its salivary glands. It is used in microsurgery to prevent blood clotting in reattached digits/limbs and to reduce venous congestion. Leeches are also used in traditional medicine."},
+    {q:"Nereis (sandworm) is a polychaete annelid. 'Polychaete' means:",opts:["Many segments","Many setae (bristles) — paired fleshy appendages (parapodia) with many setae","No setae","Few setae"],ans:1,exp:"Polychaeta (many setae): Nereis and other marine annelids have parapodia — fleshy lateral appendages bearing many setae (bristles) used in locomotion and respiration. Oligochaeta (few setae): earthworm — no parapodia, few setae per segment. Hirudinea (leeches): no setae."},
+    {q:"The excretory organ of Annelida is:",opts:["Malpighian tubules","Flame cells","Nephridia (metanephridia)","Green glands"],ans:2,exp:"Annelida excrete through nephridia (metanephridia) — paired segmental organs that open internally (nephrostome in coelom) and externally (nephridiopore on body surface). They excrete ammonia (in aquatic annelids) or urea. Earthworm has septal, integumentary, and pharyngeal nephridia."},
+    {q:"The blood of Annelida contains which respiratory pigment?",opts:["Haemocyanin","Haemoglobin dissolved in plasma (not in blood cells) in earthworm","No pigment","Chlorocruorin only"],ans:1,exp:"Earthworm (Pheretima) blood contains haemoglobin dissolved in the plasma (not in blood cells — erythrocruorin, a giant extracellular haemoglobin). Some marine polychaetes have chlorocruorin (green pigment containing iron). All annelid blood is contained in closed blood vessels."},
+    {q:"The body wall of earthworm has muscles arranged as:",opts:["Only longitudinal muscles","Only circular muscles","Outer circular and inner longitudinal muscles (working antagonistically for peristaltic movement)","No muscles"],ans:2,exp:"Earthworm's body wall has: outer circular muscles (contraction makes body long and thin) and inner longitudinal muscles (contraction makes body short and fat). These work antagonistically to produce peristaltic movement — segments alternately grip the soil and extend forward."},
+    {q:"Peritoneum in annelids is derived from:",opts:["Ectoderm","Mesoderm (lines the coelom)","Endoderm","All three layers"],ans:1,exp:"Peritoneum is the mesodermal epithelium lining the coelom. In annelids, the coelom is divided by septa (transverse partitions) into segmental compartments. Each compartment is lined by peritoneum. The presence of peritoneum-lined coelom is the defining character of a true coelom (eucoelomate)."},
+  ],
+
+  'topic-4': [
+    {q:"Arthropoda is the largest animal phylum with approximately:",opts:["10,000 species","1 million+ described species (most being insects)","100 species","10 million species"],ans:1,exp:"Arthropoda is the largest phylum — over 1 million described species, representing ~80% of all known animal species. About 90% of arthropods are insects. The secret to their success: exoskeleton (protection + waterproofing), jointed appendages (locomotion), compound eyes, metamorphosis."},
+    {q:"The exoskeleton of Arthropoda is composed of:",opts:["Calcium carbonate","Chitin (polysaccharide) with proteins","Silica","Bone"],ans:1,exp:"Arthropod exoskeleton (cuticle) is made of chitin — a polymer of N-acetylglucosamine. It may be hardened (sclerotised) by quinone tanning and/or calcified (in crustaceans). The exoskeleton must be periodically shed (ecdysis/moulting) to allow growth."},
+    {q:"Malpighian tubules are the excretory organs of:",opts:["Annelida","Echinodermata","Insects (Class Insecta of Arthropoda)","Mollusca"],ans:2,exp:"Malpighian tubules are thin blind-ending tubules that open into the hindgut of insects. They absorb nitrogenous waste (uric acid) from the haemolymph and pass it into the hindgut for excretion with faeces. Uric acid is non-toxic and requires minimal water — ideal for terrestrial life."},
+    {q:"The respiratory organ of aquatic crustaceans is:",opts:["Lungs","Book lungs","Gills (branchiostegites)","Trachea"],ans:2,exp:"Aquatic crustaceans (prawns, crabs, lobsters) respire through gills. The gills are feathery structures sheltered under the carapace. Terrestrial arthropods: insects and myriapods use tracheal system; spiders use book lungs + tracheae; land crabs have vascularised gill chambers."},
+    {q:"Insects belong to which class?",opts:["Arachnida","Crustacea","Insecta (Hexapoda) — 6 legs, 3 body segments, usually 2 pairs of wings","Chilopoda"],ans:2,exp:"Class Insecta (Hexapoda): 6 legs (3 pairs), body divided into head + thorax + abdomen, 2 pairs of wings (most), 1 pair of antennae. Largest class with ~900,000+ species. Examples: Periplaneta (cockroach), Apis (honeybee), Anopheles (mosquito), Bombyx (silkworm), Laccifer (lac insect)."},
+    {q:"Silkworm (Bombyx mori) belongs to which order of insects?",opts:["Diptera","Coleoptera","Lepidoptera (moths and butterflies)","Orthoptera"],ans:2,exp:"Bombyx mori (silkworm) belongs to Order Lepidoptera. The silk thread is the cocoon of the silkworm larva (caterpillar) — a continuous protein fibre (fibroin + sericin) up to 1000 metres long. Silk industry (sericulture) is economically important in India, China, and Japan."},
+    {q:"Cockroach (Periplaneta americana) has how many pairs of legs?",opts:["2","3","4","5"],ans:1,exp:"Cockroach has 3 pairs of legs (6 legs) — typical of insects. The legs are: forelegs (walking), middle legs (walking), hindlegs (running). All three pairs are attached to the thorax (one pair per thoracic segment: prothorax, mesothorax, metathorax)."},
+    {q:"Arachnida is characterised by the presence of:",opts:["3 pairs of legs","4 pairs of legs, cephalothorax, no antennae","6 pairs of legs","Antennae and 3 body segments"],ans:1,exp:"Arachnida (spiders, scorpions, mites, ticks): 4 pairs of legs (8 legs), body divided into cephalothorax (prosoma) and abdomen (opisthosoma), NO antennae (use pedipalps and chelicerae for sensing and feeding). Respiration: book lungs and/or tracheae."},
+    {q:"Mollusca is the second largest animal phylum. Its characteristic features include:",opts:["Metameric segmentation","Mantle, radula (rasping tongue), and muscular foot — soft-bodied with often a shell","Jointed appendages","Water vascular system"],ans:1,exp:"Mollusca: soft-bodied animals (mollis = soft) with: mantle (covers body, secretes shell), muscular foot (locomotion), radula (rasping organ for feeding — absent in bivalves), visceral mass (internal organs), ctenidia (gills) or lung."},
+    {q:"Radula in Mollusca is used for:",opts:["Respiration","Rasping/scraping food (like a file — rows of teeth)","Excretion","Locomotion"],ans:1,exp:"Radula is a unique feeding organ in most molluscs — a ribbon-like, tooth-bearing rasping structure. The teeth (made of magnetite — the hardest biological material) scrape algae and food off surfaces. Absent in bivalves (clams, oysters) which are filter feeders."},
+    {q:"Which mollusc has a closed circulatory system?",opts:["Pila (apple snail)","Chiton","Cephalopods (Octopus, Loligo, Nautilus)","Oyster"],ans:2,exp:"Cephalopod molluscs (Octopus, Squid/Loligo, Nautilus) have a closed circulatory system — unusual for molluscs. This provides efficient blood flow to the brain and supports their active, predatory lifestyle and high intelligence. Other molluscs have open circulatory system."},
+    {q:"Pearl is produced by which mollusc?",opts:["Pila globosa","Pinctada (pearl oyster) — when an irritant is coated with nacre (mother of pearl)","Sepia","Chiton"],ans:1,exp:"Pearls are produced by pearl oysters (Pinctada species) and some other bivalves. When an irritant (sand grain, parasite) enters the mantle, the mollusc coats it with layers of nacre (aragonite CaCO₃ + conchiolin protein) → a pearl. Japan pioneered cultured pearl production (Mikimoto)."},
+    {q:"Sepia (cuttlefish) uses which for defence?",opts:["Shell only","Ink (melanin) ejected to create smoke screen, jet propulsion for escape","Venom","Nematocysts"],ans:1,exp:"Sepia (cuttlefish) uses: (1) ink gland (chromatophores also for camouflage), (2) jet propulsion (water forcibly expelled through funnel), (3) hard internal cuttlebone (for buoyancy control). The ink contains melanin and is used to confuse predators. Sepia ink gives 'sepia' colour in art."},
+    {q:"The excretory organ of Mollusca is:",opts:["Nephridia (kidneys — metanephridia type)","Malpighian tubules","Flame cells","Green glands"],ans:0,exp:"Mollusca excrete through kidneys (nephridia/Keber's organ) that are modified metanephridia. They remove nitrogenous waste (ammonia in aquatic, uric acid in terrestrial) from blood and release it into the mantle cavity. Coelom is reduced in molluscs — kidneys use the haemocoel."},
+    {q:"Loligo (squid) belongs to which class of Mollusca?",opts:["Gastropoda","Bivalvia","Cephalopoda","Scaphopoda"],ans:2,exp:"Loligo (squid) belongs to Class Cephalopoda — 'head-foot' molluscs where the foot is modified into tentacles around the head. Cephalopods: Loligo (squid), Sepia (cuttlefish), Octopus, Nautilus. They have the largest brain among invertebrates and show complex behaviours."},
+  ],
+
+  'topic-5': [
+    {q:"The unique feature of Echinodermata is:",opts:["Jointed appendages","Water vascular system (WVS) — a hydraulic system for locomotion, feeding, and respiration","Nematocysts","Radula"],ans:1,exp:"Water Vascular System (WVS) is unique to Echinodermata. It is a system of fluid-filled canals (madreporite → stone canal → ring canal → radial canals → tube feet) that functions in locomotion, food capture, respiration, and excretion. Tube feet are the locomotory organs."},
+    {q:"The larva of starfish (Asterias) is called:",opts:["Tornaria","Bipinnaria","Nauplius","Trochophore"],ans:1,exp:"Starfish (Asterias) larva: Bipinnaria larva (free-swimming, bilaterally symmetrical) → Brachiolaria larva → settles and metamorphoses into the radially symmetrical adult. This bilateral larva confirms the evolutionary link of Echinoderms to Chordates (both are Deuterostomes)."},
+    {q:"Echinoderms show which type of symmetry as adults?",opts:["Bilateral symmetry","Radial symmetry (pentamerous — 5-fold)","Asymmetry","Spherical symmetry"],ans:1,exp:"Adult echinoderms show pentamerous radial symmetry — body can be divided into 5 equal parts. However, their larvae are bilaterally symmetrical. This secondary radial symmetry evolved as an adaptation to a sessile/slow lifestyle. Phylum name: Echinodermata (spiny skin)."},
+    {q:"The endoskeleton of Echinoderms is made of:",opts:["Chitin","Calcium carbonate ossicles (calcareous plates with spines)","Silica","Bone"],ans:1,exp:"Echinoderms have an endoskeleton (internal skeleton) of calcium carbonate (CaCO₃) ossicles (plates) embedded in the body wall. These ossicles may bear spines on the surface (hence 'spiny skin' = Echinodermata). The endoskeleton provides protection and structural support."},
+    {q:"Starfish can regenerate lost arms. This is because:",opts:["They have stem cells only","Echinoderms have remarkable regenerative powers — lost arms regenerate even from a fragment of the central disc","They have no organs in arms","Arms are never truly lost"],ans:1,exp:"Echinoderms have remarkable regeneration. A single arm with a fragment of the central disc can regenerate the entire starfish (e.g., Linckia). Some sea cucumbers can eviscerate (expel internal organs) when threatened and then regenerate them. This regeneration is studied for potential medical applications."},
+    {q:"Sea cucumber belongs to which class of Echinodermata?",opts:["Asteroidea","Ophiuroidea","Holothuroidea","Crinoidea"],ans:2,exp:"Classes of Echinodermata: Asteroidea (starfish — Asterias), Ophiuroidea (brittle stars — Ophiura), Echinoidea (sea urchins, sand dollars — Echinus), Holothuroidea (sea cucumbers — Holothuria), Crinoidea (feather stars, sea lilies — Antedon). Sea cucumbers are soft-bodied, elongated, lacking spines."},
+    {q:"Aristotle's lantern is the jaw apparatus of:",opts:["Starfish","Sea urchins (Echinoidea) — a complex masticatory apparatus of 5 plates","Sea cucumber","Brittle stars"],ans:1,exp:"Aristotle's lantern is the complex jaw apparatus of sea urchins — 5 calcareous teeth (each supported by a pyramid of ossicles) that project from the mouth. Used to scrape algae off rocks. Named by Aristotle who described it as resembling a horn lantern."},
+    {q:"Hemichordata are considered a link between:",opts:["Arthropoda and Chordata","Echinodermata and Chordata (Invertebrates and Chordates)","Mollusca and Annelida","Platyhelminthes and Nematoda"],ans:1,exp:"Hemichordata ('half-chordates') are considered a link between invertebrates (especially Echinoderms) and Chordates. They have: gill slits (like Chordata), dorsal nerve cord (but solid and posterior only), no true notochord (just a buccal diverticulum called stomochord). Example: Balanoglossus."},
+    {q:"Tornaria larva is the larva of:",opts:["Starfish","Balanoglossus (Hemichordata)","Sea cucumber","Sea urchin"],ans:1,exp:"Tornaria is the free-swimming larva of Balanoglossus (class Enteropneusta, Hemichordata). It resembles the bipinnaria larva of starfish (Echinodermata) — confirming the evolutionary link between Hemichordata and Echinodermata, and their relationship to Chordata (all are Deuterostomes)."},
+    {q:"Madreporite in starfish is located on the:",opts:["Oral surface","Aboral (dorsal) surface — acts as a sieve plate for the WVS","Arms","Mouth"],ans:1,exp:"Madreporite is a porous plate on the aboral (dorsal) surface of starfish — it is the entry point for seawater into the water vascular system. Water enters through madreporite → stone canal → ring canal → radial canals → tube feet. In some species it is orange or red."},
+    {q:"Ophiuroidea (brittle stars) differ from Asteroidea (starfish) in that:",opts:["They have no arms","Their arms are sharply demarcated from the central disc and highly flexible (snake-like movement)","They have no tube feet","They are acoelomate"],ans:1,exp:"Brittle stars (Ophiuroidea) have 5 long, slender arms sharply set off from the small central disc — unlike starfish (Asteroidea) where arms merge gradually with disc. Brittle stars move by arm undulation (not tube feet). They are the most species-rich class of Echinoderms (~2000 species)."},
+    {q:"Which echinoderm is used as a delicacy in some cultures?",opts:["Starfish","Sea cucumber (Holothuroidea — 'trepang' or 'bêche-de-mer' in Asian cuisine)","Brittle star","Crinoid"],ans:1,exp:"Sea cucumbers (Holothuroidea) are considered a delicacy in Chinese and Southeast Asian cuisine (dried = trepang/bêche-de-mer). They are also rich in bioactive compounds (saponins, collagen) with potential pharmaceutical applications. Sea urchin gonads (uni) are also eaten in Japan and Mediterranean."},
+    {q:"The tube feet of echinoderms are extensions of the:",opts:["Circulatory system","Water vascular system (radial canals extend into tube feet)","Digestive system","Reproductive system"],ans:1,exp:"Tube feet (podia) are extensions of the radial canals of the water vascular system. Each tube foot has a muscular ampulla (bulb) that pushes fluid into the tube foot, extending it. The foot has a sucker at the tip for attachment. Tube feet function in locomotion, feeding, and gas exchange."},
+    {q:"Sea lily (feather star) belongs to class:",opts:["Asteroidea","Crinoidea","Holothuroidea","Echinoidea"],ans:1,exp:"Crinoidea (feather stars and sea lilies) are the most ancient class of Echinoderms (abundant as fossils since Cambrian). They are sessile (sea lilies attached by a stalk) or free-moving (feather stars/comatulids). They use feathery arms with tube feet to filter-feed on plankton. Example: Antedon (feather star)."},
+    {q:"Echinodermata are deuterostomes. This means:",opts:["Mouth forms first in development","Anus forms first from the blastopore (second opening becomes the mouth)","No mouth at all","They develop by spiral cleavage"],ans:1,exp:"Deuterostomes (second mouth): the blastopore becomes the anus; the mouth forms second from a separate opening. Deuterostomes include Echinoderms, Hemichordates, and Chordates. Protostomes (first mouth): blastopore becomes mouth — includes Annelids, Molluscs, Arthropods. This distinction is fundamental in animal phylogeny."},
+  ],
+
+  'topic-6': [
+    {q:"The four fundamental characters of phylum Chordata are:",opts:["Wings, gills, backbone, warm blood","Notochord, dorsal hollow nerve cord, pharyngeal gill slits, post-anal tail — all at some stage","Exoskeleton, jointed appendages, compound eyes, Malpighian tubules","Radula, mantle, foot, shell"],ans:1,exp:"Chordata diagnostic characters (all present at some stage of development): (1) Notochord, (2) Dorsal hollow nerve cord, (3) Pharyngeal gill slits, (4) Post-anal tail. These define the phylum — not all need to be present throughout life."},
+    {q:"Urochordata (tunicates) is named because:",opts:["They have a tail throughout life","Notochord is present only in the larval tail (oura = tail, chorde = string)","They have a urinary bladder","They are shaped like tubes"],ans:1,exp:"Urochordata = 'tail-chordate': the notochord is present only in the tail of the tadpole larva (for swimming). During metamorphosis to the sessile adult (sea squirt), the tail is reabsorbed and the notochord disappears. Example: Herdmania, Ascidia, Doliolum."},
+    {q:"Herdmania (sea squirt) belongs to subphylum:",opts:["Cephalochordata","Urochordata","Vertebrata","Hemichordata"],ans:1,exp:"Herdmania is a urochordate (tunicate/ascidian) — a sessile adult with a barrel-shaped body covered by a tunic (made of tunicin, a cellulose-like substance). The larva has a notochord and resembles a tadpole. It feeds by filtering water through pharyngeal gill slits."},
+    {q:"Amphioxus (Branchiostoma) is the common name for:",opts:["A urochordate","A cephalochordate — the notochord extends from head to tail throughout life","A vertebrate fish","A hemichordate"],ans:1,exp:"Amphioxus (Branchiostoma/Branchiostoma lanceolatum) is a cephalochordate (lancelets). The notochord persists throughout life (extending from anterior tip to tail). They are fish-like, marine, burrowing filter feeders. They have ~100 pairs of V-shaped muscle blocks (myotomes) and are a key model for understanding chordate origins."},
+    {q:"Which subphylum of Chordata shows the most primitive condition?",opts:["Vertebrata","Cephalochordata","Urochordata (most primitive — notochord only in larval tail)","All equally primitive"],ans:2,exp:"Urochordata is considered most primitive among chordates — only the larva shows chordate characters (notochord, nerve cord, gill slits, tail). The adult is highly degenerate (sessile, filter feeder with notochord and tail gone). This suggests chordates evolved through neoteny (retention of larval characters in adults)."},
+    {q:"Cyclostomata (Petromyzon and Myxine) differ from other vertebrates in:",opts:["Having no heart","Lacking paired fins, scales, and having a circular mouth without jaws (Agnatha = jawless)","Having external gills only","Being invertebrates"],ans:1,exp:"Cyclostomata are the most primitive vertebrates — they are Agnatha (jawless). Features: circular sucker-like mouth (used to rasp flesh of host fish), no paired fins, no scales, persistent notochord in adult, 6-15 pairs of gill pouches. Examples: Petromyzon (lamprey), Myxine (hagfish)."},
+    {q:"Petromyzon (lamprey) is unique in that its larva (ammocoetes) resembles:",opts:["Adult fish","Amphioxus (cephalochordate) — evidence of evolutionary connection","Tadpole of frog","Sea squirt"],ans:1,exp:"The ammocoetes larva of lamprey (Petromyzon) remarkably resembles Amphioxus (cephalochordate) — both are small, filter-feeding, with similar internal organisation. This supports the hypothesis that vertebrates evolved from cephalochordate-like ancestors via a neotenic route."},
+    {q:"Which subphylum contains most of the familiar chordates (fish, amphibians, reptiles, birds, mammals)?",opts:["Urochordata","Cephalochordata","Vertebrata","All equally"],ans:2,exp:"Vertebrata is the largest and most diverse subphylum — includes all animals with a vertebral column (backbone): Cyclostomata, Pisces (fish), Amphibia, Reptilia, Aves, Mammalia. The vertebral column replaces or supplements the notochord, providing support and protecting the nerve cord."},
+    {q:"What is the significance of pharyngeal gill slits in non-aquatic chordates?",opts:["They function as gills throughout life","In embryos they give rise to various structures — Eustachian tube, tonsils, thymus, parathyroids in higher vertebrates","They are non-functional vestiges only","They serve as respiratory organs in all chordates"],ans:1,exp:"Pharyngeal gill slits are present at some stage in ALL chordates. In aquatic chordates: functional gills. In terrestrial vertebrates (amphibian larvae, reptile/bird/mammal embryos): the pharyngeal pouches give rise to Eustachian tubes, tonsils, thymus, parathyroid glands, thyroid gland — vital structures. They are NOT vestigial."},
+    {q:"The dorsal nerve cord in Chordata differs from the ventral nerve cord of invertebrates in being:",opts:["Solid","Hollow (has a central canal — neurocoel) and located dorsally above the notochord","Absent in larvae","Paired cords"],ans:1,exp:"Chordate nerve cord is: (1) Dorsal (above the notochord and gut), (2) Hollow — has a central canal (neurocoel) filled with cerebrospinal fluid, (3) Single. Invertebrate nerve cord: ventral, solid (ganglionated), often paired. The chordate nerve cord develops into brain + spinal cord."},
+    {q:"Doliolum is an example of a:",opts:["Cephalochordate","Urochordate (belongs to class Thaliacea — free-swimming colonial tunicate)","Vertebrate","Hemichordate"],ans:1,exp:"Doliolum is a urochordate in class Thaliacea — free-swimming, barrel-shaped, colonial, planktonic tunicates. Unlike sessile sea squirts (Ascidiacea), thaliaceans remain free-swimming as adults. Other classes of Urochordata: Ascidiacea (sea squirts) and Larvacea/Appendicularia."},
+    {q:"The evolution of jaws in vertebrates is considered significant because:",opts:["It made vertebrates smaller","Jaws allowed efficient predation and food capture, enabling vertebrates to exploit new food sources and habitats","Jaws made vertebrates lose their notochord","Jaws made vertebrates air-breathing"],ans:1,exp:"Evolution of jaws (from 1st and 2nd gill arches) in Gnathostomata was a key innovation: allowed efficient biting, predation, food manipulation, and exploitation of new food sources (larger prey). It marks the transition from Agnatha (jawless) to Gnathostomata (jawed) vertebrates."},
+    {q:"Which of the following correctly pairs a protochordate with its class?",opts:["Amphioxus — Urochordata","Herdmania — Cephalochordata","Branchiostoma — Cephalochordata","Ascidia — Cephalochordata"],ans:2,exp:"Branchiostoma (= Amphioxus) — Cephalochordata. Herdmania, Ascidia, Doliolum — Urochordata. Petromyzon, Myxine — Cyclostomata (Vertebrata). Balanoglossus — Hemichordata (not a true chordate). (NEET frequently tests these pairings.)"},
+    {q:"Tunicin found in the tunic of urochordates is similar to:",opts:["Chitin","Cellulose (a polysaccharide with β-1,4 glucose linkages)","Starch","Pectin"],ans:1,exp:"Tunicin (the substance forming the tunic/test of urochordates) is chemically similar to cellulose — it is a polysaccharide. This is the only known case of cellulose-like substance being produced by an animal — it is thought to reflect the deuterostome evolutionary link with plants (both use cellulose-based structures)."},
+    {q:"Which is the correct sequence of water flow through the water vascular system of a starfish?",opts:["Tube feet → madreporite → ring canal","Madreporite → stone canal → ring canal → radial canals → lateral canals → tube feet","Ring canal → madreporite → stone canal","Stone canal → madreporite → ring canal"],ans:1,exp:"WVS water flow: Madreporite (entry) → Stone canal (connects madreporite to ring canal) → Ring canal (circular, around mouth) → Radial canals (one per arm, extends along arm length) → Lateral canals → Ampullae → Tube feet (locomotion). The ampulla acts as a bulb that pushes fluid into tube feet, extending them."},
+  ],
+
+  'topic-7': [
+    {q:"Class Chondrichthyes (cartilaginous fish) differs from Osteichthyes (bony fish) in that:",opts:["It has a bony skeleton","It has a cartilaginous skeleton, placoid scales, no swim bladder, and no operculum","It has lungs","It reproduces by budding"],ans:1,exp:"Chondrichthyes (sharks, rays, skates): cartilaginous skeleton (no bone), placoid scales (toothlike/dermal denticles), no swim bladder (must swim continuously or sink), no operculum (separate gill slits visible), internal fertilisation, mostly marine. Osteichthyes: bony skeleton, cycloid/ctenoid scales, swim bladder, operculum."},
+    {q:"Which class of vertebrates has a two-chambered heart?",opts:["Amphibia","Reptilia","Pisces (fish) — one auricle + one ventricle","Aves"],ans:2,exp:"Heart chambers: Pisces (fish) = 2 chambers (1 atrium + 1 ventricle) — single circulation. Amphibia + most Reptilia = 3 chambers (2 atria + 1 ventricle, partially divided) — incomplete double circulation. Crocodilia + Aves + Mammalia = 4 chambers — complete double circulation."},
+    {q:"Amphibia are the first terrestrial vertebrates but are tied to water because:",opts:["They breathe only through gills","Their eggs lack protective membranes and desiccate in air; tadpoles must live in water; skin must remain moist","They cannot regulate body temperature","They feed only on aquatic food"],ans:1,exp:"Amphibia's limitations: (1) Naked eggs (no amnion, no shell) → must be laid in water, (2) Aquatic larva (tadpole) with gills, (3) Moist permeable skin needed for cutaneous respiration (desiccates in dry conditions), (4) Ectothermic (cold-blooded) — limited to warm, moist environments."},
+    {q:"Caudal autotomy is the ability to:",opts:["Regenerate limbs","Voluntarily shed the tail as a defence mechanism — seen in some lizards","Breathe through the tail","Change colour"],ans:1,exp:"Caudal autotomy: voluntary shedding (autotomy) of the tail as an escape response — the detached tail wriggles to distract the predator while the lizard escapes. Seen in many lizards (geckos, skinks). The tail regenerates (cartilaginous rod, not bone). This is an example of predator escape behaviour."},
+    {q:"Which reptile has a four-chambered heart (like birds and mammals)?",opts:["Lizards","Snakes","Crocodilians (Crocodylus — crocodiles, alligators, gharials)","Turtles"],ans:2,exp:"Crocodilians are unique among reptiles in having a 4-chambered heart (like birds and mammals) — complete separation of oxygenated and deoxygenated blood. However, crocodiles have a unique Panizza foramen between left and right aorta allowing some blood mixing during diving. All other reptiles: 3 chambers."},
+    {q:"Which of the following is a unique character of Aves (birds)?",opts:["Scales","Four-chambered heart","Feathers (modified scales, unique to birds — no other animal has feathers)","Endothermy"],ans:2,exp:"Feathers are unique to birds — no other group of animals has feathers. Feathers (modified reptilian scales) serve: flight, insulation (thermoregulation), waterproofing, camouflage, display. Four-chambered heart is also found in crocodiles and mammals. Endothermy is shared with mammals."},
+    {q:"Pneumatic bones in birds help in:",opts:["Thermoregulation","Reducing body weight for flight — bones are hollow with air cavities","Producing sound","Storing calcium"],ans:1,exp:"Pneumatic bones (hollow bones with air spaces connected to air sacs of the respiratory system) greatly reduce body weight without losing structural strength — essential for flight. All major bones (skull, humerus, femur) are pneumatised. Bird skeletons are extremely light yet strong."},
+    {q:"Mammalia is characterised by presence of:",opts:["Scales","Feathers","Mammary glands (for milk production) and hair/fur","Swim bladder"],ans:2,exp:"Mammalia diagnostic characters: mammary glands (produce milk for nourishment of young — unique to mammals), hair/fur (insulation, sensory), diaphragm, 4-chambered heart, 3 middle ear ossicles (malleus, incus, stapes), endothermic, mostly viviparous. Most mammals give birth to live young (exceptions: monotremes lay eggs)."},
+    {q:"Monotremes are mammals that:",opts:["Give birth to live young","Lay eggs (oviparous) while still nursing young with milk from mammary glands","Have no mammary glands","Are cold-blooded"],ans:1,exp:"Monotremes are egg-laying mammals — they lay leathery eggs (like reptiles) but nurse hatchlings with milk. Examples: Ornithorhynchus (platypus) and Tachyglossus (echidna/spiny anteater) — found only in Australia and New Guinea. Despite laying eggs, they have all other mammalian characters (hair, mammary glands, 3 ear ossicles, etc.)."},
+    {q:"Marsupials differ from placental mammals in that:",opts:["They have no mammary glands","Young are born very early and complete development in the marsupium (pouch)","They lay eggs","They have no hair"],ans:1,exp:"Marsupials: young are born at very early stage of development (underdeveloped) → crawl to the marsupium (pouch) on the mother's belly → attach to nipple and continue development. Examples: Kangaroo (Macropus), Koala, Opossum, Wombat. Found mainly in Australia (convergent evolution has produced many marsupial equivalents of placental mammals)."},
+    {q:"Which of the following is an example of a cartilaginous fish?",opts:["Rohu (Labeo)","Scoliodon (dogfish shark)","Exocoetus (flying fish)","Hippocampus (seahorse)"],ans:1,exp:"Scoliodon (dogfish) is a cartilaginous fish (Class Chondrichthyes). Other Chondrichthyes: Pristis (sawfish), Trygon (stingray), Torpedo (electric ray), Carcharodon (great white shark). Rohu, Exocoetus, and Hippocampus are bony fish (Osteichthyes)."},
+    {q:"The lateral line system in fish functions to:",opts:["Detect light","Detect water pressure changes, vibrations, and currents (mechanoreception)","Provide camouflage","Regulate buoyancy"],ans:1,exp:"The lateral line system is a row of sensory organs (neuromasts) along the sides of fish and aquatic amphibians — they detect changes in water pressure, vibrations, and currents. This allows fish to: detect prey/predators by water displacement, maintain schooling behaviour, navigate in dark water."},
+    {q:"Aves have air sacs that function in:",opts:["Sound production only","Unidirectional airflow through lungs (making avian respiration more efficient than mammalian tidal breathing)","Buoyancy only","Thermoregulation only"],ans:1,exp:"Bird air sacs (9 pairs) connected to the lungs create a unidirectional flow of air through the parabronchi (lung tubes) — fresh air flows through the lung during BOTH inhalation AND exhalation. This is more efficient than mammalian tidal breathing (which mixes fresh and stale air). Also reduces body weight (pneumatisation)."},
+    {q:"Which is the only venomous mammal?",opts:["Bat","Shrew","Male platypus (Ornithorhynchus) has venom spurs on hind legs","Mongoose"],ans:2,exp:"The male duck-billed platypus (Ornithorhynchus anatinus) has crural spurs on its hind ankles connected to venom glands — capable of delivering intensely painful venom to rivals during mating season. Some shrews have toxic saliva but it is not delivered via a specialised venom apparatus."},
+    {q:"The largest living bird is:",opts:["Albatross (largest wingspan)","Ostrich (Struthio camelus — largest living bird by height and weight)","Condor","Eagle"],ans:1,exp:"Ostrich (Struthio camelus) is the largest living bird — up to 2.8m tall, 150 kg. It is flightless (ratite bird) — has no keel on sternum, wings vestigial. Lays the largest eggs of any living bird. Fastest running bird (up to 70 km/h). Found in African savannas."},
+  ],
+
+  'pyq-2024': [
+    {q:"[NEET 2024] Which of the following has a true coelom?",opts:["Ascaris (Aschelminthes)","Planaria (Platyhelminthes)","Hydra (Cnidaria)","Pheretima (Annelida)"],ans:3,exp:"Pheretima (earthworm, Annelida) is eucoelomate — has a true coelom lined by mesodermal peritoneum. Ascaris = pseudocoelomate; Planaria = acoelomate; Hydra = diploblastic (no coelom). (NEET 2024)"},
+    {q:"[NEET 2024] Water vascular system is characteristic of phylum:",opts:["Mollusca","Arthropoda","Echinodermata","Hemichordata"],ans:2,exp:"Water vascular system — unique to Echinodermata. Functions in locomotion (tube feet), feeding, respiration, and excretion. (NEET 2024)"},
+    {q:"[NEET 2024] Which vertebrate class has a 4-chambered heart and is warm-blooded?",opts:["Pisces","Amphibia","Reptilia","Aves and Mammalia"],ans:3,exp:"Aves (birds) and Mammalia both have 4-chambered hearts and are endothermic (warm-blooded). Crocodiles also have 4 chambers but are ectothermic. (NEET 2024)"},
+    {q:"[NEET 2024] Malpighian tubules are excretory organs of:",opts:["Annelida","Echinodermata","Insects (Arthropoda)","Mollusca"],ans:2,exp:"Malpighian tubules open at the midgut-hindgut junction in insects — excrete uric acid. (NEET 2024)"},
+  ],
+  'pyq-2023': [
+    {q:"[NEET 2023] Nematocysts are found in phylum:",opts:["Porifera","Cnidaria","Platyhelminthes","Nematoda"],ans:1,exp:"Nematocysts (stinging cells/cnidoblasts) are unique to and characteristic of phylum Cnidaria. (NEET 2023)"},
+    {q:"[NEET 2023] Which of the following is a pseudocoelomate?",opts:["Earthworm","Hydra","Ascaris (Aschelminthes)","Planaria"],ans:2,exp:"Ascaris is pseudocoelomate — the body cavity is not lined by mesodermal epithelium on all sides. (NEET 2023)"},
+    {q:"[NEET 2023] Placoid scales are found in:",opts:["Bony fish (Osteichthyes)","Cartilaginous fish (Chondrichthyes — sharks, rays)","Amphibia","Reptilia"],ans:1,exp:"Placoid scales (dermal denticles) are toothlike scales found in cartilaginous fish (sharks, rays). They are similar to teeth in structure. (NEET 2023)"},
+    {q:"[NEET 2023] Feathers are unique to class:",opts:["Reptilia","Aves","Mammalia","Amphibia"],ans:1,exp:"Feathers are found exclusively in birds (Aves) — no other group of animals possesses feathers. (NEET 2023)"},
+  ],
+  'pyq-2022': [
+    {q:"[NEET 2022] Radial symmetry is found in phylum:",opts:["Annelida","Mollusca","Cnidaria and adult Echinodermata","Arthropoda"],ans:2,exp:"Cnidaria (Hydra, jellyfish) and adult Echinoderms (starfish) show radial symmetry. Echinoderm larvae are bilaterally symmetrical. (NEET 2022)"},
+    {q:"[NEET 2022] Monotremes are mammals that:",opts:["Give birth to live young","Lay eggs but feed young with milk","Have no hair","Are ectothermic"],ans:1,exp:"Monotremes (platypus, echidna) are oviparous (egg-laying) mammals that still nurse young with milk from mammary glands. (NEET 2022)"},
+    {q:"[NEET 2022] Nephridia are excretory organs of:",opts:["Insects","Mollusca","Annelida","Echinoderms"],ans:2,exp:"Nephridia are the excretory organs of Annelida (earthworms, leeches, marine polychaetes). (NEET 2022)"},
+  ],
+  'pyq-2021': [
+    {q:"[NEET 2021] Choanocytes are characteristic of phylum:",opts:["Cnidaria","Platyhelminthes","Porifera","Annelida"],ans:2,exp:"Choanocytes (collar cells) are flagellated cells unique to Porifera (sponges) — they create water currents and capture food. (NEET 2021)"},
+    {q:"[NEET 2021] The largest phylum in the animal kingdom is:",opts:["Chordata","Mollusca","Annelida","Arthropoda"],ans:3,exp:"Arthropoda is the largest phylum — over 1 million described species (~80% of all known animal species). (NEET 2021)"},
+    {q:"[NEET 2021] Crocodilians differ from other reptiles in having:",opts:["3-chambered heart","4-chambered heart","No heart","2-chambered heart"],ans:1,exp:"Crocodilians (crocodiles, alligators, gharials) have a 4-chambered heart — unique among reptiles. (NEET 2021)"},
+  ],
+  'pyq-2020': [
+    {q:"[NEET 2020] Hirudin is secreted by:",opts:["Earthworm","Leech (Hirudo medicinalis) — an anticoagulant","Snail","Crab"],ans:1,exp:"Hirudin is an anticoagulant secreted by medicinal leech (Hirudo medicinalis) from salivary glands. Used in microsurgery. (NEET 2020)"},
+    {q:"[NEET 2020] Which of the following is a cartilaginous fish?",opts:["Labeo (rohu)","Catla","Scoliodon (dogfish shark)","Hippocampus (seahorse)"],ans:2,exp:"Scoliodon belongs to Class Chondrichthyes (cartilaginous fish). Labeo, Catla, and Hippocampus are bony fish (Osteichthyes). (NEET 2020)"},
+  ],
+  'pyq-all':[]
+  };
+
+  QUESTION_BANK['pyq-all']=[].concat(
+    QUESTION_BANK['pyq-2024'],QUESTION_BANK['pyq-2023'],
+    QUESTION_BANK['pyq-2022'],QUESTION_BANK['pyq-2021'],
+    QUESTION_BANK['pyq-2020']
+  );
+
+  /* NEET-weighted full test 45 Qs
+     Ch4 weightage: Arthropoda/Mollusca(9) + Vertebrata(9) +
+     Basis of Classification(7) + Porifera/Cnidaria(6) +
+     Platyhelminthes/Annelida(6) + Chordata/Protochordata(5) +
+     Echinodermata/Hemichordata(3) = 45 */
+  var NEET_WEIGHTS={'topic-4':9,'topic-7':9,'topic-1':7,'topic-2':6,'topic-3':6,'topic-6':5,'topic-5':3};
+  QUESTION_BANK['full']=[];
+  Object.keys(NEET_WEIGHTS).forEach(function(tid){
+    var pool=QUESTION_BANK[tid].slice();
+    for(var i=pool.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=pool[i];pool[i]=pool[j];pool[j]=t;}
+    QUESTION_BANK['full']=QUESTION_BANK['full'].concat(pool.slice(0,NEET_WEIGHTS[tid]));
+  });
+  for(var i=QUESTION_BANK['full'].length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=QUESTION_BANK['full'][i];QUESTION_BANK['full'][i]=QUESTION_BANK['full'][j];QUESTION_BANK['full'][j]=t;}
+
+  /* QUIZ ENGINE */
+  var QZ={questions:[],answers:[],currentQ:0,timerSec:0,timerInterval:null,examId:'',submitted:false};
+  var completedTopics=JSON.parse(localStorage.getItem('ch4_completed')||'[]');
+  var pendingExam={};
+  updateProgress();
+
+  function updateProgress(){
+    var pct=Math.round((completedTopics.length/7)*100);
+    var b=document.getElementById('chapter-progress'),l=document.getElementById('progress-pct');
+    if(b)b.style.width=pct+'%';if(l)l.textContent=pct+'% done';
+  }
+  function openExamModal(title,questions,duration,examId){
+    pendingExam={title:title,questions:questions,duration:duration,examId:examId};
+    document.getElementById('modal-topic-title').textContent=title;
+    document.getElementById('modal-q-count').textContent=questions;
+    document.getElementById('modal-duration').textContent=duration+' min';
+    document.getElementById('confirm-modal').classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function closeConfirm(){document.getElementById('confirm-modal').classList.remove('open');document.body.style.overflow='';}
+  function handleOverlayClick(e){if(e.target===document.getElementById('confirm-modal'))closeConfirm();}
+  function launchQuiz(){
+    closeConfirm();
+    var bank=QUESTION_BANK[pendingExam.examId];
+    if(!bank||bank.length===0){alert('Questions not found.');return;}
+    var qs=shuffle(bank.slice()).slice(0,Math.min(pendingExam.questions,bank.length));
+    QZ.questions=qs;QZ.answers=new Array(qs.length).fill(-1);QZ.currentQ=0;
+    QZ.timerSec=pendingExam.duration*60;QZ.examId=pendingExam.examId;QZ.submitted=false;
+    var ov=document.getElementById('quiz-overlay');
+    ov.style.display='block';ov.scrollTop=0;document.body.style.overflow='hidden';
+    document.getElementById('qo-title').textContent=pendingExam.title;
+    document.getElementById('qo-question-area').style.display='block';
+    document.getElementById('qo-result-area').style.display='none';
+    document.getElementById('qo-dots').style.display='flex';
+    buildDots();renderQuestion();startQTimer();
+  }
+  function startQTimer(){
+    clearInterval(QZ.timerInterval);
+    QZ.timerInterval=setInterval(function(){
+      if(QZ.timerSec<=0){clearInterval(QZ.timerInterval);submitQuiz();return;}
+      QZ.timerSec--;
+      var m=String(Math.floor(QZ.timerSec/60)).padStart(2,'0'),s=String(QZ.timerSec%60).padStart(2,'0');
+      var el=document.getElementById('qo-timer');
+      el.textContent=m+':'+s;el.className='qo-timer'+(QZ.timerSec<60?' danger':'');
+    },1000);
+  }
+  function renderQuestion(){
+    var q=QZ.questions[QZ.currentQ],idx=QZ.currentQ,total=QZ.questions.length,keys=['A','B','C','D'];
+    document.getElementById('qo-qnum').textContent='Question '+(idx+1)+' of '+total;
+    document.getElementById('qo-qtext').textContent=q.q;
+    document.getElementById('qo-pbar').style.width=(((idx+1)/total)*100)+'%';
+    var d=document.getElementById('qo-options');d.innerHTML='';
+    q.opts.forEach(function(opt,i){
+      var div=document.createElement('div');
+      div.className='qo-opt'+(QZ.answers[idx]===i?' selected':'');
+      div.innerHTML='<span class="qo-key">'+keys[i]+'</span> '+opt;
+      div.onclick=(function(ai){return function(){selectAnswer(ai);};})(i);
+      d.appendChild(div);
+    });
+    document.getElementById('qo-prev').disabled=idx===0;
+    document.getElementById('qo-next').style.display=idx===total-1?'none':'inline-block';
+    updateDots();
+  }
+  function selectAnswer(i){if(QZ.submitted)return;QZ.answers[QZ.currentQ]=i;renderQuestion();}
+  function goQ(dir){var n=QZ.currentQ+dir;if(n<0||n>=QZ.questions.length)return;QZ.currentQ=n;renderQuestion();}
+  function buildDots(){
+    var c=document.getElementById('qo-dots');c.innerHTML='';
+    QZ.questions.forEach(function(_,i){
+      var d=document.createElement('div');d.className='qo-dot'+(i===0?' current':'');
+      d.id='qdot-'+i;d.textContent=i+1;
+      d.onclick=(function(idx){return function(){QZ.currentQ=idx;renderQuestion();};})(i);c.appendChild(d);
+    });
+  }
+  function updateDots(){
+    QZ.questions.forEach(function(_,i){
+      var d=document.getElementById('qdot-'+i);if(!d)return;
+      d.className='qo-dot';
+      if(i===QZ.currentQ)d.classList.add('current');
+      else if(QZ.answers[i]!==-1)d.classList.add('answered');
+    });
+  }
+  function confirmSubmit(){
+    var u=QZ.answers.filter(function(a){return a===-1;}).length;
+    if(confirm(u>0?u+' question(s) unanswered. Submit anyway?':'Submit the test?'))submitQuiz();
+  }
+  function submitQuiz(){
+    if(QZ.submitted)return;QZ.submitted=true;clearInterval(QZ.timerInterval);
+    var correct=0,wrong=0,skipped=0;
+    QZ.questions.forEach(function(q,i){var a=QZ.answers[i];if(a===-1)skipped++;else if(a===q.ans)correct++;else wrong++;});
+    var ns=correct*4-wrong,ms=QZ.questions.length*4,pct=Math.round((correct/QZ.questions.length)*100);
+    var grade,emoji,bg,sub;
+    if(pct>=80){grade='Future Doctor! 🏆';emoji='🏆';bg='linear-gradient(135deg,#085041,#1D9E75)';sub='Outstanding! You are NEET ready.';}
+    else if(pct>=60){grade='Well Done! 👍';emoji='👍';bg='linear-gradient(135deg,#0F6E56,#5DCAA5)';sub='Good effort! Revise weak areas.';}
+    else if(pct>=40){grade='Keep Practising 📚';emoji='📚';bg='linear-gradient(135deg,#ba7517,#ef9f27)';sub='On the right track. Attempt more tests.';}
+    else{grade='Needs More Practice 💪';emoji='💪';bg='linear-gradient(135deg,#993c1d,#d85a30)';sub='Revise NCERT thoroughly and retry.';}
+    if(QZ.examId.startsWith('topic-')&&!completedTopics.includes(QZ.examId)){
+      completedTopics.push(QZ.examId);localStorage.setItem('ch4_completed',JSON.stringify(completedTopics));updateProgress();
+    }
+    var keys=['A','B','C','D'];
+    var rh=QZ.questions.map(function(q,i){
+      var ua=QZ.answers[i],sk=ua===-1,ok=ua===q.ans;
+      var sc=sk?'skip-bg':(ok?'correct-bg':'wrong-bg'),si=sk?'⊘ Skipped':(ok?'✓ Correct':'✗ Wrong');
+      var yr=ua!==-1&&!ok?'<span class="review-wrong">Your: '+keys[ua]+'. '+q.opts[ua]+'</span><br>':'';
+      return '<div class="review-item"><div class="review-q '+sc+'"><b>Q'+(i+1)+'.</b> '+q.q+'&nbsp;<span style="float:right;font-size:.73rem;">'+si+'</span></div>'
+        +'<div class="review-detail">'+(sk?'<span style="color:#aaa;">Unattempted</span><br>':yr)
+        +'<span class="review-correct">Correct: '+keys[q.ans]+'. '+q.opts[q.ans]+'</span>'
+        +'<div class="review-exp">'+q.exp+'</div></div></div>';
+    }).join('');
+    var html='<div class="result-grade-card"><div class="result-grade-header" style="background:'+bg+';">'
+      +'<div class="result-grade-emoji">'+emoji+'</div><div class="result-grade-title">'+grade+'</div>'
+      +'<div class="result-grade-sub">'+sub+'</div></div>'
+      +'<div class="result-score-row">'
+      +'<div class="result-score-cell"><div class="rsc-num" style="color:#1D9E75;">'+ns+'/'+ms+'</div><div class="rsc-lbl">NEET Score</div></div>'
+      +'<div class="result-score-cell"><div class="rsc-num" style="color:#1D9E75;">'+correct+'</div><div class="rsc-lbl">Correct</div></div>'
+      +'<div class="result-score-cell"><div class="rsc-num" style="color:#c0392b;">'+wrong+'</div><div class="rsc-lbl">Wrong</div></div>'
+      +'<div class="result-score-cell"><div class="rsc-num" style="color:#888;">'+skipped+'</div><div class="rsc-lbl">Skipped</div></div>'
+      +'</div></div>'
+      +'<div style="background:#fff8e1;border:1px solid #f0a040;border-radius:8px;padding:9px 13px;font-size:.78rem;color:#7a5010;margin-bottom:1rem;">NEET Marking: +4 correct · −1 wrong · 0 skipped</div>'
+      +'<div class="result-review-title">Question-wise Review</div>'+rh
+      +'<div class="qo-retake-row"><button class="btn-retake" onclick="retakeQuiz()">↺ Retake Test</button>'
+      +'<button class="btn-back-ch" onclick="closeQuiz()">← Back to Chapter</button></div>';
+    var ra=document.getElementById('qo-result-area');ra.innerHTML=html;
+    document.getElementById('qo-question-area').style.display='none';
+    document.getElementById('qo-dots').style.display='none';
+    ra.style.display='block';document.getElementById('quiz-overlay').scrollTop=0;
+    document.getElementById('qo-timer').textContent='Done';document.getElementById('qo-timer').className='qo-timer';
+  }
+  function retakeQuiz(){QZ.submitted=false;launchQuiz();document.getElementById('qo-dots').style.display='flex';}
+  function closeQuiz(){clearInterval(QZ.timerInterval);document.getElementById('quiz-overlay').style.display='none';document.getElementById('qo-dots').style.display='flex';document.body.style.overflow='';}
+  function confirmExit(){if(confirm('Exit the test? Progress will be lost.'))closeQuiz();}
+  function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});});
+  </script>
+</body>
+</html>

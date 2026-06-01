@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 2: Biological Classification — Biome Education</title>
+  <link rel="stylesheet" href="chapter1.css"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav>
+    <a class="nav-brand" href="index.html">
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="17" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+        <ellipse cx="18" cy="18" rx="8" ry="12" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+        <ellipse cx="18" cy="18" rx="4" ry="7" fill="none" stroke="#9FE1CB" stroke-width="1.2"/>
+        <line x1="18" y1="6" x2="18" y2="30" stroke="#fff" stroke-width="1.2"/>
+        <line x1="10" y1="18" x2="26" y2="18" stroke="#fff" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="3" fill="#9FE1CB"/>
+      </svg>
+      <span class="nav-brand-name">BIOME <span>EDUCATION</span></span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="class11.html">Class 11</a></li>
+        <li><a href="chapter1.html">← Ch. 1</a></li>
+      </ul>
+      <a class="nav-back" href="class11.html">← All Chapters</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <div class="chapter-hero">
+    <svg class="hero-bg-decor" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+      <!-- Five kingdom circles -->
+      <circle cx="450" cy="100" r="60" fill="none" stroke="#fff" stroke-width="2"/>
+      <circle cx="320" cy="200" r="45" fill="none" stroke="#fff" stroke-width="1.6"/>
+      <circle cx="420" cy="220" r="40" fill="none" stroke="#fff" stroke-width="1.4"/>
+      <circle cx="520" cy="215" r="42" fill="none" stroke="#fff" stroke-width="1.4"/>
+      <circle cx="620" cy="195" r="45" fill="none" stroke="#fff" stroke-width="1.6"/>
+      <line x1="450" y1="160" x2="320" y2="200" stroke="#fff" stroke-width="1.2"/>
+      <line x1="450" y1="160" x2="420" y2="220" stroke="#fff" stroke-width="1.2"/>
+      <line x1="450" y1="160" x2="520" y2="215" stroke="#fff" stroke-width="1.2"/>
+      <line x1="450" y1="160" x2="620" y2="195" stroke="#fff" stroke-width="1.2"/>
+      <!-- Bacteria shape -->
+      <ellipse cx="100" cy="130" rx="18" ry="40" fill="none" stroke="#fff" stroke-width="2"/>
+      <line x1="100" y1="90" x2="100" y2="50" stroke="#fff" stroke-width="1.2"/>
+      <line x1="100" y1="170" x2="100" y2="210" stroke="#fff" stroke-width="1.2"/>
+      <circle cx="100" cy="130" r="8" fill="#fff" opacity="0.35"/>
+      <!-- Mushroom -->
+      <path d="M780 200 C770 160 750 145 765 130 C780 115 800 115 815 130 C830 145 810 160 800 200Z" fill="none" stroke="#fff" stroke-width="1.8"/>
+      <line x1="790" y1="200" x2="790" y2="240" stroke="#fff" stroke-width="2"/>
+      <!-- Amoeba -->
+      <path d="M160 260 C145 245 135 230 148 218 C160 206 175 212 182 225 C190 238 185 258 175 265 C165 272 162 268 160 260Z" fill="none" stroke="#fff" stroke-width="1.8"/>
+    </svg>
+
+    <div class="hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">›</span>
+        <a href="class11.html">Class 11 Biology</a>
+        <span class="sep">›</span>
+        <span style="color:rgba(255,255,255,0.8);">Chapter 2</span>
+      </div>
+
+      <div class="chapter-badge-row">
+        <span class="ch-badge chapter-num">📖 Chapter 2</span>
+        <span class="ch-badge unit">Unit I — Diversity in the Living World</span>
+        <span class="ch-badge ncert">NCERT Class 11</span>
+      </div>
+
+      <h1 class="chapter-hero-title">
+        Biological <em>Classification</em>
+      </h1>
+      <p class="chapter-hero-desc">
+        Explore the Five Kingdom system (Whittaker), the kingdoms Monera, Protista, Fungi, Plantae and Animalia. Learn about viruses, viroids, and lichens — one of NEET's most frequently tested chapters.
+      </p>
+
+      <div class="hero-quick-stats">
+        <div class="hqs"><span class="hqs-num">6</span><span class="hqs-lbl">Topics</span></div>
+        <div class="hqs"><span class="hqs-num">90+</span><span class="hqs-lbl">Practice Questions</span></div>
+        <div class="hqs"><span class="hqs-num">14</span><span class="hqs-lbl">PYQ Questions</span></div>
+        <div class="hqs"><span class="hqs-num">~60 min</span><span class="hqs-lbl">Full Test Duration</span></div>
+      </div>
+    </div>
+
+    <div class="chapter-progress-strip">
+      <span class="progress-label">Chapter Progress</span>
+      <div class="progress-bar-outer">
+        <div class="progress-bar-inner" id="chapter-progress"></div>
+      </div>
+      <span class="progress-pct" id="progress-pct">0% done</span>
+    </div>
+  </div>
+
+  <!-- ========== MAIN BODY ========== -->
+  <main class="page-body">
+
+    <!-- Overview -->
+    <div class="overview-row">
+      <div class="overview-card"><div class="ov-icon">🦠</div><div class="ov-num">6</div><div class="ov-lbl">Topics to cover</div></div>
+      <div class="overview-card"><div class="ov-icon">❓</div><div class="ov-num">15</div><div class="ov-lbl">Qs per topic test</div></div>
+      <div class="overview-card"><div class="ov-icon">⏱️</div><div class="ov-num">15 min</div><div class="ov-lbl">Per topic test</div></div>
+      <div class="overview-card"><div class="ov-icon">🎯</div><div class="ov-num">+4 / −1</div><div class="ov-lbl">NEET marking</div></div>
+      <div class="overview-card"><div class="ov-icon">📊</div><div class="ov-num">Instant</div><div class="ov-lbl">Result & analysis</div></div>
+    </div>
+
+    <!-- Full chapter banner -->
+    <div class="full-chapter-banner">
+      <div class="fcb-text">
+        <h3>Ready for the Full Chapter Test?</h3>
+        <p>45 questions · 60 minutes · NEET +4/−1 marking · All 6 topics with NEET weightage · Shuffled every attempt</p>
+      </div>
+      <a href="#full-chapter-test" id="link-full-chapter">
+      <button class="btn-full-chapter" onclick="openExamModal('Full Chapter Test — Biological Classification', 45, 60, 'full')">
+        📋 Start Full Chapter Test
+      </button>
+      </a>
+    </div>
+
+    <!-- Topics -->
+    <div class="section-label">
+      <span class="section-tag">Topic-wise</span>
+      <h2 class="section-title">Choose a Topic to Practice</h2>
+    </div>
+
+    <div class="topics-list">
+
+      <!-- T1 -->
+      <div class="topic-card" style="--topic-color:#1D9E75;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col">
+            <div class="topic-num-badge">T1</div>
+            <div class="topic-num-label">Topic</div>
+          </div>
+          <div class="topic-content">
+            <div class="topic-title">Need for Classification & History</div>
+            <div class="topic-desc">Why classification is essential, limitations of the two-kingdom system, Ernst Haeckel's three kingdoms, Copeland's four kingdoms, and Whittaker's Five Kingdom classification with criteria used.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Two Kingdom</span>
+              <span class="subtopic-chip">Three Kingdom</span>
+              <span class="subtopic-chip">Whittaker 1969</span>
+              <span class="subtopic-chip">Classification Criteria</span>
+              <span class="subtopic-chip">Carl Woese</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Medium</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <a href="#topic-1" id="link-topic-1">
+            <button class="btn-start-exam" onclick="openExamModal('Need for Classification & History', 15, 15, 'topic-1')">▶ Start Exam</button>
+            </a>
+            <a class="btn-practice" href="#">📝 Practice Mode</a>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- T2 -->
+      <div class="topic-card" style="--topic-color:#0F6E56;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col">
+            <div class="topic-num-badge">T2</div>
+            <div class="topic-num-label">Topic</div>
+          </div>
+          <div class="topic-content">
+            <div class="topic-title">Kingdom Monera</div>
+            <div class="topic-desc">Prokaryotic organisms — bacteria (Eubacteria, Archaebacteria, Cyanobacteria, Mycoplasma). Gram staining, modes of nutrition, reproduction, shapes, and economic importance of bacteria.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Eubacteria</span>
+              <span class="subtopic-chip">Archaebacteria</span>
+              <span class="subtopic-chip">Cyanobacteria</span>
+              <span class="subtopic-chip">Mycoplasma</span>
+              <span class="subtopic-chip">Gram Staining</span>
+              <span class="subtopic-chip">Nitrogen Fixation</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ High Weightage</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <a href="#topic-2" id="link-topic-2">
+            <button class="btn-start-exam" onclick="openExamModal('Kingdom Monera', 15, 15, 'topic-2')">▶ Start Exam</button>
+            </a>
+            <a class="btn-practice" href="#">📝 Practice Mode</a>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- T3 -->
+      <div class="topic-card" style="--topic-color:#1a7a9a;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col">
+            <div class="topic-num-badge">T3</div>
+            <div class="topic-num-label">Topic</div>
+          </div>
+          <div class="topic-content">
+            <div class="topic-title">Kingdom Protista</div>
+            <div class="topic-desc">Unicellular eukaryotes — Chrysophytes (diatoms), Dinoflagellates, Euglenoids, Slime Moulds, and Protozoans (Amoeboid, Flagellated, Ciliated, Sporozoans). Features, modes of nutrition, and examples.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Diatoms</span>
+              <span class="subtopic-chip">Dinoflagellates</span>
+              <span class="subtopic-chip">Euglenoids</span>
+              <span class="subtopic-chip">Slime Moulds</span>
+              <span class="subtopic-chip">Protozoans</span>
+              <span class="subtopic-chip">Red Tide</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Very Important</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <a href="#topic-3" id="link-topic-3">
+            <button class="btn-start-exam" onclick="openExamModal('Kingdom Protista', 15, 15, 'topic-3')">▶ Start Exam</button>
+            </a>
+            <a class="btn-practice" href="#">📝 Practice Mode</a>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- T4 -->
+      <div class="topic-card" style="--topic-color:#8B5CF6;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col">
+            <div class="topic-num-badge">T4</div>
+            <div class="topic-num-label">Topic</div>
+          </div>
+          <div class="topic-content">
+            <div class="topic-title">Kingdom Fungi</div>
+            <div class="topic-desc">Heterotrophic organisms with chitin cell walls — Phycomycetes, Ascomycetes, Basidiomycetes, Deuteromycetes. Absorptive nutrition, sexual and asexual reproduction, lichens and mycorrhiza.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Chitin Cell Wall</span>
+              <span class="subtopic-chip">Ascomycetes</span>
+              <span class="subtopic-chip">Basidiomycetes</span>
+              <span class="subtopic-chip">Deuteromycetes</span>
+              <span class="subtopic-chip">Lichens</span>
+              <span class="subtopic-chip">Mycorrhiza</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Highest Weightage</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <a href="#topic-4" id="link-topic-4">
+            <button class="btn-start-exam" onclick="openExamModal('Kingdom Fungi', 15, 15, 'topic-4')">▶ Start Exam</button>
+            </a>
+            <a class="btn-practice" href="#">📝 Practice Mode</a>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- T5 -->
+      <div class="topic-card" style="--topic-color:#D97706;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col">
+            <div class="topic-num-badge">T5</div>
+            <div class="topic-num-label">Topic</div>
+          </div>
+          <div class="topic-content">
+            <div class="topic-title">Kingdom Plantae & Animalia</div>
+            <div class="topic-desc">Characteristics of Plantae (autotrophic eukaryotes with cell walls) and Animalia (heterotrophic, no cell wall). Insectivorous and parasitic plants. Comparison of all five kingdoms.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Plantae</span>
+              <span class="subtopic-chip">Animalia</span>
+              <span class="subtopic-chip">Insectivorous Plants</span>
+              <span class="subtopic-chip">Parasitic Plants</span>
+              <span class="subtopic-chip">5-Kingdom Comparison</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Medium</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <a href="#topic-5" id="link-topic-5">
+            <button class="btn-start-exam" onclick="openExamModal('Kingdom Plantae & Animalia', 15, 15, 'topic-5')">▶ Start Exam</button>
+            </a>
+            <a class="btn-practice" href="#">📝 Practice Mode</a>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- T6 -->
+      <div class="topic-card" style="--topic-color:#DC2626;">
+        <div class="topic-card-inner">
+          <div class="topic-number-col">
+            <div class="topic-num-badge">T6</div>
+            <div class="topic-num-label">Topic</div>
+          </div>
+          <div class="topic-content">
+            <div class="topic-title">Viruses, Viroids, Prions & Lichens</div>
+            <div class="topic-desc">Non-cellular agents — virus structure (capsid, capsomere, envelope), types of viruses, TMV, HIV, bacteriophage. Viroids (Diener), Prions (mad cow disease). Lichens as symbiotic associations.</div>
+            <div class="topic-subtopics">
+              <span class="subtopic-chip">Virus Structure</span>
+              <span class="subtopic-chip">Capsid & Capsomere</span>
+              <span class="subtopic-chip">TMV</span>
+              <span class="subtopic-chip">Bacteriophage</span>
+              <span class="subtopic-chip">Viroids</span>
+              <span class="subtopic-chip">Prions</span>
+              <span class="subtopic-chip">Lichens</span>
+            </div>
+            <div class="topic-meta-row">
+              <span class="topic-meta-item">❓ 15 questions</span>
+              <span class="topic-meta-item">⏱ 15 min</span>
+              <span class="topic-meta-item">⭐ Very High Weightage</span>
+            </div>
+          </div>
+          <div class="topic-action-col">
+            <a href="#topic-6" id="link-topic-6">
+            <button class="btn-start-exam" onclick="openExamModal('Viruses, Viroids, Prions & Lichens', 15, 15, 'topic-6')">▶ Start Exam</button>
+            </a>
+            <a class="btn-practice" href="#">📝 Practice Mode</a>
+            <div class="topic-qs-count">15 Qs · NEET pattern</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end topics-list -->
+
+    <!-- PYQ Section -->
+    <div class="pyq-section">
+      <div class="section-label">
+        <span class="section-tag">PYQs</span>
+        <h2 class="section-title">Previous Year NEET Questions</h2>
+      </div>
+      <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:0.75rem;">
+        Chapter 2 is one of NEET's most tested chapters — attempt all PYQs before exam.
+      </p>
+      <div class="pyq-chips">
+        <a href="#pyq-chip" id="link-pyq-chip" class="pyq-chip" onclick="openExamModal('NEET 2024 — Chapter 2 PYQs', 4, 15, 'pyq-2024')">📅 NEET 2024 &nbsp;·&nbsp; 4 Qs</a>
+        <a href="#pyq-chip" id="link-pyq-chip" class="pyq-chip" onclick="openExamModal('NEET 2023 — Chapter 2 PYQs', 3, 10, 'pyq-2023')">📅 NEET 2023 &nbsp;·&nbsp; 3 Qs</a>
+        <a href="#pyq-chip" id="link-pyq-chip" class="pyq-chip" onclick="openExamModal('NEET 2022 — Chapter 2 PYQs', 3, 10, 'pyq-2022')">📅 NEET 2022 &nbsp;·&nbsp; 3 Qs</a>
+        <a href="#pyq-chip" id="link-pyq-chip" class="pyq-chip" onclick="openExamModal('NEET 2021 — Chapter 2 PYQs', 2, 10, 'pyq-2021')">📅 NEET 2021 &nbsp;·&nbsp; 2 Qs</a>
+        <a href="#pyq-chip" id="link-pyq-chip" class="pyq-chip" onclick="openExamModal('NEET 2020 — Chapter 2 PYQs', 2, 10, 'pyq-2020')">📅 NEET 2020 &nbsp;·&nbsp; 2 Qs</a>
+        <a href="#pyq-chip" id="link-pyq-chip" class="pyq-chip" onclick="openExamModal('All PYQs — Chapter 2 (2020–2024)', 14, 35, 'pyq-all')">📅 All PYQs &nbsp;·&nbsp; 14 Qs · 35 min</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-bottom">
+      © 2026 Biome Education · NEET-UG Biology · Chapter 2: Biological Classification
+    </div>
+  </footer>
+
+  <!-- ========== CONFIRM MODAL ========== -->
+  <div class="modal-overlay" id="confirm-modal" onclick="handleOverlayClick(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-text">
+          <h3 id="modal-topic-title">Topic Test</h3>
+          <p>Chapter 2 · Biological Classification · Class 11</p>
+        </div>
+        <button class="modal-close" onclick="closeConfirm()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-info-grid">
+          <div class="modal-info-card"><div class="mic-num" id="modal-q-count">15</div><div class="mic-lbl">Questions</div></div>
+          <div class="modal-info-card"><div class="mic-num" id="modal-duration">15 min</div><div class="mic-lbl">Time Limit</div></div>
+          <div class="modal-info-card"><div class="mic-num">+4</div><div class="mic-lbl">Correct answer</div></div>
+          <div class="modal-info-card"><div class="mic-num" style="color:#c0392b;">−1</div><div class="mic-lbl">Wrong answer</div></div>
+        </div>
+        <ul class="modal-rules">
+          <li><span class="rule-dot">📌</span>Once started, the timer cannot be paused. Auto-submits when time runs out.</li>
+          <li><span class="rule-dot">🔒</span>Do not refresh or close the tab — progress will be lost.</li>
+          <li><span class="rule-dot">✅</span>Navigate between questions freely and change answers before submitting.</li>
+          <li><span class="rule-dot">📊</span>Instant detailed result with question-wise analysis after submission.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-modal-cancel" onclick="closeConfirm()">Cancel</button>
+        <a href="#quiz-start" id="link-quiz-start">
+        <button class="btn-modal-start" id="btn-modal-start" onclick="launchQuiz()">▶ &nbsp;Start Test Now</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== QUIZ OVERLAY ========== -->
+  <div id="quiz-overlay" style="display:none;position:fixed;inset:0;background:#f8fdf9;z-index:500;overflow-y:auto;">
+    <style>
+      .qo-nav{position:sticky;top:0;background:#085041;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:56px;z-index:10;gap:1rem;}
+      .qo-title{font-family:'Playfair Display',serif;color:#fff;font-size:1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;}
+      .qo-timer{background:rgba(255,255,255,0.15);color:#fff;padding:5px 16px;border-radius:20px;font-size:0.88rem;font-weight:700;font-family:monospace;white-space:nowrap;}
+      .qo-timer.danger{background:rgba(192,57,43,0.6);}
+      .qo-exit{background:rgba(255,255,255,0.1);border:none;color:#9FE1CB;padding:6px 14px;border-radius:16px;font-size:0.78rem;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;}
+      .qo-exit:hover{background:rgba(255,255,255,0.18);}
+      .qo-progress{height:4px;background:#d0f0e4;}
+      .qo-progress-bar{height:4px;background:#1D9E75;transition:width 0.3s;}
+      .qo-body{max-width:760px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+      .qo-qnum{font-size:0.75rem;color:#5a8070;letter-spacing:0.5px;margin-bottom:0.5rem;}
+      .qo-qtext{font-size:1.05rem;font-weight:600;color:#0d2b22;line-height:1.65;margin-bottom:1.5rem;font-family:'DM Sans',sans-serif;}
+      .qo-options{display:flex;flex-direction:column;gap:0.65rem;margin-bottom:1.75rem;}
+      .qo-opt{display:flex;align-items:center;gap:12px;padding:0.85rem 1.1rem;border:1.5px solid rgba(29,158,117,0.2);border-radius:10px;cursor:pointer;transition:all 0.18s;font-size:0.92rem;color:#2f5045;background:#fff;}
+      .qo-opt:hover{border-color:#1D9E75;background:#E1F5EE;}
+      .qo-opt.selected{border-color:#1D9E75;background:#E1F5EE;color:#085041;font-weight:500;}
+      .qo-key{width:30px;height:30px;border-radius:50%;background:rgba(29,158,117,0.1);display:flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700;color:#0F6E56;flex-shrink:0;}
+      .qo-opt.selected .qo-key{background:#1D9E75;color:#fff;}
+      .qo-nav-btns{display:flex;justify-content:space-between;align-items:center;gap:0.75rem;}
+      .qo-btn{padding:9px 20px;border-radius:8px;border:none;font-size:0.88rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.18s;}
+      .qo-btn-prev{background:#fff;border:1.5px solid rgba(29,158,117,0.2);color:#5a8070;}
+      .qo-btn-prev:hover{background:#E1F5EE;}
+      .qo-btn-prev:disabled{opacity:0.3;cursor:not-allowed;}
+      .qo-btn-next{background:#1D9E75;color:#fff;}
+      .qo-btn-next:hover{background:#085041;}
+      .qo-btn-submit{background:#c0392b;color:#fff;}
+      .qo-btn-submit:hover{background:#a93226;}
+      .qo-dots{display:flex;flex-wrap:wrap;gap:6px;padding:1rem 1.5rem;background:#fff;border-top:1px solid rgba(29,158,117,0.12);border-bottom:1px solid rgba(29,158,117,0.12);margin-bottom:1.5rem;}
+      .qo-dot{width:30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:600;cursor:pointer;border:1.5px solid rgba(29,158,117,0.2);background:#fff;color:#5a8070;transition:all 0.15s;}
+      .qo-dot.answered{background:#E1F5EE;border-color:#5DCAA5;color:#085041;}
+      .qo-dot.current{background:#1D9E75;border-color:#1D9E75;color:#fff;}
+      .qo-result{max-width:760px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+      .result-grade-card{border-radius:18px;overflow:hidden;margin-bottom:1.5rem;box-shadow:0 8px 32px rgba(8,80,65,0.12);}
+      .result-grade-header{padding:2rem;text-align:center;}
+      .result-grade-emoji{font-size:3rem;margin-bottom:0.5rem;}
+      .result-grade-title{font-family:'Playfair Display',serif;font-size:1.5rem;color:#fff;margin-bottom:4px;}
+      .result-grade-sub{font-size:0.88rem;color:rgba(255,255,255,0.8);}
+      .result-score-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(29,158,117,0.15);}
+      .result-score-cell{background:#fff;padding:1rem;text-align:center;}
+      .rsc-num{font-size:1.5rem;font-weight:700;font-family:'Playfair Display',serif;}
+      .rsc-lbl{font-size:0.7rem;color:#5a8070;margin-top:2px;}
+      .result-review-title{font-family:'Playfair Display',serif;font-size:1.1rem;color:#0d2b22;margin:1.5rem 0 1rem;}
+      .review-item{border:1px solid rgba(29,158,117,0.15);border-radius:12px;overflow:hidden;margin-bottom:0.85rem;}
+      .review-q{padding:0.85rem 1rem;font-size:0.88rem;font-weight:600;color:#0d2b22;line-height:1.5;}
+      .review-q.correct-bg{background:#E1F5EE;}
+      .review-q.wrong-bg{background:#fdecea;}
+      .review-q.skip-bg{background:#f5f5f5;}
+      .review-detail{padding:0.75rem 1rem;background:#fff;font-size:0.82rem;color:#5a8070;line-height:1.5;}
+      .review-correct{color:#1D9E75;font-weight:600;}
+      .review-wrong{color:#c0392b;font-weight:600;}
+      .review-exp{border-top:1px dashed rgba(29,158,117,0.2);padding-top:0.6rem;margin-top:0.5rem;font-style:italic;}
+      .qo-retake-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.5rem;}
+      .btn-retake{padding:11px 24px;background:#1D9E75;color:#fff;border:none;border-radius:10px;font-size:0.9rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;}
+      .btn-retake:hover{background:#085041;}
+      .btn-back-ch{padding:11px 24px;background:#fff;color:#085041;border:1.5px solid rgba(29,158,117,0.3);border-radius:10px;font-size:0.9rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;}
+      .btn-back-ch:hover{background:#E1F5EE;}
+      @keyframes fadeInUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+      .qo-body,.qo-result{animation:fadeInUp 0.3s ease;}
+    </style>
+
+    <div class="qo-nav">
+      <div class="qo-title" id="qo-title">Quiz</div>
+      <div class="qo-timer" id="qo-timer">15:00</div>
+      <button class="qo-exit" onclick="confirmExit()">✕ Exit</button>
+    </div>
+    <div class="qo-progress"><div class="qo-progress-bar" id="qo-pbar" style="width:0%"></div></div>
+    <div class="qo-dots" id="qo-dots"></div>
+    <div class="qo-body" id="qo-question-area">
+      <div class="qo-qnum" id="qo-qnum">Question 1 of 15</div>
+      <div class="qo-qtext" id="qo-qtext"></div>
+      <div class="qo-options" id="qo-options"></div>
+      <div class="qo-nav-btns">
+        <button class="qo-btn qo-btn-prev" id="qo-prev" onclick="goQ(-1)">← Prev</button>
+        <button class="qo-btn qo-btn-submit" onclick="confirmSubmit()">Submit Test</button>
+        <button class="qo-btn qo-btn-next" id="qo-next" onclick="goQ(1)">Next →</button>
+      </div>
+    </div>
+    <div class="qo-result" id="qo-result-area" style="display:none;"></div>
+  </div>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+
+  /* ═══════════════════════════════════════════════
+     QUESTION BANK — Chapter 2: Biological Classification
+     6 Topics × 15 Qs + PYQ sets
+  ═══════════════════════════════════════════════ */
+  var QUESTION_BANK = {
+
+    /* ── TOPIC 1: Need for Classification & History ── */
+    'topic-1': [
+      {q:"Five Kingdom classification was proposed by:",opts:["Carolus Linnaeus","Ernst Haeckel","R.H. Whittaker","Carl Woese"],ans:2,exp:"R.H. Whittaker proposed the Five Kingdom classification in 1969 based on: cell structure (prokaryote/eukaryote), body organisation (unicellular/multicellular), mode of nutrition, and phylogenetic relationships."},
+      {q:"The two-kingdom system of classification placed fungi in kingdom:",opts:["Animalia","Plantae","Monera","Protista"],ans:1,exp:"In the old two-kingdom system (Linnaeus), Fungi were placed in Kingdom Plantae since they have a cell wall. This was problematic because fungi are heterotrophs and lack chlorophyll — very different from plants."},
+      {q:"Which of the following was NOT a criterion used by Whittaker for Five Kingdom classification?",opts:["Cell structure (prokaryote vs eukaryote)","Mode of nutrition","Molecular phylogeny (DNA sequences)","Thallus organisation"],ans:2,exp:"Whittaker's criteria (1969): cell structure, thallus organisation, mode of nutrition, reproduction, and phylogenetic relationships. Molecular phylogeny (DNA-based classification) was used later by Carl Woese for the three-domain system."},
+      {q:"Ernst Haeckel proposed which kingdom to accommodate unicellular organisms?",opts:["Monera","Protista","Fungi","Plantae"],ans:1,exp:"Ernst Haeckel (1866) proposed a third kingdom — Protista — to accommodate organisms that were neither clearly plants nor animals, especially unicellular organisms like Euglena."},
+      {q:"Carl Woese's classification system is based on:",opts:["Morphological characters","Ribosomal RNA (rRNA) sequences — molecular phylogeny","Mode of reproduction","Cell wall composition only"],ans:1,exp:"Carl Woese (1977) used 16S ribosomal RNA sequences to classify organisms. He proposed a three-domain system: Bacteria, Archaea, and Eukarya — revolutionising our understanding of life's diversity."},
+      {q:"In Whittaker's Five Kingdom system, which kingdom contains only prokaryotes?",opts:["Protista","Fungi","Monera","Plantae"],ans:2,exp:"Kingdom Monera is the only prokaryotic kingdom in Whittaker's system — it includes all bacteria (Eubacteria and Archaebacteria). All other kingdoms (Protista, Fungi, Plantae, Animalia) are eukaryotic."},
+      {q:"The four-kingdom system of classification was given by:",opts:["Whittaker","Ernst Haeckel","H.F. Copeland","Carl Woese"],ans:2,exp:"H.F. Copeland (1956) proposed the four-kingdom classification: Monera, Protista, Plantae, and Animalia. He separated Monera (prokaryotes) from Protista (eukaryotic unicellular organisms)."},
+      {q:"Which criterion BEST distinguishes Kingdom Monera from other kingdoms?",opts:["Heterotrophic nutrition","Prokaryotic cell organisation (no membrane-bound nucleus)","Presence of cell wall","Unicellular organisation"],ans:1,exp:"The defining feature of Kingdom Monera is prokaryotic organisation — no membrane-bound nucleus or membrane-bound organelles. While many bacteria have cell walls and are unicellular, these features are shared with some eukaryotes."},
+      {q:"Fungi were placed in a separate kingdom because they:",opts:["Are photosynthetic","Have chitin cell wall and use absorptive heterotrophic nutrition","Are prokaryotes","Are always microscopic"],ans:1,exp:"Fungi differ from plants (which they were formerly grouped with) because: they have chitin (not cellulose) in cell walls, they are heterotrophic (absorptive nutrition), and they lack chlorophyll. These differences justified a separate kingdom."},
+      {q:"The 'Three Domain' system includes:",opts:["Plantae, Animalia, Fungi","Bacteria, Archaea, Eukarya","Monera, Protista, Eukaryota","Prokaryota, Eukaryota, Archaea"],ans:1,exp:"Carl Woese proposed three domains: Bacteria (Eubacteria), Archaea (Archaebacteria), and Eukarya (all eukaryotes — Protista + Fungi + Plantae + Animalia). This is based on 16S rRNA sequence analysis."},
+      {q:"In the two-kingdom classification, which group could NOT be satisfactorily placed?",opts:["Ferns","Mosses","Bacteria, Fungi, Algae, Viruses","Mammals"],ans:2,exp:"The two-kingdom system failed for: Bacteria (prokaryotes unlike plants), Fungi (heterotrophs unlike plants), unicellular algae (plant-like but very simple), and Viruses (non-cellular). These groups needed new kingdoms."},
+      {q:"Mode of nutrition that distinguishes Fungi from Plantae is:",opts:["Autotrophic photosynthesis","Absorptive heterotrophy (secreting enzymes, absorbing digested products)","Holozoic nutrition","Chemosynthesis"],ans:1,exp:"Fungi use absorptive (saprotrophic/parasitic) nutrition — they secrete digestive enzymes outside and absorb the digested products. Plants are photosynthetic autotrophs. This fundamental difference in nutrition justifies separate kingdoms."},
+      {q:"Which kingdom was added in Whittaker's system that was absent in the previous four-kingdom system?",opts:["Monera","Protista","Fungi","Plantae"],ans:2,exp:"Copeland's four-kingdom system included Monera, Protista, Plantae, and Animalia. Whittaker added Kingdom Fungi as the fifth kingdom, recognising that fungi are sufficiently distinct to warrant their own kingdom."},
+      {q:"Phylogenetic classification is based on:",opts:["Morphological similarity only","Evolutionary relationships and common ancestry","Geographical distribution","Economic importance"],ans:1,exp:"Phylogenetic (natural) classification is based on evolutionary relationships — organisms with common ancestry are grouped together. It reflects the true tree of life. Whittaker's system incorporated phylogenetic relationships as one of its criteria."},
+      {q:"Which of the following is a limitation of the Five Kingdom classification?",opts:["It does not have a kingdom for fungi","It does not separate prokaryotes from eukaryotes","Viruses cannot be placed in any of the five kingdoms","It has too many kingdoms"],ans:2,exp:"A major limitation of the Five Kingdom classification is that viruses (acellular, can reproduce only inside living cells) cannot be placed in any of the five kingdoms — they are not cellular organisms. They are studied separately."},
+    ],
+
+    /* ── TOPIC 2: Kingdom Monera ── */
+    'topic-2': [
+      {q:"Bacteria that can survive in extreme conditions like high temperature and low pH are called:",opts:["Methanogens","Halophiles","Thermoacidophiles","Cyanobacteria"],ans:2,exp:"Thermoacidophiles (e.g., Sulfolobus) are archaebacteria that live in extremely hot (70-80°C) and acidic (pH 2-3) environments like hot sulphur springs and volcanic areas. They have unique membrane lipids resistant to heat and acid."},
+      {q:"The cell wall of Eubacteria is composed of:",opts:["Chitin","Cellulose","Peptidoglycan (murein)","Silica"],ans:2,exp:"Eubacteria (true bacteria) have cell walls made of peptidoglycan (also called murein) — a polymer of N-acetylglucosamine and N-acetylmuramic acid cross-linked by peptide bridges. This is the target of antibiotics like penicillin and lysozyme."},
+      {q:"Cyanobacteria differ from other bacteria in that they:",opts:["Are heterotrophs","Are prokaryotes with chlorophyll a and can fix nitrogen","Have membrane-bound nucleus","Have chitin cell walls"],ans:1,exp:"Cyanobacteria (blue-green algae) are photosynthetic prokaryotes — they contain chlorophyll a (and phycocyanin) and can perform oxygenic photosynthesis. Many (like Anabaena, Nostoc) can also fix atmospheric nitrogen using heterocysts."},
+      {q:"Mycoplasma is unique among prokaryotes because it:",opts:["Has the largest genome","Lacks a cell wall completely","Has a membrane-bound nucleus","Can only survive at high temperatures"],ans:1,exp:"Mycoplasma is unique because it completely lacks a cell wall — making it resistant to antibiotics like penicillin (which target peptidoglycan cell walls). It is the smallest known living cell (~0.1-0.3 μm) and is pleomorphic (variable shape)."},
+      {q:"Gram-positive bacteria retain the crystal violet stain because:",opts:["They have a thin peptidoglycan layer","Their thick peptidoglycan layer retains the stain after alcohol washing","They have an outer membrane","They have a thin outer membrane"],ans:1,exp:"Gram-positive bacteria have a thick peptidoglycan layer (20-80 nm) — it retains crystal violet dye after alcohol decolorisation → purple colour. Gram-negative bacteria have thin peptidoglycan (2-7 nm) + outer lipopolysaccharide membrane → stain pink with safranin."},
+      {q:"Methanogens are archaebacteria that:",opts:["Live in hot springs","Produce methane in swampy areas and gut of ruminants","Fix nitrogen","Are extreme halophiles"],ans:1,exp:"Methanogens (e.g., Methanobacterium) produce methane (CH₄) by reducing CO₂ using H₂ in anaerobic conditions. They live in swamps (causing marsh gas), sewage treatment plants, and the gut of ruminants (cows, sheep) — contributing to greenhouse gas emissions."},
+      {q:"Halophiles are organisms that:",opts:["Live in hot conditions","Require high salt concentrations (salty/saline environments)","Produce methane","Are photosynthetic bacteria"],ans:1,exp:"Halophiles (e.g., Halobacterium) are archaebacteria that require high NaCl concentrations (2-5 M) for growth. They live in salt lakes, Dead Sea, solar evaporation ponds. Their membranes contain unique ether-linked lipids that are stable in high salt."},
+      {q:"Which type of bacteria can fix atmospheric nitrogen in root nodules of leguminous plants?",opts:["Nitrosomonas","Thiobacillus","Rhizobium","Lactobacillus"],ans:2,exp:"Rhizobium is a symbiotic nitrogen-fixing bacterium that lives in root nodules of leguminous plants (peas, beans, soybeans). It converts atmospheric N₂ to ammonia (NH₃) using the enzyme nitrogenase. The association is mutualistic — the plant provides carbon; Rhizobium provides fixed nitrogen."},
+      {q:"Which of the following shapes of bacteria is described as 'rod-shaped'?",opts:["Coccus","Bacillus","Spirillum","Vibrio"],ans:1,exp:"Bacterial shapes: Coccus = spherical (e.g., Staphylococcus), Bacillus = rod-shaped (e.g., Escherichia coli), Spirillum = spiral/helical (e.g., Spirillum), Vibrio = comma-shaped (e.g., Vibrio cholerae). Spirochaetes are also spiral but flexible."},
+      {q:"Chemosynthetic autotrophic bacteria obtain energy from:",opts:["Sunlight","Oxidation of inorganic chemicals (e.g., ammonia, sulphur, iron)","Organic compounds","Photolysis of water"],ans:1,exp:"Chemosynthetic autotrophs oxidise inorganic compounds to obtain energy for CO₂ fixation. Examples: Nitrosomonas (oxidises NH₄⁺ to NO₂⁻), Nitrobacter (oxidises NO₂⁻ to NO₃⁻), Thiobacillus (oxidises H₂S), Beggiatoa (oxidises sulphur)."},
+      {q:"Archaebacteria differ from Eubacteria in their:",opts:["Ribosome size (both have 70S)","Cell wall chemistry (Archaebacteria lack peptidoglycan) and membrane lipids (ether-linked)","Mode of reproduction","Presence of plasmids"],ans:1,exp:"Key differences of Archaebacteria from Eubacteria: (1) No peptidoglycan in cell wall — different wall polymers like pseudomurein, (2) Unique ether-linked phospholipids in membrane (vs ester-linked in bacteria), (3) Different RNA polymerase subunit structure (more like eukaryotes), (4) Different ribosomal proteins."},
+      {q:"The Gram stain was developed by:",opts:["Robert Koch","Louis Pasteur","Hans Christian Gram","Alexander Fleming"],ans:2,exp:"The Gram stain was developed by Hans Christian Gram (1884) — a Danish bacteriologist. It differentiates bacteria into Gram-positive (purple) and Gram-negative (pink/red) based on differences in cell wall structure. It is the most widely used differential staining technique in microbiology."},
+      {q:"Nitrogen fixation by bacteria requires which enzyme?",opts:["Nitrogenase","Nitrate reductase","Ammonase","Peptidase"],ans:0,exp:"Nitrogen fixation: N₂ + 8H⁺ + 8e⁻ + 16ATP → 2NH₃ + H₂ is catalysed by nitrogenase — a complex of two proteins: dinitrogenase reductase and dinitrogenase. Nitrogenase is extremely sensitive to O₂ — it is irreversibly inactivated by oxygen."},
+      {q:"Which of the following is an example of photoautotrophic bacteria?",opts:["Nitrosomonas","Rhizobium","Chromatium (purple sulphur bacteria)","Lactobacillus"],ans:2,exp:"Photoautotrophic bacteria use light energy for food synthesis: Purple sulphur bacteria (Chromatium), Purple non-sulphur bacteria (Rhodospirillum), Green sulphur bacteria (Chlorobium). Unlike cyanobacteria, these are anoxygenic — they don't produce O₂."},
+      {q:"Heterocysts in cyanobacteria are specialised cells for:",opts:["Photosynthesis","Nitrogen fixation (provide anaerobic microenvironment for nitrogenase)","Reproduction","Water storage"],ans:1,exp:"Heterocysts are thick-walled, specialised cells in filamentous cyanobacteria (Anabaena, Nostoc) — they perform nitrogen fixation. The thick wall reduces O₂ entry, providing the anaerobic environment needed by nitrogenase. They lack photosystem II (no O₂ production)."},
+    ],
+
+    /* ── TOPIC 3: Kingdom Protista ── */
+    'topic-3': [
+      {q:"Diatoms are also called 'jewels of the plant kingdom' because:",opts:["They are very small","Their cell walls have beautiful symmetrical patterns of silica (frustules)","They produce pearls","They are bright coloured"],ans:1,exp:"Diatoms (chrysophytes) have exquisitely sculptured cell walls (frustules) made of hydrated silica (SiO₂). The walls have intricate patterns visible under microscope, earning them the name 'jewels of the plant kingdom' or 'grass of the sea'."},
+      {q:"Dinoflagellates are primarily characterised by:",opts:["Pseudopodia","Two flagella arranged perpendicular to each other","Cilia","No locomotion organs"],ans:1,exp:"Dinoflagellates have two flagella: one longitudinal (in a groove along the length) and one transverse (in a groove around the equator — girdle). Their spinning movement (dinos = whirling) gives them their name. Examples: Gonyaulax, Noctiluca."},
+      {q:"'Red tide' is caused by explosive growth of:",opts:["Red algae","Cyanobacteria","Dinoflagellates (e.g., Gonyaulax)","Diatoms"],ans:2,exp:"Red tide (harmful algal bloom) is caused by rapid multiplication of dinoflagellates (especially Gonyaulax, Karenia, Alexandrium) → sea turns red/orange. They produce potent neurotoxins (saxitoxin, brevetoxin) that kill fish, shellfish, and can cause paralytic shellfish poisoning in humans."},
+      {q:"Euglenoids are plant-animal intermediates because:",opts:["They reproduce both sexually and asexually","They are photosynthetic in light but heterotrophic in darkness","They have both a nucleus and nucleoid","They have both gills and lungs"],ans:1,exp:"Euglenoids (e.g., Euglena) have a unique dual nature: they contain chloroplasts and perform photosynthesis in light (like plants) but when kept in dark they lose chlorophyll and feed heterotrophically on organic matter (like animals). They lack a rigid cell wall — have a protein-rich pellicle instead."},
+      {q:"Diatomaceous earth (diatomite) is used for:",opts:["Making glass","Filtration, abrasives, insulation (from accumulated diatom frustules)","Growing plants","Making medicines only"],ans:1,exp:"Diatomaceous earth consists of fossilised diatom frustules (silica skeletons). It is used: as a natural filter (swimming pools, water treatment), mild abrasive (toothpastes, metal polishes), insulator, dynamite filler (Nobel's invention — kieselguhr absorbs nitroglycerin). Also used as a pesticide (dehydrates insects)."},
+      {q:"Slime moulds have which characteristic that is unique?",opts:["They are photosynthetic","They form a plasmodium — a naked mass of protoplasm with many nuclei","They have a cell wall of chitin","They reproduce by binary fission"],ans:1,exp:"Slime moulds (Myxomycetes) form a plasmodium — an acellular, multinucleate mass of protoplasm that moves and engulfs food (like an animal). Under unfavourable conditions, the plasmodium forms fruiting bodies that produce spores (like a fungus). They show both animal and fungus-like characteristics."},
+      {q:"Plasmodium (malarial parasite) belongs to which group of Protista?",opts:["Amoeboid protozoans","Flagellated protozoans","Ciliated protozoans","Sporozoans"],ans:3,exp:"Plasmodium (P. vivax, P. falciparum) is a sporozoan — the largest group of parasitic protists. They have complex life cycles with spore-like stages. Other sporozoans: Toxoplasma, Cryptosporidium. Sporozoans lack locomotion organelles in adult stage."},
+      {q:"Which ciliated protozoan is used as a model organism in biological research?",opts:["Amoeba","Trypanosoma","Paramecium","Giardia"],ans:2,exp:"Paramecium is a freshwater ciliated protozoan used extensively in research — it has been used to study ciliary beat patterns, genetics (with macronucleus and micronucleus), aging (cell senescence), membrane physiology, and as a model for predator-prey relationships."},
+      {q:"The food reserve of diatoms is stored as:",opts:["Starch","Floridean starch","Oil droplets (and chrysolaminarin)","Glycogen"],ans:2,exp:"Diatoms store food mainly as oils (lipids) and chrysolaminarin (a β-1,3-glucan polysaccharide). The oil reserve makes them important contributors to petroleum deposits (marine diatoms) and makes them rich in omega-3 fatty acids."},
+      {q:"Amoeboid movement is seen in:",opts:["Paramoecium","Euglena","Amoeba (using pseudopodia)","Gonyaulax"],ans:2,exp:"Amoeba moves using pseudopodia ('false feet') — temporary cytoplasmic projections formed by streaming of cytoplasm. The pseudopodia engulf food (phagocytosis). Similar amoeboid movement is seen in human white blood cells (neutrophils, macrophages)."},
+      {q:"Trypanosoma (causing sleeping sickness) is a:",opts:["Sporozoan","Ciliated protozoan","Flagellated protozoan","Amoeboid protozoan"],ans:2,exp:"Trypanosoma (T. brucei gambiense — African sleeping sickness; T. cruzi — Chagas disease) is a flagellated protozoan. It is transmitted by tsetse fly (T. brucei) or kissing bug/Triatoma (T. cruzi). It has a characteristic undulating membrane alongside its single flagellum."},
+      {q:"Chrysophytes include which organisms?",opts:["Diatoms and golden algae","Red algae","Brown algae","Slime moulds"],ans:0,exp:"Chrysophytes (Class Chrysophyceae) include diatoms (class Bacillariophyceae) and golden algae (class Chrysophyceae). They contain carotenoid pigments (especially fucoxanthin) giving a golden-brown colour. Most are freshwater; diatoms are also abundant in marine environments."},
+      {q:"Which of the following is NOT a characteristic of Protista?",opts:["Eukaryotic cell structure","Primarily unicellular","Presence of membrane-bound nucleus","Always photosynthetic"],ans:3,exp:"Not all Protists are photosynthetic — kingdom Protista includes: photosynthetic members (diatoms, euglenoids, dinoflagellates), saprophytic members (slime moulds), and parasitic/predatory members (protozoans). The common feature is eukaryotic unicellular organisation."},
+      {q:"The bioluminescence seen in some marine dinoflagellates is due to:",opts:["Chlorophyll","Luciferin-luciferase reaction","Phycoerythrin","Silica in cell walls"],ans:1,exp:"Bioluminescence in dinoflagellates (Noctiluca, Gonyaulax) is due to the luciferin-luciferase reaction — luciferin (a substrate) is oxidised by the enzyme luciferase in the presence of O₂, producing light without heat. This causes the 'sea sparkle' phenomenon in ocean waves at night."},
+      {q:"Foraminifera belong to which group?",opts:["Flagellated protozoans","Ciliated protozoans","Amoeboid protozoans (with shell/test made of CaCO₃)","Sporozoans"],ans:2,exp:"Foraminifera (forams) are amoeboid protozoans with porous calcium carbonate shells (tests). They extend pseudopodia (reticulopodia) through the pores for feeding. Their fossilised shells form chalk and limestone deposits. Forams are used as index fossils in oil exploration."},
+    ],
+
+    /* ── TOPIC 4: Kingdom Fungi ── */
+    'topic-4': [
+      {q:"The cell wall of fungi is composed of:",opts:["Cellulose","Peptidoglycan","Chitin (N-acetylglucosamine polymer)","Silica"],ans:2,exp:"Fungi have cell walls made of chitin — a polymer of N-acetylglucosamine linked by β-1,4 glycosidic bonds. This is unique to fungi; plants have cellulose, bacteria have peptidoglycan. Chitin also forms the exoskeleton of arthropods."},
+      {q:"The mode of nutrition in fungi is:",opts:["Autotrophic","Holozoic (like animals)","Absorptive heterotrophy (secreting enzymes, absorbing products)","Chemosynthetic"],ans:2,exp:"Fungi use absorptive (extracellular) nutrition — they secrete hydrolytic enzymes (cellulases, proteases, lipases) into the substrate and absorb the digested products. This is called saprotrophic nutrition when acting on dead matter, or parasitic when attacking living organisms."},
+      {q:"Penicillin — the first antibiotic — was discovered from:",opts:["Aspergillus","Penicillium notatum by Alexander Fleming (1928)","Agaricus","Saccharomyces"],ans:1,exp:"Alexander Fleming (1928) noticed that Penicillium notatum mould contaminating a bacterial plate produced a substance (penicillin) that inhibited bacterial growth. Florey and Chain later developed it as an antibiotic (Nobel Prize 1945). Today Penicillium chrysogenum is used for commercial production."},
+      {q:"Saccharomyces cerevisiae (baker's yeast) is classified as:",opts:["Phycomycetes","Ascomycetes","Basidiomycetes","Deuteromycetes"],ans:1,exp:"Saccharomyces cerevisiae belongs to Ascomycetes — it produces ascospores in ascus. It is used in bread making (CO₂ causes bread to rise), beer and wine fermentation (ethanol production), and is a model organism in genetic research."},
+      {q:"Agaricus (button mushroom) belongs to:",opts:["Phycomycetes","Ascomycetes","Basidiomycetes","Deuteromycetes"],ans:2,exp:"Agaricus (including A. bisporus — edible mushroom, A. campestris — field mushroom) belongs to Basidiomycetes. Basidiomycetes produce sexual spores (basidiospores) on club-shaped structures called basidia. Other Basidiomycetes: Puccinia (rust), Ustilago (smut), Amanita, Boletus."},
+      {q:"Alternaria, Colletotrichum and Trichoderma belong to:",opts:["Phycomycetes","Ascomycetes","Basidiomycetes","Deuteromycetes (Fungi Imperfecti)"],ans:3,exp:"Deuteromycetes (Fungi Imperfecti) are fungi where only asexual reproduction is known. Examples: Alternaria (leaf blight), Colletotrichum (anthracnose), Trichoderma (biocontrol agent), Aspergillus (some species), Penicillium (some species). When sexual stage is discovered, they are reclassified."},
+      {q:"Rhizopus (bread mould) belongs to:",opts:["Phycomycetes","Ascomycetes","Basidiomycetes","Deuteromycetes"],ans:0,exp:"Rhizopus (bread mould/black mould) belongs to Phycomycetes — the lowest class of fungi with coenocytic (aseptate) mycelium. Phycomycetes reproduce sexually by zygospores. Examples: Rhizopus (bread mould), Mucor, Albugo (white rust on mustard)."},
+      {q:"Lichens are formed by a symbiotic association between:",opts:["Algae and bacteria","Fungi (mycobiont) and algae or cyanobacteria (phycobiont)","Fungi and mosses","Bacteria and plants"],ans:1,exp:"Lichens are mutualistic symbioses: the fungal partner (mycobiont — usually an ascomycete) provides shelter, moisture, and minerals; the algal/cyanobacterial partner (phycobiont) provides food through photosynthesis. Lichens are pioneer organisms — first to colonise bare rocks."},
+      {q:"Mycorrhiza is a symbiotic association between fungi and:",opts:["Algae","Roots of higher plants","Bacteria","Mosses"],ans:1,exp:"Mycorrhiza: mutualistic fungi-root association — fungal hyphae (mycelium) surround or penetrate plant roots. The fungus absorbs phosphorus, water, and minerals for the plant; the plant provides carbohydrates to the fungus. Found in >80% of vascular plants. Examples: Glomus (AM fungi), Boletus."},
+      {q:"Ustilago (smut) and Puccinia (rust) are examples of:",opts:["Phycomycetes","Ascomycetes","Basidiomycetes","Deuteromycetes"],ans:2,exp:"Ustilago (loose smut of wheat/maize) and Puccinia (wheat rust — P. graminis) are important plant-pathogenic Basidiomycetes. They reproduce by basidiospores. Puccinia graminis causes black/stem rust of wheat — a major threat to wheat production globally."},
+      {q:"Neurospora crassa is an important research tool. It belongs to:",opts:["Phycomycetes","Ascomycetes","Basidiomycetes","Deuteromycetes"],ans:1,exp:"Neurospora crassa (red bread mould) is an ascomycete used extensively in genetic research — Beadle and Tatum used it to establish the 'one gene-one enzyme' hypothesis (Nobel Prize 1958). It has a short life cycle, is haploid (easier genetics), and grows rapidly on defined media."},
+      {q:"The sexual spores produced by Ascomycetes are called:",opts:["Conidia","Zoospores","Ascospores (formed in ascus)","Basidiospores"],ans:2,exp:"Ascomycetes produce sexual spores called ascospores, formed inside a sac-like structure called ascus (plural: asci). Usually 8 ascospores per ascus (after meiosis + one mitosis). Asexual reproduction is by conidia (conidiospores) — borne on conidiophores."},
+      {q:"Fungi that cause athlete's foot and ringworm belong to:",opts:["Ascomycetes","Phycomycetes","Deuteromycetes (dermatophytes — e.g., Trichophyton, Microsporum)","Basidiomycetes"],ans:2,exp:"Dermatophytes causing athlete's foot (Tinea pedis) and ringworm (Tinea corporis) belong to Deuteromycetes — specifically genera Trichophyton, Microsporum, and Epidermophyton. They digest keratin (in skin, hair, nails) and are called keratinophilic fungi."},
+      {q:"Coenocytic (aseptate, lacking cross-walls) mycelium is a characteristic of:",opts:["Ascomycetes","Basidiomycetes","Phycomycetes","Deuteromycetes"],ans:2,exp:"Phycomycetes have coenocytic mycelium — the hyphae lack septa (cross-walls) and contain multiple nuclei in a common cytoplasm. Higher fungi (Ascomycetes, Basidiomycetes, Deuteromycetes) have septate mycelium — hyphae are divided by cross-walls (septa)."},
+      {q:"Ergot of rye is caused by the fungus:",opts:["Ustilago maydis","Claviceps purpurea","Puccinia graminis","Alternaria solani"],ans:1,exp:"Ergot of rye is caused by Claviceps purpurea (an Ascomycete). It produces ergot alkaloids (ergotamine, ergonovine) which cause ergotism (hallucinations, gangrenous extremities). It was responsible for 'St. Anthony's Fire' in mediaeval Europe. Ergotamine is used medically for migraines and post-partum haemorrhage."},
+    ],
+
+    /* ── TOPIC 5: Kingdom Plantae & Animalia ── */
+    'topic-5': [
+      {q:"Kingdom Plantae is characterised by all EXCEPT:",opts:["Presence of chlorophyll","Autotrophic nutrition","Eukaryotic cells with cell wall","Heterotrophic nutrition with absorptive digestion"],ans:3,exp:"Absorptive heterotrophic nutrition is the mode in fungi, not plants. Kingdom Plantae includes eukaryotic, primarily autotrophic (photosynthetic) organisms with chlorophyll and cellulose cell walls. Exceptions: some plants are partially or wholly heterotrophic (insectivorous, parasitic)."},
+      {q:"Cuscuta (dodder) is an example of a:",opts:["Insectivorous plant","Parasitic plant (total parasite — lacks chlorophyll)","Saprophytic plant","Epiphyte"],ans:1,exp:"Cuscuta is a total (holoparasitic) plant — it lacks chlorophyll and depends entirely on its host for nutrition. It attaches to the host using haustoria (specialised absorptive organs that penetrate the host's vascular tissue). Cuscuta causes significant crop damage."},
+      {q:"Nepenthes (pitcher plant) is an example of:",opts:["A saprophyte","An insectivorous plant (partially heterotrophic)","A total parasite","An epiphyte"],ans:1,exp:"Nepenthes is an insectivorous (carnivorous) plant — it is partially heterotrophic. The pitcher is a modified leaf that traps insects. Digestive enzymes in the pitcher fluid digest the prey, supplementing nitrogen (obtained from insects) in nitrogen-poor soils. Also: Drosera, Dionaea."},
+      {q:"Kingdom Animalia is characterised by:",opts:["Presence of cell wall","Autotrophic nutrition","Eukaryotic cells without cell wall and heterotrophic nutrition","Photosynthetic pigments"],ans:2,exp:"Kingdom Animalia: eukaryotic organisms WITHOUT cell walls, heterotrophic (holozoic) nutrition, most are motile (at some stage), reproduce sexually (primarily), have nervous and muscular systems (in most), and store food as glycogen."},
+      {q:"Comparing kingdoms: which pair correctly matches a kingdom with its mode of nutrition?",opts:["Monera — autotrophic only","Protista — heterotrophic only","Fungi — absorptive heterotrophic","Plantae — heterotrophic only"],ans:2,exp:"Fungi are exclusively absorptive heterotrophs — they cannot photosynthesize. Monera includes both autotrophs (cyanobacteria, chemosynthetic bacteria) and heterotrophs. Protista includes both autotrophs and heterotrophs. Plantae is primarily autotrophic (with some exceptions)."},
+      {q:"Monotropa (Indian pipe) is an example of a plant that is:",opts:["Insectivorous","Parasitic on another plant","Saprophytic (mycoheterotrophic — gets nutrition via mycorrhizal fungi from decomposing matter)","Epiphytic"],ans:2,exp:"Monotropa (Indian pipe) is a saprophytic/mycoheterotrophic plant — it lacks chlorophyll and obtains nutrition through mycorrhizal fungi that are connected to nearby photosynthetic trees. It is epiparasitic — indirectly parasitising other plants through shared mycorrhizal networks."},
+      {q:"Which of the following organisms would be MISCLASSIFIED in Kingdom Plantae under the old two-kingdom system?",opts:["Mango tree","Fern","Mushroom (Agaricus)","Lotus"],ans:2,exp:"Mushroom (Agaricus) is a fungus — it would be misclassified in Plantae in the two-kingdom system because: it lacks chlorophyll, has chitin (not cellulose) cell walls, and uses absorptive heterotrophic nutrition. These fundamental differences justify its placement in Kingdom Fungi."},
+      {q:"Store of food in Kingdom Plantae is mainly as:",opts:["Glycogen","Starch","Floridean starch","Laminarin"],ans:1,exp:"Plants store food primarily as starch — in amyloplasts (in seeds, roots, tubers). Animals store glycogen; fungi store glycogen; many algae have unique storage products. Starch is a polymer of glucose (amylose + amylopectin)."},
+      {q:"Alteration of generations in Kingdom Plantae means:",opts:["Asexual reproduction","Alternating between diploid sporophyte and haploid gametophyte generations","Having two types of reproduction","Living in two different habitats"],ans:1,exp:"Alternation of generations: the life cycle alternates between a diploid (2n) sporophyte phase (produces spores by meiosis) and a haploid (n) gametophyte phase (produces gametes). The relative dominance of each phase varies from bryophytes (gametophyte dominant) to angiosperms (sporophyte dominant)."},
+      {q:"Fossil animals and extinct organisms are studied in:",opts:["Kingdom Animalia only","They cannot be classified","Classified based on preserved features in the five kingdom system","A separate kingdom"],ans:2,exp:"Extinct organisms are classified in the appropriate kingdom based on their preserved features (fossils, molecular data when available). Fossil animals are placed in Kingdom Animalia; fossil plants in Kingdom Plantae, etc. They follow the same taxonomic rules as living organisms."},
+      {q:"A major difference between Kingdom Plantae and Kingdom Fungi is:",opts:["Presence of nucleus","Mode of nutrition (autotrophic vs heterotrophic) and cell wall composition (cellulose vs chitin)","Ability to reproduce","Presence of mitochondria"],ans:1,exp:"Key differences: (1) Nutrition: Plants are autotrophic (photosynthesis); Fungi are heterotrophic (absorptive). (2) Cell wall: Plants have cellulose; Fungi have chitin. (3) Storage: Plants store starch; Fungi store glycogen. (4) Chlorophyll: Plants have it; Fungi completely lack it."},
+      {q:"Which kingdom has members showing the most diverse modes of nutrition?",opts:["Monera (bacteria have the most diverse metabolic strategies)","Animalia","Plantae","Fungi"],ans:0,exp:"Kingdom Monera shows the greatest diversity in metabolism: photoautotrophs (cyanobacteria), photoheterotrophs (purple non-sulphur bacteria), chemoautotrophs (Nitrosomonas, Thiobacillus), and chemoheterotrophs (most bacteria — ranging from decomposers to pathogens to nitrogen fixers)."},
+      {q:"Which is the correct match of kingdom to characteristic cell wall component?",opts:["Monera — chitin; Fungi — cellulose","Plantae — chitin; Fungi — cellulose","Fungi — chitin; Plantae — cellulose; Monera — peptidoglycan","All have peptidoglycan"],ans:2,exp:"Cell wall composition: Monera (Eubacteria) = peptidoglycan; Fungi = chitin; Plantae = cellulose; Protista = varies (diatoms = silica; euglenoids = pellicle = no true wall; Oomycetes = cellulose); Animalia = no cell wall."},
+      {q:"Kingdom Animalia is MOST closely related to which kingdom based on molecular data?",opts:["Plantae","Monera","Fungi (animals and fungi share a common ancestor — Opisthokonta)","Protista"],ans:2,exp:"Molecular phylogenetics reveals that animals and fungi are more closely related to each other than either is to plants — they share a common ancestor in the group Opisthokonta. Both animals and fungi store glycogen, have similar codon usage, and share other molecular signatures."},
+      {q:"Volvox is classified in Kingdom Plantae. It is:",opts:["A unicellular alga","A colonial green alga with division of labour between cells","A filamentous fungus","A multicellular brown alga"],ans:1,exp:"Volvox is a colonial green alga — colonies of 500 to 50,000 cells form a hollow sphere. Different cells have different functions (division of labour): somatic cells (photosynthesis, motility with flagella) and reproductive cells (gonidia). It shows a transition from unicellular to multicellular organisation."},
+    ],
+
+    /* ── TOPIC 6: Viruses, Viroids, Prions & Lichens ── */
+    'topic-6': [
+      {q:"Viruses are considered as being on the borderline of living and non-living because:",opts:["They have DNA only","They can reproduce outside the host and show metabolism","They can form crystals (non-living) but replicate only inside host cells (living)","They have a cell wall"],ans:2,exp:"Viruses are acellular entities — they can be crystallised (non-living property) yet reproduce (living property) only inside a host cell using host's machinery. Outside the host, they are metabolically inert. W.M. Stanley first crystallised TMV (1935), showing viruses can be obtained in crystalline form."},
+      {q:"The protein coat of a virus is called:",opts:["Nucleocapsid","Capsid","Envelope","Prion"],ans:1,exp:"Capsid is the protein coat of a virus, made of protein subunits called capsomeres. The capsid + genetic material (DNA or RNA) = nucleocapsid. Some viruses also have a lipid envelope (enveloped viruses like HIV, Influenza) derived from the host cell membrane."},
+      {q:"Tobacco Mosaic Virus (TMV) was first discovered by:",opts:["W.M. Stanley","D.J. Ivanowsky","Martinus Beijerinck","Louis Pasteur"],ans:1,exp:"TMV was first described by D.J. Ivanowsky (1892) who showed that the causative agent of tobacco mosaic disease passed through a Chamberland filter (bacteria cannot pass). Beijerinck (1898) called it 'contagium vivum fluidum'. W.M. Stanley (1935) crystallised TMV and showed it is a nucleoprotein."},
+      {q:"Bacteriophages are viruses that:",opts:["Infect plants","Infect animals","Infect bacteria","Infect fungi"],ans:2,exp:"Bacteriophages (phages) specifically infect bacteria. They inject their genetic material into the bacterium and use its machinery to reproduce. T4 phage (infects E. coli) is the most studied. Phages are being explored for phage therapy — treating antibiotic-resistant bacterial infections."},
+      {q:"HIV is classified as a retrovirus because it:",opts:["Has double-stranded DNA","Has RNA genome and uses reverse transcriptase to make DNA from RNA","Infects only bacteria","Causes acute infection only"],ans:1,exp:"HIV (Human Immunodeficiency Virus) is a retrovirus — it has single-stranded RNA genome and the enzyme reverse transcriptase (RNA-dependent DNA polymerase). It reverse-transcribes its RNA into DNA, which integrates into the host cell's genome as a provirus."},
+      {q:"Viroids were discovered by:",opts:["W.M. Stanley","Martinus Beijerinck","T.O. Diener","Louis Pasteur"],ans:2,exp:"Viroids were discovered by T.O. Diener (1971). They are: much smaller than viruses, consist only of a short single-stranded circular RNA (~240-400 nucleotides), have NO protein coat (capsid), and cause plant diseases like Potato Spindle Tuber Disease (PSTD), Chrysanthemum stunt, Citrus exocortis."},
+      {q:"Viroids differ from viruses in that viroids:",opts:["Have DNA instead of RNA","Have no protein coat — just a naked RNA molecule","Are larger than viruses","Can only infect bacteria"],ans:1,exp:"Key differences: Viroids = naked, small circular ssRNA, no protein coat, cause plant diseases. Viruses = have protein coat (capsid), have DNA or RNA, can infect plants/animals/bacteria/fungi. Viroids are believed to be escaped introns or RNA molecules from plants."},
+      {q:"Prions are infectious agents that consist of:",opts:["Abnormal RNA molecules","Abnormal, misfolded proteins (no nucleic acid)","DNA molecules","Lipid molecules"],ans:1,exp:"Prions (Proteinaceous Infectious particles) are abnormally folded proteins that can cause normal cellular proteins to misfold into the same abnormal conformation — a self-propagating conformational change without any nucleic acid. Discovered by Stanley Prusiner (Nobel Prize 1997). Cause BSE, scrapie, CJD."},
+      {q:"Which disease is caused by prions?",opts:["Potato spindle tuber disease","Tobacco mosaic disease","Bovine Spongiform Encephalopathy (Mad Cow Disease — BSE)","AIDS"],ans:2,exp:"Prion diseases (Transmissible Spongiform Encephalopathies — TSEs): BSE (Mad Cow Disease) in cattle, Scrapie in sheep, CJD (Creutzfeldt-Jakob Disease) in humans, Kuru in humans (from ritual cannibalism in Papua New Guinea), Fatal Familial Insomnia. The abnormal PrP protein causes brain to become spongy."},
+      {q:"In lichens, which partner provides minerals and water?",opts:["Algal component (phycobiont)","Fungal component (mycobiont)","Both equally","Neither"],ans:1,exp:"In lichens: Fungal partner (mycobiont) provides: structural support, protection, water absorption, minerals from substrate. Algal/cyanobacterial partner (phycobiont) provides: carbohydrates through photosynthesis, nitrogen (if cyanobacterium like Nostoc). The lichen body (thallus) is produced mainly by the fungus."},
+      {q:"Lichens are important ecologically because they:",opts:["Produce oxygen only","Are pioneer organisms — colonise bare rock, produce acids that weather it, and prepare soil for other organisms","Only grow in tropical areas","Are only used as food"],ans:1,exp:"Ecological importance of lichens: (1) Pioneer species — first colonisers of bare rock, (2) Produce acids (oxalic acid, lichenic acids) that weather rock → primary soil formation, (3) Fix nitrogen (those with N₂-fixing cyanobacteria like Nostoc), (4) Food for reindeer (Reindeer lichen = Cladonia), (5) Bioindicators of air quality."},
+      {q:"The genetic material of TMV (Tobacco Mosaic Virus) is:",opts:["Double-stranded DNA","Double-stranded RNA","Single-stranded RNA","Single-stranded DNA"],ans:2,exp:"TMV has single-stranded, positive-sense RNA as its genetic material — about 6400 nucleotides encoding 4 proteins. The RNA is surrounded by ~2130 identical coat protein (capsomere) subunits arranged in a helix. TMV was the first virus to be crystallised (Stanley, 1935)."},
+      {q:"Which of the following viruses has a double-stranded DNA genome?",opts:["HIV","TMV","Influenza virus","T4 bacteriophage"],ans:3,exp:"T4 bacteriophage has a double-stranded DNA (dsDNA) genome. HIV = ssRNA (retrovirus). TMV = ssRNA. Influenza = segmented ssRNA (8 segments). Other dsDNA viruses: Herpesvirus, Adenovirus, Poxvirus, Hepatitis B (partially dsDNA)."},
+      {q:"The nucleic acid in viruses can be:",opts:["Only DNA","Only RNA","Either DNA or RNA — but never both","Both DNA and RNA simultaneously"],ans:2,exp:"Each type of virus has either DNA or RNA as its genetic material, NEVER both. DNA viruses: T4 phage, Herpes, Adenovirus, Poxvirus, Hepatitis B. RNA viruses: TMV, HIV, Influenza, Polio, Rabies, Ebola, SARS-CoV-2 (COVID-19). The type of nucleic acid is used in classification."},
+      {q:"Which statement about lichens is CORRECT?",opts:["Lichens are sensitive to pollution and are excellent bioindicators of air quality","Lichens grow rapidly","Lichens are always green coloured","Lichens can grow only in tropical forests"],ans:0,exp:"Lichens are extremely sensitive to air pollution, especially sulphur dioxide (SO₂) — they are among the first organisms to disappear when air quality deteriorates. They are used as bioindicators to map air pollution levels. Their slow growth (mm/year) also makes them useful for dating rock surfaces (lichenometry)."},
+    ],
+
+    /* ── PYQs ── */
+    'pyq-2024': [
+      {q:"[NEET 2024] Five Kingdom classification was proposed by:",opts:["Carolus Linnaeus","Ernst Haeckel","R.H. Whittaker","Carl Woese"],ans:2,exp:"R.H. Whittaker proposed the Five Kingdom classification in 1969 based on cell structure, thallus organisation, mode of nutrition, reproduction, and phylogeny. (NEET 2024)"},
+      {q:"[NEET 2024] Which of the following is placed in Kingdom Monera?",opts:["Amoeba","Paramecium","Nostoc (cyanobacterium)","Spirogyra"],ans:2,exp:"Nostoc is a cyanobacterium — a prokaryote. Amoeba and Paramecium are Protists; Spirogyra is a green alga in Plantae. (NEET 2024)"},
+      {q:"[NEET 2024] Cell wall of fungi is made of:",opts:["Cellulose","Peptidoglycan","Chitin","Silica"],ans:2,exp:"Fungi have chitin cell walls — a polymer of N-acetylglucosamine. (NEET 2024)"},
+      {q:"[NEET 2024] Which is a retrovirus?",opts:["TMV","T4 bacteriophage","HIV","Influenza virus"],ans:2,exp:"HIV is a retrovirus — has ssRNA genome and uses reverse transcriptase enzyme. (NEET 2024)"},
+    ],
+    'pyq-2023': [
+      {q:"[NEET 2023] Lichens are a symbiotic association of:",opts:["Fungi and bacteria","Algae and bacteria","Fungi and algae/cyanobacteria","Plants and fungi"],ans:2,exp:"Lichens = mycobiont (fungus, usually ascomycete) + phycobiont (alga or cyanobacterium). (NEET 2023)"},
+      {q:"[NEET 2023] Viroids consist of:",opts:["Protein only","Naked ssRNA without protein coat","DNA with protein coat","RNA with protein coat"],ans:1,exp:"Viroids are naked ssRNA molecules — they have no protein coat (capsid), unlike viruses. Discovered by T.O. Diener (1971). (NEET 2023)"},
+      {q:"[NEET 2023] Penicillin antibiotic is obtained from:",opts:["Aspergillus","Penicillium","Agaricus","Rhizopus"],ans:1,exp:"Penicillin is obtained from Penicillium notatum/chrysogenum — discovered by Alexander Fleming (1928). (NEET 2023)"},
+    ],
+    'pyq-2022': [
+      {q:"[NEET 2022] Which is an ascomycete?",opts:["Rhizopus","Agaricus","Neurospora","Ustilago"],ans:2,exp:"Neurospora crassa is an ascomycete (produces ascospores in ascus). Rhizopus = Phycomycete; Agaricus and Ustilago = Basidiomycetes. (NEET 2022)"},
+      {q:"[NEET 2022] Mycorrhiza represents a symbiotic association between:",opts:["Algae and fungi","Fungi and roots of higher plants","Bacteria and roots","Fungi and bacteria"],ans:1,exp:"Mycorrhiza = symbiotic association of fungi with roots of higher plants — fungus gets carbohydrates, plant gets phosphorus and minerals. (NEET 2022)"},
+      {q:"[NEET 2022] Red tide in sea is caused by:",opts:["Diatoms","Cyanobacteria","Dinoflagellates (e.g., Gonyaulax)","Red algae"],ans:2,exp:"Red tide (harmful algal bloom) is caused by explosive growth of dinoflagellates, especially Gonyaulax — they produce neurotoxins dangerous to marine life and humans. (NEET 2022)"},
+    ],
+    'pyq-2021': [
+      {q:"[NEET 2021] Which of the following is characterised by the absence of a cell wall?",opts:["Bacteria","Fungi","Mycoplasma","Cyanobacteria"],ans:2,exp:"Mycoplasma completely lacks a cell wall — making it the smallest living cell and resistant to penicillin (which targets peptidoglycan). (NEET 2021)"},
+      {q:"[NEET 2021] T.O. Diener discovered:",opts:["Prions","Viroids","Lichens","Mycorrhiza"],ans:1,exp:"T.O. Diener (1971) discovered viroids — infectious RNA molecules without a protein coat, smaller than viruses. (NEET 2021)"},
+    ],
+    'pyq-2020': [
+      {q:"[NEET 2020] Which organisms belong to Kingdom Protista?",opts:["Rhizopus and Agaricus","Amoeba and Paramecium","Rhizobium and Azotobacter","Puccinia and Ustilago"],ans:1,exp:"Amoeba and Paramecium are protists — unicellular eukaryotes. Rhizopus and Agaricus = Fungi; Rhizobium and Azotobacter = Monera (bacteria); Puccinia and Ustilago = Fungi (Basidiomycetes). (NEET 2020)"},
+      {q:"[NEET 2020] Prions are composed of:",opts:["RNA only","DNA only","Abnormal misfolded proteins (no nucleic acid)","Both RNA and protein"],ans:2,exp:"Prions are infectious misfolded proteins — they contain NO nucleic acid (DNA or RNA). Discovered by Stanley Prusiner (Nobel 1997). (NEET 2020)"},
+    ],
+    'pyq-all': [] // filled below
+  };
+
+  /* ── Build pyq-all ── */
+  QUESTION_BANK['pyq-all'] = [].concat(
+    QUESTION_BANK['pyq-2024'],
+    QUESTION_BANK['pyq-2023'],
+    QUESTION_BANK['pyq-2022'],
+    QUESTION_BANK['pyq-2021'],
+    QUESTION_BANK['pyq-2020']
+  );
+
+  /* ── Build NEET-weighted full chapter test (45 Qs) ──
+     Ch2 NEET weightage (approximate from past papers):
+     Fungi(10) + Viruses/Viroids/Prions(10) + Monera(8) +
+     Protista(8) + Classification History(5) + Plantae/Animalia(4) = 45
+  ── */
+  var NEET_WEIGHTS = {
+    'topic-4':10, 'topic-6':10, 'topic-2':8,
+    'topic-3':8,  'topic-1':5,  'topic-5':4
+  };
+  QUESTION_BANK['full'] = [];
+  Object.keys(NEET_WEIGHTS).forEach(function(tid){
+    var pool = QUESTION_BANK[tid].slice();
+    for(var i=pool.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=pool[i];pool[i]=pool[j];pool[j]=t;}
+    QUESTION_BANK['full'] = QUESTION_BANK['full'].concat(pool.slice(0, NEET_WEIGHTS[tid]));
+  });
+  // Final shuffle of full test
+  for(var i=QUESTION_BANK['full'].length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=QUESTION_BANK['full'][i];QUESTION_BANK['full'][i]=QUESTION_BANK['full'][j];QUESTION_BANK['full'][j]=t;}
+
+
+  /* ═══════════════════════════════════════════════
+     QUIZ ENGINE STATE
+  ═══════════════════════════════════════════════ */
+  var QZ = {
+    questions:[], answers:[], currentQ:0,
+    timerSec:0, timerInterval:null,
+    examId:'', examTitle:'', submitted:false
+  };
+
+  var completedTopics = JSON.parse(localStorage.getItem('ch2_completed') || '[]');
+  updateProgress();
+
+  function updateProgress() {
+    var pct = Math.round((completedTopics.length / 6) * 100);
+    var bar = document.getElementById('chapter-progress');
+    var lbl = document.getElementById('progress-pct');
+    if(bar) bar.style.width = pct + '%';
+    if(lbl) lbl.textContent = pct + '% done';
+  }
+
+  var pendingExam = {};
+
+  function openExamModal(title, questions, duration, examId) {
+    pendingExam = { title:title, questions:questions, duration:duration, examId:examId };
+    document.getElementById('modal-topic-title').textContent = title;
+    document.getElementById('modal-q-count').textContent = questions;
+    document.getElementById('modal-duration').textContent = duration + ' min';
+    document.getElementById('confirm-modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeConfirm() {
+    document.getElementById('confirm-modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function handleOverlayClick(e) {
+    if(e.target === document.getElementById('confirm-modal')) closeConfirm();
+  }
+
+  function launchQuiz() {
+    closeConfirm();
+    var bank = QUESTION_BANK[pendingExam.examId];
+    if(!bank || bank.length === 0){ alert('Questions not loaded for: ' + pendingExam.examId); return; }
+    var shuffled = shuffle(bank.slice());
+    var qs = shuffled.slice(0, Math.min(pendingExam.questions, shuffled.length));
+
+    QZ.questions = qs;
+    QZ.answers   = new Array(qs.length).fill(-1);
+    QZ.currentQ  = 0;
+    QZ.timerSec  = pendingExam.duration * 60;
+    QZ.examId    = pendingExam.examId;
+    QZ.examTitle = pendingExam.title;
+    QZ.submitted = false;
+
+    var ov = document.getElementById('quiz-overlay');
+    ov.style.display = 'block';
+    ov.scrollTop = 0;
+    document.body.style.overflow = 'hidden';
+    document.getElementById('qo-title').textContent = pendingExam.title;
+    document.getElementById('qo-question-area').style.display = 'block';
+    document.getElementById('qo-result-area').style.display = 'none';
+    document.getElementById('qo-dots').style.display = 'flex';
+
+    buildDots();
+    renderQuestion();
+    startQTimer();
+  }
+
+  function startQTimer() {
+    clearInterval(QZ.timerInterval);
+    QZ.timerInterval = setInterval(function(){
+      if(QZ.timerSec <= 0){ clearInterval(QZ.timerInterval); submitQuiz(); return; }
+      QZ.timerSec--;
+      var m = String(Math.floor(QZ.timerSec/60)).padStart(2,'0');
+      var s = String(QZ.timerSec%60).padStart(2,'0');
+      var el = document.getElementById('qo-timer');
+      el.textContent = m+':'+s;
+      el.className = 'qo-timer'+(QZ.timerSec<60?' danger':'');
+    },1000);
+  }
+
+  function renderQuestion() {
+    var q = QZ.questions[QZ.currentQ];
+    var idx = QZ.currentQ;
+    var total = QZ.questions.length;
+    var keys = ['A','B','C','D'];
+    document.getElementById('qo-qnum').textContent = 'Question '+(idx+1)+' of '+total;
+    document.getElementById('qo-qtext').textContent = q.q;
+    document.getElementById('qo-pbar').style.width = (((idx+1)/total)*100)+'%';
+    var optDiv = document.getElementById('qo-options');
+    optDiv.innerHTML = '';
+    q.opts.forEach(function(opt,i){
+      var div = document.createElement('div');
+      div.className = 'qo-opt'+(QZ.answers[idx]===i?' selected':'');
+      div.innerHTML = '<span class="qo-key">'+keys[i]+'</span> '+opt;
+      div.onclick = (function(ai){ return function(){ selectAnswer(ai); }; })(i);
+      optDiv.appendChild(div);
+    });
+    document.getElementById('qo-prev').disabled = idx===0;
+    document.getElementById('qo-next').style.display = idx===total-1?'none':'inline-block';
+    updateDots();
+  }
+
+  function selectAnswer(i) {
+    if(QZ.submitted) return;
+    QZ.answers[QZ.currentQ] = i;
+    renderQuestion();
+  }
+
+  function goQ(dir) {
+    var next = QZ.currentQ + dir;
+    if(next<0 || next>=QZ.questions.length) return;
+    QZ.currentQ = next;
+    renderQuestion();
+  }
+
+  function buildDots() {
+    var c = document.getElementById('qo-dots');
+    c.innerHTML = '';
+    QZ.questions.forEach(function(_,i){
+      var d = document.createElement('div');
+      d.className = 'qo-dot'+(i===0?' current':'');
+      d.id = 'qdot-'+i;
+      d.textContent = i+1;
+      d.onclick = (function(idx){ return function(){ QZ.currentQ=idx; renderQuestion(); }; })(i);
+      c.appendChild(d);
+    });
+  }
+
+  function updateDots() {
+    QZ.questions.forEach(function(_,i){
+      var d = document.getElementById('qdot-'+i);
+      if(!d) return;
+      d.className = 'qo-dot';
+      if(i===QZ.currentQ) d.classList.add('current');
+      else if(QZ.answers[i]!==-1) d.classList.add('answered');
+    });
+  }
+
+  function confirmSubmit() {
+    var u = QZ.answers.filter(function(a){ return a===-1; }).length;
+    if(confirm(u>0? u+' question(s) unanswered. Submit anyway?':'Submit the test?')) submitQuiz();
+  }
+
+  function submitQuiz() {
+    if(QZ.submitted) return;
+    QZ.submitted = true;
+    clearInterval(QZ.timerInterval);
+
+    var correct=0, wrong=0, skipped=0;
+    QZ.questions.forEach(function(q,i){
+      var a=QZ.answers[i];
+      if(a===-1) skipped++;
+      else if(a===q.ans) correct++;
+      else wrong++;
+    });
+
+    var neetScore = correct*4 - wrong;
+    var maxScore  = QZ.questions.length*4;
+    var pct       = Math.round((correct/QZ.questions.length)*100);
+
+    var grade, emoji, gradeBg, gradeSub;
+    if(pct>=80){ grade='Future Doctor! 🏆'; emoji='🏆'; gradeBg='linear-gradient(135deg,#085041,#1D9E75)'; gradeSub='Outstanding! You are NEET ready.'; }
+    else if(pct>=60){ grade='Well Done! 👍'; emoji='👍'; gradeBg='linear-gradient(135deg,#0F6E56,#5DCAA5)'; gradeSub='Good effort! Revise weak areas.'; }
+    else if(pct>=40){ grade='Keep Practising 📚'; emoji='📚'; gradeBg='linear-gradient(135deg,#ba7517,#ef9f27)'; gradeSub='On the right track. Attempt more tests.'; }
+    else { grade='Needs More Practice 💪'; emoji='💪'; gradeBg='linear-gradient(135deg,#993c1d,#d85a30)'; gradeSub='Revise NCERT thoroughly and retry.'; }
+
+    if(QZ.examId.startsWith('topic-')){
+      if(!completedTopics.includes(QZ.examId)){
+        completedTopics.push(QZ.examId);
+        localStorage.setItem('ch2_completed', JSON.stringify(completedTopics));
+        updateProgress();
+      }
+    }
+
+    var keys = ['A','B','C','D'];
+    var reviewHtml = QZ.questions.map(function(q,i){
+      var ua=QZ.answers[i];
+      var isSk=ua===-1, isOk=ua===q.ans;
+      var sc = isSk?'skip-bg':(isOk?'correct-bg':'wrong-bg');
+      var si = isSk?'⊘ Skipped':(isOk?'✓ Correct':'✗ Wrong');
+      var yr = ua!==-1?('<span class="review-wrong">Your answer: '+keys[ua]+'. '+q.opts[ua]+'</span><br>'):'';
+      return '<div class="review-item">'
+        +'<div class="review-q '+sc+'"><b>Q'+(i+1)+'.</b> '+q.q+'&nbsp;&nbsp;<span style="float:right;font-size:0.75rem;">'+si+'</span></div>'
+        +'<div class="review-detail">'
+        +(isSk?'<span style="color:#888;">Unattempted</span><br>':(!isOk?yr:''))
+        +'<span class="review-correct">Correct: '+keys[q.ans]+'. '+q.opts[q.ans]+'</span>'
+        +'<div class="review-exp">'+q.exp+'</div>'
+        +'</div></div>';
+    }).join('');
+
+    var html='<div class="result-grade-card">'
+      +'<div class="result-grade-header" style="background:'+gradeBg+';">'
+      +'<div class="result-grade-emoji">'+emoji+'</div>'
+      +'<div class="result-grade-title">'+grade+'</div>'
+      +'<div class="result-grade-sub">'+gradeSub+'</div>'
+      +'</div>'
+      +'<div class="result-score-row">'
+      +'<div class="result-score-cell"><div class="rsc-num" style="color:#1D9E75;">'+neetScore+'/'+maxScore+'</div><div class="rsc-lbl">NEET Score</div></div>'
+      +'<div class="result-score-cell"><div class="rsc-num" style="color:#1D9E75;">'+correct+'</div><div class="rsc-lbl">Correct</div></div>'
+      +'<div class="result-score-cell"><div class="rsc-num" style="color:#c0392b;">'+wrong+'</div><div class="rsc-lbl">Wrong</div></div>'
+      +'<div class="result-score-cell"><div class="rsc-num" style="color:#888;">'+skipped+'</div><div class="rsc-lbl">Skipped</div></div>'
+      +'</div></div>'
+      +'<div style="background:#fff8e1;border:1px solid #f0a040;border-radius:8px;padding:10px 14px;font-size:0.8rem;color:#7a5010;margin-bottom:1rem;">NEET Marking: +4 correct · −1 wrong · 0 skipped</div>'
+      +'<div class="result-review-title">Question-wise Review</div>'
+      +reviewHtml
+      +'<div class="qo-retake-row">'
+      +'<a href="#retake" id="link-retake"><button class="btn-retake" onclick="retakeQuiz()">↺ Retake Test</button></a>'
+      +'<a href="#chapter" id="link-back-ch"><button class="btn-back-ch" onclick="closeQuiz()">← Back to Chapter</button></a>'
+      +'</div>';
+
+    var ra = document.getElementById('qo-result-area');
+    ra.innerHTML = html;
+    document.getElementById('qo-question-area').style.display = 'none';
+    document.getElementById('qo-dots').style.display = 'none';
+    ra.style.display = 'block';
+    document.getElementById('quiz-overlay').scrollTop = 0;
+    document.getElementById('qo-timer').textContent = 'Done';
+    document.getElementById('qo-timer').className = 'qo-timer';
+  }
+
+  function retakeQuiz() {
+    launchQuiz();
+    document.getElementById('qo-dots').style.display = 'flex';
+  }
+
+  function closeQuiz() {
+    clearInterval(QZ.timerInterval);
+    document.getElementById('quiz-overlay').style.display = 'none';
+    document.getElementById('qo-dots').style.display = 'flex';
+    document.body.style.overflow = '';
+  }
+
+  function confirmExit() {
+    if(confirm('Exit the test? Progress will be lost.')) closeQuiz();
+  }
+
+  function shuffle(arr) {
+    for(var i=arr.length-1;i>0;i--){
+      var j=Math.floor(Math.random()*(i+1));
+      var tmp=arr[i]; arr[i]=arr[j]; arr[j]=tmp;
+    }
+    return arr;
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var t=document.querySelector(this.getAttribute('href'));
+      if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+
+  </script>
+
+</body>
+</html>
